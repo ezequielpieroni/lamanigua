@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Manigüa</title>
- 
+        
+        <!--FUENTES GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -12,16 +16,14 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css"> 
                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header id="headerIndex">
             <section id="navMasBanner">
                     
-                    <!--Imagen LA MANIGUA MADERgitgA Y FUEGO-->
+                    <!--Imagen LA MANIGUA MADERA Y FUEGO-->
                     
                     <div class="logoPrincipal">           
                         <img  src="Images/logos/Manigua-maderayfuego.png" alt="La Manigua">    
@@ -29,13 +31,13 @@
                     
                     <!--Navegador Bootstrap-->
 
-                    <nav class="navbar navbar-expand-lg navBarBts"> <!--Clase navBarBts AÑADIDA-->
+                    <nav id="navbarIndex" class="navbar navbar-expand-lg navBarBtsIndex"> <!--Clase navBarBts AÑADIDA-->
                         <div class="container-fluid">
                             <a class="navbar-brand  logoNavIndex" href="#"><img src="Images/logos/fuegoBlanco.png"   alt="logo"></a>                                      <!--Clase logoNavIndex AÑADIDA-->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"     aria-label="Toggle  navigation">
-                            <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon hamburguesaColorIndex"></span>
                             </button>                                          
-                            <div class="collapse navbar-collapse navIndex" id="navbarNav"> <!--Clase navIndex AÑADIDA-->
+                            <div class="collapse navbar-collapse menuIndex" id="navbarNav"> <!--Clase menuIndex AÑADIDA-->
                                 <ul class="navbar-nav ulNavIndex">              <!--Clase ulNavIndex AÑADIDA-->
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Inicio</a>
@@ -62,10 +64,12 @@
 
         <main id="mainIndex">       <!--Contenido introductorio al sitio-->
             <section id="frase">
-                    <h2 class="textoRenglonUnoFrase">"y, abriéndote paso entre la manigua,</h2>      <!--Frase referente al sitio-->
+                    <h2 class="textoRenglonUnoFrase">"y, abriéndote paso entre la manigua,</h2>   <!--Frase referente al sitio-->
                     <h2 class="textoRenglonDosFrase">inaugurarás caminos y atajos"</h2>
-                    <h3 class="vermasFrase">ver mas</h3>
-                    <img src="Images/Index/right_arrows_1.png" alt="flecha hacia abajo">        <!--Flecha-->
+                    <a href="#contenido" class="vermasFrase">
+                        <h3 >ver mas</h3>
+                        <img src="Images/Index/right_arrows_1.png" alt="flecha hacia abajo">    <!--Flecha-->
+                    </a> 
                    
             </section>
             <section id="contenido">
@@ -84,17 +88,17 @@
                     </aside>
                 </article>
                 <article class="tecnica">             <!--Articulo Tecnica de trabajo-->
-                    <aside class="cuencoTecnica">
+                    <div class="cuencoTecnica">
                         <img  src="Images/Index/cuencoNaranja.webp" alt="cuenco">
-                    </aside>
-                    <aside class="textoTecnica">
+                    </div>
+                    <div class="textoTecnica">
                         <h3 class="tituloTecnica">Yakisugi</h3>
                         <hr>
                         <p class="parrafoTecnica">En el corazón de nuestra artesanía reside la distinguida técnica japonesa llamada Yakisugi, una fusión de yaki (quemado) y sugi (ciprés). Este antiguo método implica la aplicación cuidadosa de fuego sobre la madera, logrando no solo un patrón visualmente atractivo, sino también fortaleciendo la estructura misma del material.
                         El Yakisugi va más allá de la superficie: cada paso de este proceso ancestral eleva la durabilidad y resistencia de la madera, creando piezas que desafían el paso del tiempo. La técnica no solo es estética, sino también funcional, proporcionando a cada mueble una capa protectora que resiste las inclemencias del entorno.
                                             
                         </p>
-                    </aside>    
+                    </div>    
                 </article> 
             </section>        
         </main>

@@ -46,7 +46,7 @@ main {
     display: flex;
     justify-content: center;  
     text-align: center;
-    padding-top: 350px;
+    padding-top: 330px;
     position: absolute;
     z-index: 100;
 }
@@ -61,9 +61,11 @@ main {
 
 /**-----BARRA DE NAVEGADOR INDEX-----------------------------------------------------------------------------------------------**/
 
-
-.navBarBts {
-    background-color: rgba(0, 0, 0, 0.082);
+#navbarIndex {
+    width: 100%;
+}
+.navBarBtsIndex {
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100px;
     position: fixed;
@@ -71,7 +73,7 @@ main {
     
 }
 
-.navIndex {
+.menuIndex {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -117,7 +119,12 @@ main {
    
 }
 
-.navbar-toggler {           /**MENU HAMBURGUESA SIN BORDES**/
+.hamburguesaColorIndex {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA**/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ 
+}
+
+.navbar-toggler {           /**MENU HAMBURGUESA SIN BORDES**/     /**BOOTSTRAP**/  /** INDEX Y PAGES**/
     border: none;
 }
 
@@ -126,10 +133,7 @@ main {
     box-shadow: none;
 }
 
-.navbar-toggler-icon {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA**/
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
- 
-}
+
 
 
 
@@ -147,7 +151,7 @@ main {
     padding-top: 200px;
 }
 
-.textoRenglonUnoFrase {              /** texto FRASE **/
+.textoRenglonUnoFrase {     /** texto FRASE **/
     padding-top: 200px;
     font-weight: 100;
     
@@ -159,7 +163,15 @@ main {
 }
 
 .vermasFrase{             /** texto VER MAS **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 50px;
+}
+
+.vermasFrase h3 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 #frase img {
@@ -304,44 +316,53 @@ main {
 
 /**----------------------------BARRA DE NAVEGADOR PAGES------------------------------------------------------------------------------------------------------**/
 
-
-.navPages {                  
+.navBarBtsPages {
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100px;
     position: fixed;
-    z-index: 101;
+    z-index: 100;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
     
-
 }
 
-.navPages img {                /** LOGO navegados PAGES**/
+.menuPages {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logoNavPages img {            /**LOGO navegador TOP PAGES**/
     width: 30px;
     height: auto;
-    display: flex;              
-    margin-left: 100px;
+    margin-left: 7%;
+    margin-top: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+
 }
 
-.ulNavPages {                   /**UL navegador PAGES**/
+
+.ulNavPages {                    /**UL navegador PAGES**/
     width: 500px;
     display: flex;
     margin-right: 250px;
-   
-}
 
-.ulNavPages a{                   /**LINKS navegador PAGES**/
+}
+.ulNavPages li a{                   /**LINKS navegador PAGES**/
     color: rgb(0, 0, 0);
     margin: 30px;
-    font-weight: 600;
     font-size: 18px;
 }
 
-.ulNavPages a:hover {              /**COLOR LINKS CON PUNTERO ARRIBA**/
-    color: rgb(119, 112, 112);
+.ulNavPages a:hover {            /**COLOR LINKS CON PUNTERO ARRIBA**/
+    color: rgb(188, 185, 185);
+}
+
+.hamburguesaColorPages {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA PAGES**/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ 
 }
 
 
@@ -425,14 +446,15 @@ main {
 #tituloPiezas h1{          /** TITULO **/
     font-size: 70px;
     width: 70%;
-    margin-left: 20px;   
+    margin-left: 30px;   
+    font-weight: 600;
 }
 
 #tituloPiezas h3{           /** SUB TITULO**/
     font-size: 30px;
     color: rgba(0, 0, 0, 0.507);
     margin-bottom: 50px;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 5px;
 }
 
@@ -478,7 +500,8 @@ margin: 40px 0;
 #tituloProceso h1{          /**TITULO**/
     font-size: 70px;
     width: 70%;   
-    margin-left: 20px;
+    margin-left: 30px;
+    font-weight: 600;
     
 }
 
@@ -487,7 +510,7 @@ margin: 40px 0;
 #tituloProceso h3{           /** SUB TITULO**/
     font-size: 30px;
     color: rgba(0, 0, 0, 0.507);
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 5px;
 }
 
@@ -941,6 +964,7 @@ margin: 40px 0;
     font-size:80px;
     line-height: 1.4;
     margin-left: 200px;
+    font-weight: 600;
 }
 
 .textoTituloContacto h3 {           /**SUBTITULO**/
@@ -974,5 +998,213 @@ margin: 40px 0;
     height: auto;
 }
     
+/*-----------------------------------FOOTER MEDIA QUERY-----------------------------------------------------------**/
 
+
+
+@media (max-width:495px) {
+
+    #footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+
+
+/** -----COLUMNA 1 LOGO y COPYRIGHT----**/
+
+
+#columnaLogoFooter {             /** SECCION COLumna 1 **/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.logoFooter img{                    
+    width: 170px;
+    height: 170px;
+    
+    
+}
+
+.copyrightFooter h3{             /** COPYRIGHT **/                
+    font-size: medium;
+    font-weight: 100; 
+}
+
+
+/** -----COLUMNA 2 CONTACTO y REDES----**/
+
+
+#columnaContactoFooter {        /** SECCION COLUMNA 2 **/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 200px 200px 40px 60px ;
+}
+
+.contactoFooter {               /** TEXTO CONTACTO **/
+    width: 55%;
+    font-weight: 100;
+}
+
+.redesFooter {                  /** REDES **/
+    margin-top: 30px;
+    font-weight: 10;
+    
+}
+
+.redesFooter
+
+
+.intagramFooter img,
+.facebookFooter img{
+    width: 60px;
+    height: auto;
+    
+}
+
+.disenoFooter h3{               /** DESIGN BY **/
+    font-size: medium;
+    font-weight: 100;
+}
+
+.disenoFooter a {
+    text-decoration: underline;
+    color: rgb(178, 178, 186); 
+}
+
+.disenoFooter a:hover {         /**COLOR LINK DISEÑO CON PUNTERO ARRIBA**/
+    color: rgb(255, 255, 255);
+}
+
+
+/**-----COLUMNA 3 BOTON UP, MENU y MAIL----**/
+
+
+#columnaBotonFooter {           /** SECCION COLUMNA 3 **/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    
+}
+
+.botonFooter {                 /** BOTON UP **/
+    padding: 10px;
+    border-color: aliceblue;
+    
+}
+
+.botonFooter a h3{                 
+    font-weight: 100;
+    border-color: aliceblue;
+    color: rgb(255, 255, 255);
+}
+
+.menuFooter ul {               /** MENU FOOTER **/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.menuFooter a{                      
+    color: rgb(178, 178, 186);      
+    line-height: 1.8;
+    font-size: larger;
+}
+
+.menuFooter a:hover {          /**COLOR LINKS MENU CON PUNTERO ARRIBA**/
+    color: rgb(255, 255, 255);
+  }
+
+.mailFooter h3{                /** MAIL **/
+    font-size: medium;
+    font-weight: 100;
+
+  }
+
+}
+
+
+
+
+
+
+
+/*------------------------------------INDEX MEDIA QUERY-----------------------------------------------------------**/
+
+
+@media (max-width:495px) {
+  
+
+    .logoPrincipal img{   /**LOGO INDEX**/
+        width: 70%;
+    }
+
+    #frase h2 {             /**FRASE INDEX**/
+        font-size: 20px;
+    }
+
+    .filosofia  {            /**ARTICULO FILOSOFIA **/
+    
+        flex-direction: column;
+        padding: 0;
+        padding-right: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   
+    .tecnica {               /**ARTICULO TECNICA**/
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-right: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .troncoFilosofia img,  /** IMAGENES **/
+    .cuencoTecnica img {   
+        width: 100%;    
+        padding-left: 30px;
+        
+    }
+
+    .textoFilosofia hr,
+    .textoTecnica hr {      /** LINEAS **/
+        display: inline-block;
+        width:20%;
+        margin: 30px 0 30px 10px;
+        
+    }
+
+    .parrafoFilosofia,      /** PARRAFOS **/
+    .parrafoTecnica {
+        width: 100%;
+        line-height: 1.8;
+        text-align: justify;
+        padding-left: 30px;
+    }
+
+    .tituloFilosofia,       /** TITULOS **/
+    .tituloTecnica {
+        padding-left: 30px;
+    
+    }
+
+    
+
+
+}
 

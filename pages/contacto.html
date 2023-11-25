@@ -4,30 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Manigüa</title>
-        <link rel="stylesheet" href="../css/style.css">
+        
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css"> 
+               
+
+        <!--FUENTES GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
     <body>
         <header id="headerPages">
-            <nav class="navPages"> <!--Navegador-->
-                <div class="logoNavPages">
-                    <a href="../index.html"><img src="../Images/logos/fuego-negro.png" alt="isotipo"></a>
-                </div>                 
-                <ul class="ulNavPages"> 
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Piezas</a></li>
-                    <li><a href="proceso.html">Proceso</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                     <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navBarBtsPages"> <!--Clase navBarBtsPages AÑADIDA-->
+                <div class="container-fluid">
+                    <a class="navbar-brand  logoNavPages" href="#"><img src="../Images/logos/fuego-negro.png"   alt="logo"></a>                                      <!--Clase logoNavPages AÑADIDA-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"     aria-label="Toggle  navigation">
+                        <span class="navbar-toggler-icon hamburguesaColorPages"></span>
+                    </button>                                          
+                    <div class="collapse navbar-collapse menuPages" id="navbarNav"> <!--Clase menuPages AÑADIDA-->
+                        <ul class="navbar-nav ulNavPages">              <!--Clase ulNavPages AÑADIDA-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="piezas.html">Piezas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proceso.html">Proceso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            
-        </header>     
-        
+        </header>    
+         
         <main id="mainContacto">          <!--Pagina de CONTACTO-->
             <section id="tituloContacto"> <!--Mensaje titulo de pagina-->
                 <article class="textoTituloContacto">    
