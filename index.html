@@ -4,40 +4,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Manigüa</title>
-        <link rel="stylesheet" href="css/style.css">
+ 
+        
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css"> 
                
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <header id="headerIndex">
             <section id="navMasBanner">
-                    <div class="logoPrincipal">
-                        <img  src="Images/logos/Manigua-maderayfuego.png" alt="La Manigua">    
-                    </div>    <!--Imagen LOGO grande-->
-                    <nav class="navIndex">              <!--Navegador-->
-                        <ul class="ulNavIndex"> 
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="pages/piezas.html">Piezas</a></li>
-                            <li><a href="pages/proceso.html">Proceso</a></li>
-                            <li><a href="pages/nosotros.html">Nosotros</a></li>
-                            <li><a href="pages/contacto.html">Contacto</a></li>
-                        </ul> 
-                    </nav>
-                                  
-                    <div class="logoNavIndex">        
-                        <a href="#"><img src="Images/logos/fuegoBlanco.png" alt="logo"></a>    
-                    </div> 
                     
-                    <!-- <video autoplay muted loop id="myVideo">
-                        <source src="/Video de WhatsApp 2023-11-15 a las 19.19.38_f86eebf9.mp4" type="video/mp4">
+                    <!--Imagen LA MANIGUA MADERgitgA Y FUEGO-->
+                    
+                    <div class="logoPrincipal">           
+                        <img  src="Images/logos/Manigua-maderayfuego.png" alt="La Manigua">    
+                    </div>   
+                    
+                    <!--Navegador Bootstrap-->
 
-                    </video>  -->
+                    <nav class="navbar navbar-expand-lg navBarBts"> <!--Clase navBarBts AÑADIDA-->
+                        <div class="container-fluid">
+                            <a class="navbar-brand  logoNavIndex" href="#"><img src="Images/logos/fuegoBlanco.png"   alt="logo"></a>                                      <!--Clase logoNavIndex AÑADIDA-->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"     aria-label="Toggle  navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>                                          
+                            <div class="collapse navbar-collapse navIndex" id="navbarNav"> <!--Clase navIndex AÑADIDA-->
+                                <ul class="navbar-nav ulNavIndex">              <!--Clase ulNavIndex AÑADIDA-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/piezas.html">Piezas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/proceso.html">Proceso</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                    </li>
 
-                
-            </section>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </section>
         </header>    
+
         <main id="mainIndex">       <!--Contenido introductorio al sitio-->
             <section id="frase">
                     <h2 class="textoRenglonUnoFrase">"y, abriéndote paso entre la manigua,</h2>      <!--Frase referente al sitio-->
@@ -76,6 +98,7 @@
                 </article> 
             </section>        
         </main>
+
         <footer id="footer">            <!--FOOTER DIVIDIDO EN 3 COLUMNAS-->
             <section id="columnaLogoFooter">    <!--COLUMNA 1  LOGO y COPYRIGHT -->
                 <article class="logoFooter">
@@ -122,6 +145,7 @@
                 </article>    
             </section>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
 
