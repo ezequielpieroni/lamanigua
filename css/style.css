@@ -20,7 +20,6 @@ li {
 
 main {
     min-height: 100vh;   /**footer siempre abajo**/
-    
 }
 
 
@@ -34,15 +33,18 @@ main {
     background-image: url(../Images/Index/closeup-shot-wood-black2.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 100;
 }
 
 .logoPrincipal img {
     width: 50%;
     height: auto;
-    
+
 }
 
 .logoPrincipal {
+    width: 100%;
     display: flex;
     justify-content: center;  
     text-align: center;
@@ -64,9 +66,9 @@ main {
 #navbarIndex {
     width: 100%;
 }
+
 .navBarBtsIndex {
     background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
     height: 100px;
     position: fixed;
     z-index: 100;
@@ -86,7 +88,7 @@ main {
     margin-top: 30px;
     position: fixed;
     top: 0;
-    z-index: 101;
+    z-index: 100;
 
 }
 
@@ -115,7 +117,7 @@ main {
     display: flex;
     background-color: black;
     align-items: center;
-    z-index: 2;
+    z-index: 10;
    
 }
 
@@ -137,7 +139,7 @@ main {
 
 
 
-/**-----------------------------MAIN INDEX----------------------------------------------------**/
+/**-----------------------------CONTENIDO INDEX----------------------------------------------------**/
 
 
 
@@ -149,6 +151,9 @@ main {
     flex-direction: column;
     align-items: center;
     padding-top: 200px;
+    position: relative;
+    z-index: 100;
+
 }
 
 .textoRenglonUnoFrase {     /** texto FRASE **/
@@ -176,200 +181,14 @@ main {
 
 #frase img {
     position: relative;
-    height: 300px;
+    height: 80%;
     width: 20px;
+    padding: 90px 0;
 }  
 
-
-/**------------------------------FOOTER-----------------------------------------------------------------------**/
-
-
-#footer {
-    height: 700px;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
+/** -------------------------CONTENIDO INDEX-----------------------------------------------**/
 
 
-/** -----COLUMNA 1 LOGO y COPYRIGHT----**/
-
-
-#columnaLogoFooter {             /** SECCION COLumna 1 **/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    margin-left: 60px;
-}
-
-.logoFooter img{                    
-    width: 170px;
-    height: 170px;
-    
-    
-}
-
-.copyrightFooter h3{             /** COPYRIGHT **/                
-    font-size: medium;
-    font-weight: 100; 
-}
-
-
-/** -----COLUMNA 2 CONTACTO y REDES----**/
-
-
-#columnaContactoFooter {        /** SECCION COLUMNA 2 **/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 200px 200px 40px 60px ;
-}
-
-.contactoFooter {               /** TEXTO CONTACTO **/
-    width: 55%;
-    font-weight: 100;
-}
-
-.redesFooter {                  /** REDES **/
-    margin-top: 30px;
-    font-weight: 10;
-    
-}
-
-.redesFooter
-
-
-.intagramFooter img,
-.facebookFooter img{
-    width: 60px;
-    height: auto;
-    
-}
-
-.disenoFooter h3{               /** DESIGN BY **/
-    font-size: medium;
-    font-weight: 100;
-}
-
-.disenoFooter a {
-    text-decoration: underline;
-    color: rgb(178, 178, 186); 
-}
-
-.disenoFooter a:hover {         /**COLOR LINK DISEÑO CON PUNTERO ARRIBA**/
-    color: rgb(255, 255, 255);
-}
-
-
-/**-----COLUMNA 3 BOTON UP, MENU y MAIL----**/
-
-
-#columnaBotonFooter {           /** SECCION COLUMNA 3 **/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    margin-right: 100px;
-    
-}
-
-.botonFooter {                 /** BOTON UP **/
-    padding: 10px;
-    border-color: aliceblue;
-    
-}
-
-.botonFooter a h3{                 
-    font-weight: 100;
-    border-color: aliceblue;
-    color: rgb(255, 255, 255);
-}
-
-.menuFooter ul {               /** MENU FOOTER **/
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.menuFooter a{                      
-    color: rgb(178, 178, 186);      
-    line-height: 1.8;
-    font-size: larger;
-}
-
-.menuFooter a:hover {          /**COLOR LINKS MENU CON PUNTERO ARRIBA**/
-    color: rgb(255, 255, 255);
-  }
-
-.mailFooter h3{                /** MAIL **/
-    font-size: medium;
-    font-weight: 100;
-
-  }
-
-
-/**----------------------------BARRA DE NAVEGADOR PAGES------------------------------------------------------------------------------------------------------**/
-
-.navBarBtsPages {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    
-}
-
-.menuPages {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.logoNavPages img {            /**LOGO navegador TOP PAGES**/
-    width: 30px;
-    height: auto;
-    margin-left: 7%;
-    margin-top: 30px;
-    position: fixed;
-    top: 0;
-    z-index: 101;
-
-}
-
-
-.ulNavPages {                    /**UL navegador PAGES**/
-    width: 500px;
-    display: flex;
-    margin-right: 250px;
-
-}
-.ulNavPages li a{                   /**LINKS navegador PAGES**/
-    color: rgb(0, 0, 0);
-    margin: 30px;
-    font-size: 18px;
-}
-
-.ulNavPages a:hover {            /**COLOR LINKS CON PUNTERO ARRIBA**/
-    color: rgb(188, 185, 185);
-}
-
-.hamburguesaColorPages {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA PAGES**/
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
- 
-}
-
-
-
-/** -------------------------CONTENIDO INDEX---------------------------------------------------------------------------**/
-
-            
 .filosofia {              /**ARTICULO FILOSOFIA**/
     display: flex;
     justify-content: space-around;
@@ -417,6 +236,187 @@ main {
     padding-bottom: 25px;
     font-family: 'Overpass Mono', monospace;
     
+}
+
+.whatsappIcon {
+    position:fixed;
+    margin-top: 100px;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    z-index: 1;
+}
+
+
+.whatsappIcon img {
+
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+/**------------------------------FOOTER-----------------------------------------------------------------------**/
+
+
+#footer {
+    background-color: black;
+    color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 100;
+}
+
+#footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/** -----------FILA 1  LOGO, CONTACTO, MENU----------**/
+
+
+#filaUnoFooter {             
+    display: flex;
+    margin: 200px 70px 0 70px;
+    justify-content: space-between;
+}
+
+.logoFooter img{        /** LOGO **/                 
+    width: 170px;
+    height: 170px;
+}
+
+.contactoyredesFooter {         /** CONTACTO Y REDES **/ 
+    padding-right: 500px;
+}
+
+.redesFooter h2 {                  /** REDES **/
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Concert One', sans-serif;
+
+    letter-spacing: 0.05em;
+
+}
+
+
+.intagramFooter img,
+.facebookFooter img,
+.whatsappFooter img {
+    width: 40px;
+    height: auto;
+    
+}
+
+.menuFooter ul {                /** MENU FOOTER **/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 80px;
+}
+
+.menuFooter a{                      
+    color: rgb(204, 204, 204);      
+    line-height: 1.8;
+    font-size: larger;
+}
+
+
+
+/** ---------FILA 2  COPIRIGHT, DISEÑO, MAIL---------**/
+
+
+
+#filaDosFooter {       
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:200px 70px 40px 70px;
+}
+
+.copyrightFooter h3{             /** COPYRIGHT **/                
+    font-size: medium;
+    font-weight: 100; 
+}
+
+.disenoFooter h3{               /** DESIGN BY **/
+    font-size: medium;
+    font-weight: 100;
+    padding-right: 580px;
+}
+
+.disenoFooter a {
+    text-decoration: underline;
+    color: rgb(204, 204, 204); 
+}
+
+.disenoFooter a:hover {        
+    color: rgb(255, 255, 255);
+}
+
+.mailFooter h3{                /** MAIL **/
+    font-size: medium;
+    font-weight: 100;
+
+}
+
+
+
+/**----------------------------BARRA DE NAVEGADOR PAGES------------------------------------------------------------------------------------------------------**/
+
+.navBarBtsPages {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    
+}
+
+.menuPages {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logoNavPages img {            /**LOGO navegador TOP PAGES**/
+    width: 30px;
+    height: auto;
+    margin-left: 7%;
+    margin-top: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+
+
+.ulNavPages {                    /**UL navegador PAGES**/
+    width: 500px;
+    display: flex;
+    margin-right: 250px;
+
+}
+.ulNavPages li a{                   /**LINKS navegador PAGES**/
+    color: rgb(0, 0, 0);
+    margin: 30px;
+    font-size: 18px;
+}
+
+.ulNavPages a:hover {            /**COLOR LINKS CON PUNTERO ARRIBA**/
+    color: rgb(188, 185, 185);
+}
+
+.hamburguesaColorPages {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA PAGES**/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ 
 }
 
 
@@ -998,163 +998,109 @@ margin: 40px 0;
     height: auto;
 }
     
+
+
+
+
+
+
+
 /*-----------------------------------FOOTER MEDIA QUERY-----------------------------------------------------------**/
 
 
 
 @media (max-width:495px) {
 
-    #footer {
-        width: 100%;
-        height: auto;
-        background-color: black;
-        color: rgb(255, 255, 255);
+    #footer {                                  
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
-        margin-top: auto;
+        margin: 0;
+        padding: 0;
     }
 
 
+    #filaUnoFooter {         
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 0 20px;
+        padding: 0;
+    }
 
-/** -----COLUMNA 1 LOGO y COPYRIGHT----**/
+    .contactoyredesFooter {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 
+    .contactoFooter {
+        margin: 50px 0 0 0;
+    }
 
-#columnaLogoFooter {             /** SECCION COLumna 1 **/
-    display: flex;
-    justify-content: space-between;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    margin-left: 60px;
+    .redesFooter img{
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .menuFooter {
+        margin-top: 30px;
+    }
+
+    .menuFooter ul {
+        display: flex;
+        align-items: start;
+        margin: 30px 0 0 0;
+        padding: 0;
+   
+    }
+
+    #filaDosFooter {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin: 30px 0 0 20px;
+        padding: 0;
+    }
+
+    #filaDosFooter h3{
+        margin: 30px 20px 0 0;
+        padding: 0;
+        font-size: small;
+    }
+
+    .mailFooter {
+        order: 3;
+    }
+
+    .copyrightFooter {
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .disenoFooter {
+        order: 1;
+    }
 }
-
-.logoFooter img{                    
-    width: 170px;
-    height: 170px;
-    
-    
-}
-
-.copyrightFooter h3{             /** COPYRIGHT **/                
-    font-size: medium;
-    font-weight: 100; 
-}
-
-
-/** -----COLUMNA 2 CONTACTO y REDES----**/
-
-
-#columnaContactoFooter {        /** SECCION COLUMNA 2 **/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 200px 200px 40px 60px ;
-}
-
-.contactoFooter {               /** TEXTO CONTACTO **/
-    width: 55%;
-    font-weight: 100;
-}
-
-.redesFooter {                  /** REDES **/
-    margin-top: 30px;
-    font-weight: 10;
-    
-}
-
-.redesFooter
-
-
-.intagramFooter img,
-.facebookFooter img{
-    width: 60px;
-    height: auto;
-    
-}
-
-.disenoFooter h3{               /** DESIGN BY **/
-    font-size: medium;
-    font-weight: 100;
-}
-
-.disenoFooter a {
-    text-decoration: underline;
-    color: rgb(178, 178, 186); 
-}
-
-.disenoFooter a:hover {         /**COLOR LINK DISEÑO CON PUNTERO ARRIBA**/
-    color: rgb(255, 255, 255);
-}
-
-
-/**-----COLUMNA 3 BOTON UP, MENU y MAIL----**/
-
-
-#columnaBotonFooter {           /** SECCION COLUMNA 3 **/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    margin-right: 100px;
-    
-}
-
-.botonFooter {                 /** BOTON UP **/
-    padding: 10px;
-    border-color: aliceblue;
-    
-}
-
-.botonFooter a h3{                 
-    font-weight: 100;
-    border-color: aliceblue;
-    color: rgb(255, 255, 255);
-}
-
-.menuFooter ul {               /** MENU FOOTER **/
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.menuFooter a{                      
-    color: rgb(178, 178, 186);      
-    line-height: 1.8;
-    font-size: larger;
-}
-
-.menuFooter a:hover {          /**COLOR LINKS MENU CON PUNTERO ARRIBA**/
-    color: rgb(255, 255, 255);
-  }
-
-.mailFooter h3{                /** MAIL **/
-    font-size: medium;
-    font-weight: 100;
-
-  }
-
-}
-
-
-
-
-
 
 
 /*------------------------------------INDEX MEDIA QUERY-----------------------------------------------------------**/
 
+@media (min-width: 992px) {
+    
+}
+
 
 @media (max-width:495px) {
-  
-
+    
+    
     .logoPrincipal img{   /**LOGO INDEX**/
         width: 70%;
     }
 
+
     #frase h2 {             /**FRASE INDEX**/
-        font-size: 20px;
+        font-size:18px;
+        text-align: center;
     }
 
     .filosofia  {            /**ARTICULO FILOSOFIA **/
@@ -1177,6 +1123,7 @@ margin: 40px 0;
     .troncoFilosofia img,  /** IMAGENES **/
     .cuencoTecnica img {   
         width: 100%;    
+        height: auto;
         padding-left: 30px;
         
     }
