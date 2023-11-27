@@ -29,7 +29,7 @@ main {
 
 #headerIndex {
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-image: url(../Images/Index/closeup-shot-wood-black2.jpg);
     background-size: cover;
     background-position: center;
@@ -137,127 +137,8 @@ main {
 
 
 
+/**------------------------------FOOTER-------------------------------------------------------------------------------**/
 
-
-/**-----------------------------CONTENIDO INDEX----------------------------------------------------**/
-
-
-
-#frase {                /** SECCION FRASE **/
-    color: rgb(255, 255, 255);
-    background-color: black;
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 200px;
-    position: relative;
-    z-index: 100;
-
-}
-
-.textoRenglonUnoFrase {     /** texto FRASE **/
-    padding-top: 200px;
-    font-weight: 100;
-    
-}
-
-.textoRenglonDosFrase {
-    padding-bottom: 350px;
-    font-weight: 100;
-}
-
-.vermasFrase{             /** texto VER MAS **/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-.vermasFrase h3 {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-#frase img {
-    position: relative;
-    height: 80%;
-    width: 20px;
-    padding: 90px 0;
-}  
-
-/** -------------------------CONTENIDO INDEX-----------------------------------------------**/
-
-
-.filosofia {              /**ARTICULO FILOSOFIA**/
-    display: flex;
-    justify-content: space-around;
-    padding: 200px 150px 250px 150px;
-    
-}
-
-             
-.tecnica {              /**ARTICULO TECNICA**/
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 150px 250px 150px;
-    
-}
-
-.troncoFilosofia img,  /** IMAGENES **/
-.cuencoTecnica img {   
-    width: 450px;    
-    height: 450px;
-}
-
-.textoFilosofia hr,
-.textoTecnica hr {      /** LINEAS **/
-    display: inline-block;
-    width:20%;
-    margin: 30px 0;
-}
-
-.parrafoFilosofia,      /** PARRAFOS **/
-.parrafoTecnica {
-    width: 500px;
-    line-height: 1.8;
-    text-align: justify;
-    padding-left: 30px;
-}
-
-.tituloFilosofia,       /** TITULOS **/
-.tituloTecnica {
-    padding-left: 30px;
-   
-}
-
-.lineaFilosofia,        /** LINEAS **/
-.lineaTecnica {
-    padding-bottom: 25px;
-    font-family: 'Overpass Mono', monospace;
-    
-}
-
-.whatsappIcon {
-    position:fixed;
-    margin-top: 100px;
-    bottom: 10px;
-    right: 10px;
-    text-align: right;
-    z-index: 1;
-}
-
-
-.whatsappIcon img {
-
-    width: 50px;
-    height: auto;
-}
-
-
-
-
-/**------------------------------FOOTER-----------------------------------------------------------------------**/
 
 
 #footer {
@@ -280,27 +161,42 @@ main {
 
 /** -----------FILA 1  LOGO, CONTACTO, MENU----------**/
 
-
-#filaUnoFooter {             
-    display: flex;
-    margin: 200px 70px 0 70px;
-    justify-content: space-between;
+#filaUnoFooter {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: 
+    "logo contactoyredes . . . . menu";
+    margin: 0 70px 0 70px;
+    
 }
+
+.logoFooter {
+    grid-area: logo;
+}
+.contactoyredesFooter {
+    grid-area: contactoyredes;
+}
+.menuFooter {
+    grid-area: menu;
+}
+
 
 .logoFooter img{        /** LOGO **/                 
     width: 170px;
     height: 170px;
+    margin-top: 200px;
+    margin-right: 30px;
 }
 
 .contactoyredesFooter {         /** CONTACTO Y REDES **/ 
-    padding-right: 500px;
+
+    margin-top: 200px;
 }
 
 .redesFooter h2 {                  /** REDES **/
     margin-top: 30px;
     color: rgb(255, 255, 255);
     font-family: 'Concert One', sans-serif;
-
     letter-spacing: 0.05em;
 
 }
@@ -311,6 +207,7 @@ main {
 .whatsappFooter img {
     width: 40px;
     height: auto;
+    margin-right:10px ;
     
 }
 
@@ -319,6 +216,7 @@ main {
     flex-direction: column;
     align-items: end;
     margin-bottom: 80px;
+    margin-top: 200px;
 }
 
 .menuFooter a{                      
@@ -327,28 +225,43 @@ main {
     font-size: larger;
 }
 
-
-
 /** ---------FILA 2  COPIRIGHT, DISEÑO, MAIL---------**/
 
-
-
-#filaDosFooter {       
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:200px 70px 40px 70px;
+#filaDosFooter {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: 
+    "copyright diseno . . . mail";
+    margin: 200px 70px 40px 70px;
+    
 }
+
+.copyrightFooter {
+    grid-area: copyright;
+} 
+
+.disenoFooter {
+    grid-area: diseno;
+} 
+
+.mailFooter {
+    grid-area: mail;
+}
+
+
 
 .copyrightFooter h3{             /** COPYRIGHT **/                
     font-size: medium;
     font-weight: 100; 
 }
+.disenoFooter {             /** DESIGN BY **/
+    display: flex;
+    justify-content: left;
+}
 
-.disenoFooter h3{               /** DESIGN BY **/
+.disenoFooter h3{              
     font-size: medium;
     font-weight: 100;
-    padding-right: 580px;
 }
 
 .disenoFooter a {
@@ -364,6 +277,11 @@ main {
     font-size: medium;
     font-weight: 100;
 
+}
+
+.mailFooter {
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -420,7 +338,145 @@ main {
 }
 
 
+
+/**-----------------------------FRASE INDEX-----------------------------------------------------------------------------**/
+
+
+
+#frase {                /** SECCION FRASE **/
+    color: rgb(255, 255, 255);
+    background-color: black;
+    height: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.textoRenglonUnoFrase {     /** texto FRASE **/
+    padding-top: 200px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 10px;    
+}
+
+.textoRenglonDosFrase {
+    padding-bottom: 350px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.vermasFrase{             /** texto VER MAS **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.vermasFrase h3 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#frase img {
+    position: relative;
+    height: 80%;
+    width: 20px;
+    padding: 90px 0;
+}  
+
+
+
+
+/** -------------------------CONTENIDO INDEX---------------------------------------------------------------------------------**/
+
+
+
+.filosofia {              /**ARTICULO FILOSOFIA**/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 200px 50px 250px 50px;
+    
+}
+
+             
+.tecnica {              /**ARTICULO TECNICA**/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    padding: 0px 50px 250px 50px;
+    
+}
+
+.troncoFilosofia img {   /** IMAGENES **/
+    width: 400px;    
+    height: auto;
+    margin-left: 40px;
+    padding-top: 50px;
+}
+
+.cuencoTecnica img {     
+    width: 400px;    
+    height: auto;
+    margin-right: 40px;
+    padding-top: 50px;
+}
+
+.textoFilosofia hr,
+.textoTecnica hr {      /** LINEAS **/
+    display: inline-block;
+    width:20%;
+    margin: 30px 0;
+}
+
+.parrafoFilosofia,      /** PARRAFOS **/
+.parrafoTecnica {
+    width: 500px;
+    line-height: 1.8;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.tituloFilosofia,       /** TITULOS **/
+.tituloTecnica {
+    padding-left: 30px;
+   
+}
+
+.lineaFilosofia,        /** LINEAS **/
+.lineaTecnica {
+    padding-bottom: 25px;
+    font-family: 'Overpass Mono', monospace;
+    
+}
+
+.whatsappIcon {
+    position:fixed;
+    margin-top: 100px;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    z-index: 1;
+}
+
+
+.whatsappIcon img {
+
+    width: 50px;
+    height: auto;
+}
+
+
+
+
 /**---------------------------------PIEZAS CONTENIDO---------------------------------------------------------------------**/
+
+
 
 
 #mainPiezas {               /**MAIN PIEZAS **/
@@ -428,24 +484,37 @@ main {
 
 }
 
-#lineaUnoPiezas,              /**SECCIONES**/      
-#lineaDosPiezas,
-#lineaTresPiezas {            
-    display: flex;
-    margin:  200px;
-    justify-content: space-around;
+.sectionsPieza {                        /**SECCIONES**/   
+    display: flex;                    
+    margin:  200px auto 200px auto;
+    justify-content: center;
+    padding: 30px;
+}
+#lineaUnoPiezas,                    /** IMPARES **/  
+#lineaTresPiezas  {                    
+    flex-wrap: wrap-reverse;  
+}              
+                            
+#lineaDosPiezas {                   /** PARES **/
+    flex-wrap: wrap;
 }
 
-#tituloPiezas {             /** CAJA TITULO **/
+#tituloPiezas {            /** CAJA TITULO **/
     display: flex;
     flex-direction: column;
     margin: 250px 0 100px 110px;
+}
 
+#tituloPiezas hr {         /**LINEA **/
+    width:15%;
+    text-align: right;
+    margin: 40px 0;
 }
 
 #tituloPiezas h1{          /** TITULO **/
+
     font-size: 70px;
-    width: 70%;
+    width: 900px;
     margin-left: 30px;   
     font-weight: 600;
 }
@@ -453,35 +522,55 @@ main {
 #tituloPiezas h3{           /** SUB TITULO**/
     font-size: 30px;
     color: rgba(0, 0, 0, 0.507);
-    margin-bottom: 50px;
-    margin-left: 35px;
     margin-bottom: 5px;
+    margin-left: 35px;
+   
 }
 
-#tituloPiezas hr {
-display: inline-block;
-width:20%;
-text-align: right;
-margin: 40px 0;
-}
 
 .textoUnoPiezas,                /**CAJA TEXTO**/
 .textoDosPiezas,                
 .textoTresPiezas{
     width: 400px;
-    height: 400px;
+    height: auto;
+    line-height: 2;
+    margin: 0 50px;
 }
+
+.textoUnoPiezas hr {            /**LINEAS**/
+    width:40%;
+    margin: 40px 0 40px 130px;
+}
+
+.textoDosPiezas hr {
+    width:40%;
+    margin: 40px 0 40px 60px;
+}
+
+.textoTresPiezas hr {
+    width:40%;
+    margin: 40px 0 40px 150px;
+} 
 
 #mainPiezas p {             /**PARRAFOS**/
-    width: 400px;
-    height: 400px;
-    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    margin-bottom: 50px;
 }
 
-#mainPiezas img{            /**IMAGENES**/
-    width: 400px;
-    height: 400px; 
+.imagenUnoPiezas,         /**IMAGENES**/
+.imagenDosPiezas,
+.imagenTresPiezas  {
+    margin: 0 50px;
 }
+
+#mainPiezas img{            
+    width: 400px;
+    height: auto; 
+}
+
+
 
 /**------------------------------PROCESO CONTENIDO--------------------------------------------------------**/
 
@@ -515,7 +604,6 @@ margin: 40px 0;
 }
 
 #tituloProceso hr {
-    display: inline-block;
     width:20%;
     text-align: right;
     margin: 40px 0;
@@ -1005,12 +1093,77 @@ margin: 40px 0;
 
 
 
-/*-----------------------------------FOOTER MEDIA QUERY-----------------------------------------------------------**/
+
+/**----------------------------------------------------MEDIA QUERY----------------------------------------------------------**/
 
 
 
-@media (max-width:495px) {
 
+
+
+
+
+
+
+
+/**---------------------------------- FOOTER RESPONSIVE ------------------------------------------------------------**/
+
+
+
+
+ /**------- FOOTER GRID -------**/ 
+
+
+@media (max-width:750px) {          /**-----FILA 1-----**/   
+    #filaUnoFooter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "logo contactoyredes"
+        "menu ."
+        ;
+    }
+
+    #filaUnoFooter {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .menuFooter ul {
+        margin: 30px 0 0 10px;
+        padding: 0;
+    }
+
+    .menuFooter {
+        display: flex;
+    }
+
+    .menuFooter ul {
+        display: flex;
+        align-items: start;
+        margin-top: 100px;
+    }
+
+    #filaDosFooter {
+        margin-top: 0;
+    }
+
+    #filaDosFooter {               /**-----FILA 2-----**/
+        margin-left: 20px;
+    } 
+}
+
+
+/**---------------------------------- INDEX RESPONSIVE ------------------------------------------------------------**/
+
+
+
+/**---------FOOTER FLEX-----------**/
+
+
+
+@media (max-width:600px) {       
     #footer {                                  
         display: flex;
         flex-direction: column;
@@ -1019,139 +1172,207 @@ margin: 40px 0;
         padding: 0;
     }
 
-
-    #filaUnoFooter {         
+    #filaUnoFooter {              /**-----FILA 1-----**/
         display: flex;
         flex-direction: column;
-        margin: 100px 0 0 20px;
+        margin: 50px 20px 20px 40px;
         padding: 0;
     }
 
-    .contactoyredesFooter {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+    .logoFooter {                  
+        margin: 0 0 0px 0px;
+    }
+
+    .contactoyredesFooter {       
+        margin: 90px 0 0 0px;
         padding: 0;
     }
-
-    .contactoFooter {
-        margin: 50px 0 0 0;
-    }
-
-    .redesFooter img{
+ 
+    .redesFooter img{          
         margin-top: 5px;
         margin-right: 5px;
     }
 
-    .menuFooter {
-        margin-top: 30px;
-    }
-
-    .menuFooter ul {
+    .menuFooter ul {           
         display: flex;
         align-items: start;
-        margin: 30px 0 0 0;
+        margin: 70px 0 0 0px;
         padding: 0;
    
     }
 
-    #filaDosFooter {
+    #filaDosFooter {            /**-----FILA 2-----**/
         display: flex;
         flex-wrap: wrap-reverse;
-        margin: 30px 0 0 20px;
+        justify-content: space-between;
+        margin:70px 0 0 40px;
         padding: 0;
     }
 
     #filaDosFooter h3{
-        margin: 30px 20px 0 0;
+        margin: 0px 0px 0 0;
         padding: 0;
         font-size: small;
     }
 
+    .copyrightFooter,
+    .disenoFooter,
     .mailFooter {
-        order: 3;
-    }
-
-    .copyrightFooter {
-        order: 2;
-        margin-bottom: 30px;
-    }
-
-    .disenoFooter {
-        order: 1;
+        margin: 0px 15px 20px 0;
     }
 }
 
-
-/*------------------------------------INDEX MEDIA QUERY-----------------------------------------------------------**/
-
-@media (min-width: 992px) {
-    
-}
-
-
-@media (max-width:495px) {
-    
-    
-    .logoPrincipal img{   /**LOGO INDEX**/
-        width: 70%;
-    }
-
-
-    #frase h2 {             /**FRASE INDEX**/
-        font-size:18px;
+@media (max-width:300px){
+    .contactoFooter h5 {
         text-align: center;
     }
-
-    .filosofia  {            /**ARTICULO FILOSOFIA **/
-    
-        flex-direction: column;
-        padding: 0;
-        padding-right: 30px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+}
    
-    .tecnica {               /**ARTICULO TECNICA**/
-        flex-direction: column-reverse;
-        padding: 0;
-        padding-right: 30px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 
-    .troncoFilosofia img,  /** IMAGENES **/
-    .cuencoTecnica img {   
-        width: 100%;    
-        height: auto;
-        padding-left: 30px;
-        
-    }
 
-    .textoFilosofia hr,
-    .textoTecnica hr {      /** LINEAS **/
-        display: inline-block;
-        width:20%;
-        margin: 30px 0 30px 10px;
-        
-    }
 
-    .parrafoFilosofia,      /** PARRAFOS **/
+/**----------LOGO INDEX ----------**/
+
+
+@media (max-width:480px) {
+    .logoPrincipal img{       
+        width: 70%;
+    }
+}
+
+@media (min-width:480px) {
+    .logoPrincipal img {     
+        width: 50%;
+    }
+}
+
+@media (min-width:800px) {
+    .logoPrincipal img {     
+        width: 35%;
+    }
+}
+
+
+
+
+/**-------------CONTENIDO INDEX  ------------**/
+
+
+@media (max-width:700px) {
+    .parrafoFilosofia,
     .parrafoTecnica {
         width: 100%;
-        line-height: 1.8;
-        text-align: justify;
-        padding-left: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .cuencoTecnica img {
+        width: 100%;
+        height: auto;
     }
 
-    .tituloFilosofia,       /** TITULOS **/
-    .tituloTecnica {
-        padding-left: 30px;
-    
+    .troncoFilosofia img {
+        width: 100%;
+        height: auto;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+/**-------------------------------PIEZAS RESPONSIVE---------------------------------------------------------------**/
+
+
+
+
+@media (max-width:1024px) {      /** TITULO 1024 **/ 
+    #tituloPiezas h1{
+        font-size: 50px;
+        width: 600px;
+    }
+    #tituloPiezas hr {
+        width:22%;
+    }
+}
+
+@media (max-width:768px) {      /** TITULO 768 **/ 
+    #tituloPiezas h1{
+        font-size: 35px;
+        width: 450px;
+    }
+    #tituloPiezas hr {
+        width:30%;
+        }
+}
+
+@media (max-width:600px) {      /** TITULO 600 **/ 
+    #tituloPiezas h1{
+        font-size: 30px;
+        width: 350px;
+    }
+    #tituloPiezas  {
+        margin-left: 50px;
+    }
+    #tituloPiezas hr {
+        width:30%;
+        }
+}
+
+@media (max-width:480px) {      /** TITULO 480 **/ 
+    #tituloPiezas h1{
+        font-size: 30px;
+        width: 250px;
+    }
+    #tituloPiezas h3 {
+        font-size: 25px;
+    }
+    #tituloPiezas  {
+        margin-left: 20px;
+    }
+    #tituloPiezas hr {
+        width:30%;
+        }
+}
+
+@media (max-width:320px) {      /** TITULO 320 **/ 
+    #tituloPiezas h1{
+        font-size: 30px;
+        width: 80%;
+    }
+    #tituloPiezas h3 {
+        font-size: 25px;
+    }
+    #tituloPiezas  {
+        margin-left: 20px;
+    }
+    #tituloPiezas hr {
+        width:50%;
+        }
+}
+
+/**-------CONTENIDO PIEZAS --------**/
+
+@media (max-width:600px){
+    #mainPiezas img {
+        width: 100%;
+        height: auto;
     }
 
-    
+    .imagenUnoPiezas,
+    .imagenDosPiezas,
+    .imagenTresPiezas {
+        margin: 0 15px;
+    }
 
+    .textoUnoPiezas,                /**CAJA TEXTO**/
+    .textoDosPiezas,                
+    .textoTresPiezas{
+        margin: 0 15px;
+    }
 
+    .sectionsPieza {
+        margin: 100px 0;
+    }
 }
 
