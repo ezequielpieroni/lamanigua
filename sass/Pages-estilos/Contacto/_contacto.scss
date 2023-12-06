@@ -1,0 +1,62 @@
+
+
+
+/**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
+
+#mainContacto {
+    margin-top: 100px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    #tituloContacto {
+      display: flex;
+      justify-content: space-around;
+      .textoTituloContacto { /**CAJA TITULO**/
+        margin: 50px;
+        h1 { /**TITULO**/
+          text-align: left;
+          font-size: 80px;
+          line-height: 1.4;
+          margin-left: 200px;
+          font-weight: 600;
+        }
+        h3 { /**SUBTITULO**/
+          text-align: left;
+          margin-left: 200px;
+          margin-top: 40px;
+          font-size: 20px;
+          font-weight: 100;
+        }
+      }
+      .imagenTituloContacto img { /**IMAGEN TITULO**/
+        height: 550px;
+        width: 500px;
+      }
+    }
+    #cuadroContacto {
+      display: flex;
+      justify-content: center;
+      .formCuadroContacto form { /**FORMULARIO**/
+        display: flex;
+        flex-direction: column;
+      }
+      .datosCuadroContacto { /**DATOS DE CONTACTO**/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(44, 42, 42);
+        img {
+          width: 40px;
+          height: auto;
+        }
+      }
+    }
+    #mapaContacto {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,37 @@
+
+/**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
+#mainNosotros {
+    margin-top: 100px;
+    }
+    
+    .lineas {          /**SECCIONES DEVIDIDAS EN LINEAS**/
+    display: flex;
+    margin: 200px;
+    justify-content: space-around;
+    }
+    
+    #mainNosotros img { /**IMAGENES**/
+    width: 400px;
+    height: 400px;
+    }
+    
+    .textos {       /**CAJAS DE TEXTOS**/
+    width: 400px;
+    height: 400px;
+    }
+    
+    #mainNosotros p { /**PARRAFOS**/
+    width: 400px;
+    height: 400px;
+    line-height: 1.8;
+    margin-top: 40px;
+    }
+    
+    .textoCuatroNosotros h3,  /**TITULOS GRANDES**/
+    .textoCincoNosotros h3 {
+    width: 400px;
+    font-size: 45px;
+    }
+    
+    
+    

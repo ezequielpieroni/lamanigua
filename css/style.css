@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/**------Pages--------**/
 /**-----RESET CSS-----**/
 * {
   box-sizing: border-box;
@@ -19,7 +21,8 @@ main {
   min-height: 100vh; /**footer siempre abajo**/
 }
 
-/**---BANNER INDEX-----------------------------------------------------------------------------------------------**/
+/**------Pages--------**/
+/**---------------------------BANNER INDEX----------------------------------------------------------**/
 #headerIndex {
   width: 100%;
   height: 800px;
@@ -30,11 +33,6 @@ main {
   z-index: 100;
 }
 
-.logoPrincipal img {
-  width: 50%;
-  height: auto;
-}
-
 .logoPrincipal {
   width: 100%;
   display: flex;
@@ -43,265 +41,7 @@ main {
   padding-top: 330px;
   position: absolute;
   z-index: 100;
-  margin-top: 100px;
-}
-
-.logoPrincipal img {
-  width: 30%;
-}
-
-/**-----BARRA DE NAVEGADOR INDEX-----------------------------------------------------------------------------------------------**/
-
-
-
-#navbarIndex {
-  width: 100%;
-}
-
-.navBarBtsIndex {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100px;
-  position: fixed;
-  z-index: 100;
-  
-}
-
-.menuIndex {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.logoNavIndex img {            /**LOGO navegador TOP INDEX**/
-  width: 30px;
-  height: auto;
-  margin-left: 7%;
-  margin-top: 30px;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-
-}
-
-
-.ulNavIndex {                    /**UL navegador INDEX**/
-  width: 500px;
-  display: flex;
-  margin-right: 250px;
-}
-.ulNavIndex li a{                   /**LINKS navegador INDEX**/
-  color: rgb(255, 255, 255);
-  margin: 30px;
-  font-size: 18px;
-}
-
-.ulNavIndex a:hover {            /**COLOR LINKS CON PUNTERO ARRIBA**/
-  color: rgb(188, 185, 185);
-}
-
-.navNegroIndex {                 /**STICKY FONDO NEGRO PARA NAVEGADOR SOBRE MAIN **/
-  width: 100%;
-  height: 100px;
-  position: sticky;
-  top: 0;
-  display: flex;
-  background-color: black;
-  align-items: center;
-  z-index: 10;
- 
-}
-
-.hamburguesaColorIndex {        /**CAMBIO DE COLOR DEL MENU HAMBURGUESA**/
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-}
-
-.navbar-toggler {           /**MENU HAMBURGUESA SIN BORDES**/     /**BOOTSTRAP**/  /** INDEX Y PAGES**/
-  border: none;
-}
-
-
-.navbar-toggler:focus{      
-  box-shadow: none;
-}
-
-
-/**------------------------------FOOTER-------------------------------------------------------------------------------**/
-#footer {
-  background-color: black;
-  color: rgb(204, 204, 204);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: auto;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 100;
-}
-
-#footer a:hover {
-  color: rgb(255, 255, 255);
-}
-
-/** -----------FILA 1  LOGO, CONTACTO, MENU----------**/
-#filaUnoFooter {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-areas: "logo contactoyredes . . . . menu";
-  margin: 0 70px 0 70px;
-}
-
-.logoFooter {
-  grid-area: logo;
-}
-
-.contactoyredesFooter {
-  grid-area: contactoyredes;
-}
-
-.menuFooter {
-  grid-area: menu;
-}
-
-.logoFooter img { /** LOGO **/
-  width: 170px;
-  height: 170px;
-  margin-top: 200px;
-  margin-right: 30px;
-}
-
-.contactoyredesFooter { /** CONTACTO Y REDES **/
-  margin-top: 200px;
-}
-
-.redesFooter h2 { /** REDES **/
-  margin-top: 30px;
-  color: rgb(255, 255, 255);
-  font-family: "Concert One", sans-serif;
-  letter-spacing: 0.05em;
-}
-
-.intagramFooter img,
-.facebookFooter img,
-.whatsappFooter img {
-  width: 40px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.menuFooter ul { /** MENU FOOTER **/
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-bottom: 80px;
-  margin-top: 200px;
-}
-
-.menuFooter a {
-  color: rgb(204, 204, 204);
-  line-height: 1.8;
-  font-size: larger;
-}
-
-/** ---------FILA 2  COPIRIGHT, DISEÑO, MAIL---------**/
-#filaDosFooter {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-areas: "copyright diseno . . . mail";
-  margin: 200px 70px 40px 70px;
-}
-
-.copyrightFooter {
-  grid-area: copyright;
-}
-
-.disenoFooter {
-  grid-area: diseno;
-}
-
-.mailFooter {
-  grid-area: mail;
-}
-
-.copyrightFooter h3 { /** COPYRIGHT **/
-  font-size: medium;
-  font-weight: 100;
-}
-
-.disenoFooter { /** DESIGN BY **/
-  display: flex;
-  justify-content: left;
-}
-
-.disenoFooter h3 {
-  font-size: medium;
-  font-weight: 100;
-}
-
-.disenoFooter a {
-  text-decoration: underline;
-  color: rgb(204, 204, 204);
-}
-
-.disenoFooter a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.mailFooter h3 { /** MAIL **/
-  font-size: medium;
-  font-weight: 100;
-}
-
-.mailFooter {
-  display: flex;
-  justify-content: right;
-}
-
-/**----------------------------BARRA DE NAVEGADOR PAGES------------------------------------------------------------------------------------------------------**/
-.navBarBtsPages {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-}
-
-.menuPages {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.logoNavPages img { /**LOGO navegador TOP PAGES**/
-  width: 30px;
-  height: auto;
-  margin-left: 7%;
-  margin-top: 30px;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
-.ulNavPages { /**UL navegador PAGES**/
-  width: 500px;
-  display: flex;
-  margin-right: 250px;
-}
-
-.ulNavPages li a { /**LINKS navegador PAGES**/
-  color: rgb(0, 0, 0);
-  margin: 30px;
-  font-size: 18px;
-}
-
-.ulNavPages a:hover { /**COLOR LINKS CON PUNTERO ARRIBA**/
-  color: rgb(188, 185, 185);
-}
-
-.hamburguesaColorPages { /**CAMBIO DE COLOR DEL MENU HAMBURGUESA PAGES**/
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  margin-top: 50px;
 }
 
 /**-----------------------------FRASE INDEX-----------------------------------------------------------------------------**/
@@ -316,34 +56,29 @@ main {
   position: relative;
   z-index: 100;
 }
-
-.textoRenglonUnoFrase { /** texto FRASE **/
+#frase .textoRenglonUnoFrase { /** texto FRASE **/
   padding-top: 200px;
   font-weight: 100;
   text-align: center;
   margin: 0 10px;
 }
-
-.textoRenglonDosFrase {
+#frase .textoRenglonDosFrase {
   padding-bottom: 350px;
   font-weight: 100;
   text-align: center;
   margin: 0 10px;
 }
-
-.vermasFrase { /** texto VER MAS **/
+#frase .vermasFrase { /** texto VER MAS **/
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
 }
-
-.vermasFrase h3 {
+#frase .vermasFrase h3 {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
-#frase img {
+#frase .vermasFrase img {
   position: relative;
   height: 80%;
   width: 20px;
@@ -351,11 +86,42 @@ main {
 }
 
 /** -------------------------CONTENIDO INDEX---------------------------------------------------------------------------------**/
+.navNegroIndex { /**STICKY FONDO NEGRO PARA NAVEGADOR SOBRE MAIN **/
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  z-index: 10;
+}
+
 .filosofia { /**ARTICULO FILOSOFIA**/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 200px 50px 250px 20px;
+}
+.filosofia .textoFilosofia .tituloFilosofia {
+  padding-left: 30px;
+}
+.filosofia .textoFilosofia hr { /** LINEAS **/
+  display: inline-block;
+  width: 20%;
+  margin: 30px 0;
+}
+.filosofia .textoFilosofia .parrafoFilosofia {
+  width: 500px;
+  line-height: 1.8;
+  text-align: justify;
+  padding-left: 30px;
+}
+.filosofia .troncoFilosofia img { /** IMAGENES **/
+  width: 400px;
+  height: auto;
+  margin-left: 40px;
+  padding-top: 50px;
 }
 
 .tecnica { /**ARTICULO TECNICA**/
@@ -364,713 +130,28 @@ main {
   justify-content: space-around;
   padding: 0px 50px 250px 20px;
 }
-
-.troncoFilosofia img { /** IMAGENES **/
-  width: 400px;
-  height: auto;
-  margin-left: 40px;
-  padding-top: 50px;
+.tecnica .textoTecnica .tituloTecnica {
+  padding-left: 30px;
 }
-
-.cuencoTecnica img {
+.tecnica .textoTecnica hr { /** LINEAS **/
+  display: inline-block;
+  width: 20%;
+  margin: 30px 0;
+}
+.tecnica .textoTecnica .parrafoTecnica {
+  width: 500px;
+  line-height: 1.8;
+  text-align: justify;
+  padding-left: 30px;
+}
+.tecnica .cuencoTecnica img {
   width: 400px;
   height: auto;
   margin-right: 40px;
   padding-top: 50px;
 }
 
-.textoFilosofia hr,
-.textoTecnica hr { /** LINEAS **/
-  display: inline-block;
-  width: 20%;
-  margin: 30px 0;
-}
-
-.parrafoFilosofia,
-.parrafoTecnica {
-  width: 500px;
-  line-height: 1.8;
-  text-align: justify;
-  padding-left: 30px;
-}
-
-.tituloFilosofia,
-.tituloTecnica {
-  padding-left: 30px;
-}
-
-.lineaFilosofia,
-.lineaTecnica {
-  padding-bottom: 25px;
-  font-family: "Overpass Mono", monospace;
-}
-
-.whatsappIcon {
-  position: fixed;
-  margin-top: 100px;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
-  z-index: 1;
-}
-
-.whatsappIcon img {
-  width: 50px;
-  height: auto;
-}
-
-/**---------------------------------PIEZAS CONTENIDO---------------------------------------------------------------------**/
-#mainPiezas { /**MAIN PIEZAS **/
-  margin-top: 100px;
-}
-
-.sectionsPieza { /**SECCIONES**/
-  display: flex;
-  margin: 200px auto 200px auto;
-  justify-content: center;
-  padding: 30px;
-}
-
-#lineaUnoPiezas,
-#lineaTresPiezas {
-  flex-wrap: wrap-reverse;
-}
-
-#lineaDosPiezas { /** PARES **/
-  flex-wrap: wrap;
-}
-
-#tituloPiezas { /** CAJA TITULO **/
-  display: flex;
-  flex-direction: column;
-  margin: 250px 0 100px 110px;
-}
-
-#tituloPiezas hr { /**LINEA **/
-  width: 15%;
-  text-align: right;
-  margin: 40px 0;
-}
-
-#tituloPiezas h1 { /** TITULO **/
-  font-size: 70px;
-  width: 900px;
-  margin-left: 30px;
-  font-weight: 600;
-}
-
-#tituloPiezas h3 { /** SUB TITULO**/
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.507);
-  margin-bottom: 5px;
-  margin-left: 35px;
-}
-
-.textoUnoPiezas,
-.textoDosPiezas,
-.textoTresPiezas {
-  width: 400px;
-  height: auto;
-  line-height: 2;
-  margin: 0 50px;
-}
-
-.textoUnoPiezas hr { /**LINEAS**/
-  width: 40%;
-  margin: 40px 0 40px 130px;
-}
-
-.textoDosPiezas hr {
-  width: 40%;
-  margin: 40px 0 40px 60px;
-}
-
-.textoTresPiezas hr {
-  width: 40%;
-  margin: 40px 0 40px 150px;
-}
-
-#mainPiezas p { /**PARRAFOS**/
-  width: 100%;
-  height: auto;
-  text-align: justify;
-  margin-bottom: 50px;
-}
-
-.imagenUnoPiezas,
-.imagenDosPiezas,
-.imagenTresPiezas {
-  margin: 0 50px;
-}
-
-#mainPiezas img {
-  width: 400px;
-  height: auto;
-}
-
-/**------------------------------PROCESO CONTENIDO--------------------------------------------------------**/
-#mainProceso {
-  margin-top: 100px;
-}
-
-#tituloProceso { /**CAJA TITULO **/
-  display: flex;
-  flex-direction: column;
-  margin: 250px 0 100px 110px;
-}
-
-#tituloProceso h1 { /**TITULO**/
-  font-size: 70px;
-  width: 70%;
-  margin-left: 30px;
-  font-weight: 600;
-}
-
-#tituloProceso h3 { /** SUB TITULO**/
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.507);
-  margin-left: 35px;
-  margin-bottom: 5px;
-}
-
-#tituloProceso hr {
-  width: 20%;
-  text-align: right;
-  margin: 40px 0;
-}
-
-/**--- ETAPA 1 PROCESO RECOLECCION---------------------------**/
-#recoleccionProceso { /** SECCION ETAPA 1 "recoleccion" **/
-  display: flex;
-  margin-top: 200px;
-}
-
-.colUnoRecoleccion { /** COLUMNA 1 - LADO IZQUIERDO**/
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 70px;
-}
-
-.imagenRecoleccion img { /** IMAGEN ARBOL CAIDO **/
-  width: 600px;
-  height: auto;
-  margin-left: 100px;
-}
-
-.textoRecoleccion { /** CAJA TEXTO **/
-  width: 100%;
-  line-height: 2;
-  padding-top: 120px;
-  padding-right: 40px;
-}
-
-.textoRecoleccion h3 { /** TITULO **/
-  width: 310px;
-  line-height: 1.5;
-}
-
-.textoRecoleccion hr { /** LINEA **/
-  width: 30%;
-  text-align: right;
-  margin: 40px 0 40px 40%;
-}
-
-.textoRecoleccion p { /** PARRAFO **/
-  text-align: justify;
-  justify-content: flex-end;
-  padding-right: 50px;
-}
-
-.colDosRecoleccion { /** COLUMNA DOS LADO DERECHO (GRID)**/
-  position: absoluta;
-  width: 50%;
-  height: 1100px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  margin-top: 300px;
-  padding-bottom: 300px;
-}
-
-.fondoRecoleccion { /** FONDO COLOR **/
-  position: relative;
-  grid-column: 4/13;
-  grid-row: 1/10;
-  background-color: rgb(54, 52, 51);
-}
-
-.corteRecoleccion { /** IMAGEN DE CORTE **/
-  position: relative;
-  background-image: url(../Images/proceso/sierra.png);
-  background-size: cover;
-  grid-column: 1/8;
-  grid-row: 5/12;
-  z-index: 50;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/**--- ETAPA 2 PROCESO FUEGO------------------------------**/
-#fuegoProceso { /**SECCION ETAPA 2 FUEGO **/
-  display: flex;
-  margin-top: 100px;
-}
-
-.colUnoFuego { /**COLUMNA 1 LADO IZQUIERDO (GRID) **/
-  position: absoluta;
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(17, 1fr);
-  padding-top: 40px;
-}
-
-.fondoFuego { /** FONDO COLOR **/
-  position: relative;
-  grid-column: 6/11;
-  grid-row: 5/15;
-  background-color: rgb(54, 52, 51);
-}
-
-.imgFuego { /** IMAGEN FUEGO **/
-  position: relative;
-  background-image: url(../Images/proceso/banco-fuego.jpg);
-  background-size: cover;
-  grid-column: 4/9;
-  grid-row: 3/13;
-  z-index: 50;
-}
-
-.colDosFuego { /** COLUMNA 2 - LADO DERECHO**/
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  padding-right: 60px;
-}
-
-.terminadoLijado img {
-  padding-bottom: 100px;
-}
-
-.textoFuego { /** CAJA TEXTO **/
-  width: 100%;
-  padding-top: 110px;
-}
-
-.textoFuego h3 { /** TITULO **/
-  font-size: 55px;
-  text-align: right;
-  padding-right: 40px;
-}
-
-.textoFuego hr {
-  width: 30%;
-  margin: 40px 0 40px 70%;
-}
-
-.textoFuego p { /** PARRAFO **/
-  padding-bottom: 100px;
-  text-align: justify;
-  line-height: 2;
-  padding-right: 40px;
-}
-
-/**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
-#lijadoProceso { /** SECTION ETAPA 3 "LIJADO" **/
-  display: flex;
-  margin-top: 200px;
-}
-
-.colUnoLijado { /** COLUMNA 1 LADO IZQUIERDO (GRID)**/
-  position: absoluta;
-  width: 50%;
-  height: 1100px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(17, 1fr);
-}
-
-.fondoLijado { /** FONDO COLOR **/
-  position: relative;
-  grid-column: 1/10;
-  grid-row: 5/15;
-  background-color: rgb(54, 52, 51);
-}
-
-.piezaLijado { /** IMAGEN DE LIJADO PINTADO **/
-  position: relative;
-  background-image: url(../Images/proceso/lijado.jpg);
-  background-size: cover;
-  grid-column: 6/13;
-  grid-row: 9/17;
-  z-index: 50;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.colDosLijado { /** COLUMNA 2 LADO DERECHO**/
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  padding-right: 100px;
-}
-
-.imagenTerminadoLijado img { /** IMAGEN BANCO TERMINADO **/
-  width: 600px;
-  height: auto;
-}
-
-.textoLijado { /** CAJA TEXTO **/
-  width: 100%;
-  line-height: 2;
-  padding-top: 120px;
-  padding-left: 40px;
-}
-
-.textoLijado h3 {
-  padding-left: 50px;
-}
-
-.textoLijado hr { /** LINEA **/
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-  margin: 40px 0 40px 30%;
-}
-
-.textoLijado p { /** PARRAFO **/
-  text-align: justify;
-  justify-content: flex-end;
-  padding-left: 50px;
-}
-
-/**--- ETAPA 4 PROCESO PIEZA UNICA------------------------------**/
-#piezaUnicaProceso { /**SECCION ETAPA 4 PIEZA UNICA **/
-  display: flex;
-  margin-top: 100px;
-  background-color: rgb(223, 223, 229);
-  align-items: center;
-  padding-top: 300px;
-  padding-bottom: 300px;
-}
-
-.colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-
-.textoPiezaUnica { /** CAJA TEXTO **/
-  width: 90%;
-}
-
-.textoPiezaUnica h3 { /** TITULO **/
-  font-size: 55px;
-  text-align: left;
-  padding-left: 55px;
-}
-
-.textoPiezaUnica hr { /** LINEA **/
-  width: 30%;
-  margin: 40px 70% 40px 0;
-}
-
-.textoPiezaUnica p { /** PARRAFO **/
-  padding-left: 55px;
-  text-align: justify;
-  line-height: 2;
-}
-
-.colDosPiezaUnica { /**COLUMNA 2 LADO DERECHO **/
-  width: 50%;
-}
-
-.imagenPiezaUnica img { /** IMAGEN PIEZA UNICA **/
-  width: 400px;
-  height: 490px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.imagenPiezaUnica {
-  padding-left: 100px;
-}
-
-/**--- ETAPA 5 PROCESO HOGAR---------------------------**/
-#hogarProceso { /** SECCION ETAPA 5 "hogar" **/
-  display: flex;
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
-
-.colUnoHogar { /** COLUMNA 1 - LADO IZQUIERDO**/
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 100px;
-}
-
-.imagenHogar img { /** BANCO NEGRO HOGAR **/
-  width: 600px;
-  height: auto;
-}
-
-.textoHogar { /** CAJA TEXTO **/
-  width: 100%;
-  line-height: 2;
-  padding-top: 120px;
-  padding-right: 40px;
-}
-
-.textoHogar hr { /** LINEA **/
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-  margin: 50px 0 50px 50%;
-}
-
-.textoHogar p { /** PARRAFO **/
-  text-align: justify;
-  justify-content: flex-end;
-  padding-right: 50px;
-}
-
-.colDosHogar { /** COLUMNA DOS LADO DERECHO (GRID)**/
-  position: absoluta;
-  width: 50%;
-  height: 1100px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(17, 1fr);
-}
-
-.fondoHogar { /** FONDO COLOR **/
-  position: relative;
-  grid-column: 4/13;
-  grid-row: 5/15;
-  background-color: rgb(54, 52, 51);
-}
-
-.piezaHogar { /** IMAGEN DE LIVING **/
-  position: relative;
-  background-image: url(../Images/proceso/living-hogar.jpg);
-  background-size: cover;
-  grid-column: 1/8;
-  grid-row: 9/17;
-  z-index: 50;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
-#mainNosotros {
-  margin-top: 100px;
-}
-
-#lineaUnoNosotros,
-#lineaDosNosotros,
-#lineaTresNosotros,
-#lineaCuatroNosotros,
-#lineaCincoNosotros,
-#lineaSeisNosotros {
-  display: flex;
-  margin: 200px;
-  justify-content: space-around;
-}
-
-#mainNosotros img { /**IMAGENES**/
-  width: 400px;
-  height: 400px;
-}
-
-.textoUnoNosotros,
-.textoDosNosotros,
-.textoTresNosotros,
-.textoCuatroNosotros,
-.textoCincoNosotros,
-.textoSeisNosotros {
-  width: 400px;
-  height: 400px;
-}
-
-#mainNosotros p { /**PARRAFOS**/
-  width: 400px;
-  height: 400px;
-  line-height: 1.8;
-  margin-top: 40px;
-}
-
-.textoCuatroNosotros h3,
-.textoCincoNosotros h3 {
-  width: 400px;
-  font-size: 45px;
-}
-
-/**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
-#mainContacto {
-  margin-top: 100px;
-  background-color: black;
-  color: rgb(255, 255, 255);
-}
-
-/**SECCIONES**/
-#cuadroContacto,
-#mapaContacto {
-  display: flex;
-  justify-content: center;
-}
-
-#tituloContacto {
-  display: flex;
-  justify-content: space-around;
-}
-
-.textoTituloContacto { /**CAJA TITULO**/
-  margin: 50px;
-}
-
-.textoTituloContacto h1 { /**TITULO**/
-  text-align: left;
-  font-size: 80px;
-  line-height: 1.4;
-  margin-left: 200px;
-  font-weight: 600;
-}
-
-.textoTituloContacto h3 { /**SUBTITULO**/
-  text-align: left;
-  margin-left: 200px;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 100;
-}
-
-.imagenTituloContacto img { /**IMAGEN TITULO**/
-  height: 550px;
-  width: 500px;
-}
-
-.formCuadroContacto form { /**FORMULARIO**/
-  display: flex;
-  flex-direction: column;
-}
-
-.datosCuadroContacto { /**DATOS DE CONTACTO**/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(44, 42, 42);
-}
-
-.datosCuadroContacto img {
-  width: 40px;
-  height: auto;
-}
-
-/**----------------------------------------------------MEDIA QUERY----------------------------------------------------------**/
-
-/**---------------------------------- FOOTER RESPONSIVE ------------------------------------------------------------**/
-
-/**------- FOOTER GRID -------**/
-@media (max-width: 1024px) {
-  #filaUnoFooter {
-    margin-top: 400px;
-  }
-}
-@media (max-width: 768px) { /**-----FILA 1-----**/
-  #filaUnoFooter {
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "logo contactoyredes" "menu .";
-  }
-  #filaUnoFooter {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .menuFooter ul {
-    margin: 30px 0 0 10px;
-    padding: 0;
-  }
-  .menuFooter {
-    display: flex;
-  }
-  .menuFooter ul {
-    display: flex;
-    align-items: start;
-    margin-top: 100px;
-  }
-  #filaDosFooter {
-    margin-top: 0;
-  }
-  #filaDosFooter { /**-----FILA 2-----**/
-    margin-left: 20px;
-  }
-}
-/**---------FOOTER FLEX-----------**/
-@media (max-width: 600px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  }
-  #filaUnoFooter { /**-----FILA 1-----**/
-    display: flex;
-    flex-direction: column;
-    margin: 50px 20px 20px 40px;
-    padding: 0;
-  }
-  .logoFooter {
-    margin: 0 0 0px 0px;
-  }
-  .contactoyredesFooter {
-    margin: 90px 0 0 0px;
-    padding: 0;
-  }
-  .redesFooter img {
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  .menuFooter ul {
-    display: flex;
-    align-items: start;
-    margin: 70px 0 0 0px;
-    padding: 0;
-  }
-  #filaDosFooter { /**-----FILA 2-----**/
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    margin: 70px 0 0 40px;
-    padding: 0;
-  }
-  #filaDosFooter h3 {
-    margin: 0px 0px 0 0;
-    padding: 0;
-    font-size: small;
-  }
-  .copyrightFooter,
-  .disenoFooter,
-  .mailFooter {
-    margin: 0px 15px 20px 0;
-  }
-}
-@media (max-width: 300px) {
-  .contactoFooter h5 {
-    text-align: center;
-  }
-}
-/**---------------------------------- INDEX RESPONSIVE ------------------------------------------------------------**/
+/**---------------------------INDEX RESPONSIVE-------------------------------------------------**/
 /**----------LOGO INDEX ----------**/
 @media (max-width: 480px) {
   .logoPrincipal img {
@@ -1105,7 +186,90 @@ main {
     padding-right: 30px;
   }
 }
-/**-------------------------------PIEZAS RESPONSIVE---------------------------------------------------------------**/
+/**---------------------------------PIEZAS CONTENIDO---------------------------------------------------------------------**/
+#mainPiezas { /**MAIN PIEZAS **/
+  margin-top: 100px;
+}
+#mainPiezas #tituloPiezas { /** CAJA TITULO **/
+  display: flex;
+  flex-direction: column;
+  margin: 250px 0 100px 110px;
+}
+#mainPiezas .sectionsPieza { /**SECCIONES**/
+  display: flex;
+  margin: 200px auto 200px auto;
+  justify-content: center;
+  padding: 30px;
+}
+#mainPiezas #lineaUnoPiezas {
+  flex-wrap: wrap-reverse;
+}
+#mainPiezas #lineaDosPiezas { /** PARES **/
+  flex-wrap: wrap;
+}
+#mainPiezas #lineaTresPiezas {
+  flex-wrap: wrap-reverse;
+}
+
+#tituloPiezas hr { /**LINEA **/
+  width: 15%;
+  text-align: right;
+  margin: 40px 0;
+}
+
+#tituloPiezas h1 { /** TITULO **/
+  font-size: 70px;
+  width: 900px;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+#tituloPiezas h3 { /** SUB TITULO**/
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.507);
+  margin-bottom: 5px;
+  margin-left: 35px;
+}
+
+.textosPiezas {
+  width: 400px;
+  height: auto;
+  line-height: 2;
+  margin: 0 50px;
+}
+
+.textoUnoPiezas hr { /**LINEAS**/
+  width: 40%;
+  margin: 40px 0 40px 130px;
+}
+
+.textoDosPiezas hr {
+  width: 40%;
+  margin: 40px 0 40px 60px;
+}
+
+.textoTresPiezas hr {
+  width: 40%;
+  margin: 40px 0 40px 150px;
+}
+
+#mainPiezas p { /**PARRAFOS**/
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.imagenesPiezas {
+  margin: 0 50px;
+}
+
+#mainPiezas img {
+  width: 400px;
+  height: auto;
+}
+
+/**-------------------------------PIEZAS RESPONSIVE-------------------------------------------------------------------**/
 @media (max-width: 1024px) { /** TITULO 1024 **/
   #tituloPiezas {
     margin-bottom: 400px;
@@ -1131,45 +295,45 @@ main {
   }
 }
 @media (max-width: 600px) { /** TITULO 600 **/
+  #tituloPiezas {
+    margin-left: 30px !important;
+  }
   #tituloPiezas h1 {
     font-size: 30px;
     width: 350px;
-  }
-  #tituloPiezas {
-    margin-left: 20px;
   }
   #tituloPiezas hr {
     width: 30%;
   }
 }
 @media (max-width: 480px) { /** TITULO 480 **/
+  #tituloPiezas {
+    margin-left: 20px;
+  }
   #tituloPiezas h1 {
     font-size: 30px;
     width: 250px;
   }
-  #tituloPiezas h3 {
-    font-size: 25px;
-  }
-  #tituloPiezas {
-    margin-left: 20px;
-  }
   #tituloPiezas hr {
     width: 30%;
   }
+  #tituloPiezas h3 {
+    font-size: 25px;
+  }
 }
 @media (max-width: 320px) { /** TITULO 320 **/
+  #tituloPiezas {
+    margin-left: 20px;
+  }
   #tituloPiezas h1 {
     font-size: 30px;
     width: 80%;
   }
-  #tituloPiezas h3 {
-    font-size: 25px;
-  }
-  #tituloPiezas {
-    margin-left: 20px;
-  }
   #tituloPiezas hr {
     width: 50%;
+  }
+  #tituloPiezas h3 {
+    font-size: 25px;
   }
 }
 /**-------CONTENIDO PIEZAS --------**/
@@ -1178,114 +342,1519 @@ main {
     width: 100%;
     height: auto;
   }
-  .imagenUnoPiezas,
-  .imagenDosPiezas,
-  .imagenTresPiezas {
+  .imagenesPiezas {
     margin: 0 15px;
   }
-  .textoUnoPiezas,
-  .textoDosPiezas,
-  .textoTresPiezas {
+  .textosPiezas {
     margin: 0 15px;
   }
   .sectionsPieza {
     margin: 100px 0;
   }
 }
-/**-------------------------------PROCESO RESPONSIVE---------------------------------------------------------------**/
-@media (max-width: 1024px) { /** TITULO 1024 **/
-  #tituloProceso {
-    margin-bottom: 400px;
-  }
-  #tituloProceso h1 {
-    font-size: 50px;
+/**------------------------------PROCESO CONTENIDO--------------------------------------------------------**/
+/**------------------TITULO-------------**/
+#mainProceso {
+  margin-top: 100px;
+  /**--- ETAPA 1 PROCESO RECOLECCION---------------------------**/
+  /**--- ETAPA 2 PROCESO FUEGO------------------------------**/
+  /** #bancoQuemado { /** IMAGEN BANCO TERMINADO **/ /**
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  img {
     width: 600px;
+    height: auto;
+    position: relative;
+    z-index: 200;
+
   }
-  #tituloProceso hr {
-    width: 22%;
-  }
+
+}**/
+  /**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
+  /**--- ETAPA 4 PROCESO PIEZA UNICA------------------------------**/
+  /**--- ETAPA 5 PROCESO HOGAR---------------------------**/
 }
-@media (max-width: 768px) { /** TITULO 768 **/
+#mainProceso #tituloProceso { /**CAJA TITULO **/
+  display: flex;
+  flex-direction: column;
+  margin: 250px 0 100px 110px;
+}
+#mainProceso #tituloProceso h1 { /**TITULO**/
+  font-size: 70px;
+  width: 70%;
+  margin-left: 30px;
+  font-weight: 600;
+}
+#mainProceso #tituloProceso hr {
+  width: 20%;
+  text-align: right;
+  margin: 40px 0;
+}
+#mainProceso #tituloProceso h3 { /** SUB TITULO**/
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.507);
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+#mainProceso #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
+  margin-left: 100px;
+}
+#mainProceso #imagenRecoleccion img {
+  width: 50%;
+  height: auto;
+}
+#mainProceso #recoleccionProceso { /** SECCION ETAPA 1 "recoleccion" **/
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+#mainProceso #recoleccionProceso .colUnoRecoleccion { /** COLUMNA 1 - LADO IZQUIERDO**/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 70px;
+}
+#mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion { /** CAJA TEXTO **/
+  width: 100%;
+  line-height: 2;
+  padding-top: 120px;
+  padding-right: 40px;
+}
+#mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion h3 { /** TITULO **/
+  width: 310px;
+  line-height: 1.5;
+}
+#mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion hr { /** LINEA **/
+  width: 30%;
+  text-align: right;
+  margin: 40px 0 40px 40%;
+}
+#mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion p { /** PARRAFO **/
+  text-align: justify;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+#mainProceso #recoleccionProceso .colDosRecoleccion { /** COLUMNA DOS LADO DERECHO (GRID)**/
+  width: 50%;
+  height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  margin-top: 110px;
+  padding-bottom: 100px;
+}
+#mainProceso #recoleccionProceso .colDosRecoleccion .imgRecoleccion { /** IMAGEN DE CORTE **/
+  position: relative;
+  background-image: url(../Images/proceso/sierra.png);
+  background-size: cover;
+  grid-column: 1/7;
+  grid-row: 6/14;
+  z-index: 50;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mainProceso #recoleccionProceso .colDosRecoleccion .fondoRecoleccion { /** FONDO COLOR **/
+  position: relative;
+  grid-column: 4/13;
+  grid-row: 1/9;
+  background-color: rgb(54, 52, 51);
+}
+#mainProceso #fuegoProceso { /**SECCION ETAPA 2 FUEGO **/
+  display: flex;
+  justify-content: space-between;
+}
+#mainProceso #fuegoProceso .colUnoFuego { /**COLUMNA 1 LADO IZQUIERDO (GRID) **/
+  width: 50%;
+  height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  padding-right: 90px;
+}
+#mainProceso #fuegoProceso .colUnoFuego .imgFuego { /** IMAGEN FUEGO **/
+  position: relative;
+  background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+  background-size: cover;
+  grid-column: 5/13;
+  grid-row: 7/14;
+  z-index: 50;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mainProceso #fuegoProceso .colUnoFuego .fondoFuego { /** FONDO COLOR **/
+  position: relative;
+  grid-column: 1/10;
+  grid-row: 1/11;
+  background-color: rgb(54, 52, 51);
+}
+#mainProceso #fuegoProceso .colDosFuego { /** COLUMNA 2 - LADO DERECHO**/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 60px;
+}
+#mainProceso #fuegoProceso .colDosFuego .textoFuego { /** CAJA TEXTO **/
+  width: 100%;
+  padding-top: 0;
+}
+#mainProceso #fuegoProceso .colDosFuego .textoFuego h3 { /** TITULO **/
+  font-size: 55px;
+  text-align: right;
+  padding-right: 40px;
+}
+#mainProceso #fuegoProceso .colDosFuego .textoFuego hr {
+  width: 30%;
+  margin: 40px 0 40px 70%;
+}
+#mainProceso #fuegoProceso .colDosFuego .textoFuego p { /** PARRAFO **/
+  text-align: justify;
+  line-height: 2;
+  padding-right: 40px;
+}
+#mainProceso #lijadoProceso { /** SECTION ETAPA 3 "LIJADO" **/
+  display: flex;
+  margin-top: 50px;
+}
+#mainProceso #lijadoProceso .colUnoLijado { /** COLUMNA 1 LADO IZQUIERDO (GRID)**/
+  width: 50%;
+  height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+#mainProceso #lijadoProceso .colUnoLijado .piezaLijado { /** IMAGEN DE LIJADO PINTADO **/
+  position: relative;
+  background-image: url(../Images/proceso/lijado.jpg);
+  background-size: cover;
+  grid-column: 7/13;
+  grid-row: 6/14;
+  z-index: 50;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mainProceso #lijadoProceso .colUnoLijado .fondoLijado { /** FONDO COLOR **/
+  position: relative;
+  grid-column: 1/10;
+  grid-row: 1/9;
+  background-color: rgb(54, 52, 51);
+}
+#mainProceso #lijadoProceso .colDosLijado { /** COLUMNA 2 LADO DERECHO**/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 70px;
+}
+#mainProceso #lijadoProceso .colDosLijado .textoLijado { /** CAJA TEXTO **/
+  width: 100%;
+  line-height: 2;
+  padding-left: 40px;
+}
+#mainProceso #lijadoProceso .colDosLijado .textoLijado h3 {
+  width: 310px;
+  padding-left: 50px;
+  line-height: 1.5;
+}
+#mainProceso #lijadoProceso .colDosLijado .textoLijado hr { /** LINEA **/
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  margin: 40px 0 40px 30%;
+}
+#mainProceso #lijadoProceso .colDosLijado .textoLijado p { /** PARRAFO **/
+  text-align: justify;
+  justify-content: flex-end;
+  padding-left: 50px;
+}
+#mainProceso #piezaUnicaProceso { /**SECCION ETAPA 4 PIEZA UNICA **/
+  display: flex;
+  background-color: rgb(223, 223, 229);
+  align-items: center;
+  height: 900px;
+  position: absolute;
+  z-index: 150;
+}
+#mainProceso #piezaUnicaProceso .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica { /** CAJA TEXTO **/
+  width: 90%;
+}
+#mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica h3 { /** TITULO **/
+  font-size: 55px;
+  text-align: left;
+  padding-left: 55px;
+}
+#mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica hr { /** LINEA **/
+  width: 30%;
+  margin: 40px 70% 40px 0;
+}
+#mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica p { /** PARRAFO **/
+  padding-left: 55px;
+  text-align: justify;
+  line-height: 2;
+}
+#mainProceso #piezaUnicaProceso .colDosPiezaUnica { /**COLUMNA 2 LADO DERECHO **/
+  width: 50%;
+}
+#mainProceso #piezaUnicaProceso .colDosPiezaUnica .imagenPiezaUnica {
+  display: flex;
+  justify-content: center;
+}
+#mainProceso #piezaUnicaProceso .colDosPiezaUnica .imagenPiezaUnica img { /** IMAGEN PIEZA UNICA **/
+  width: 90%;
+  height: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mainProceso #imagenHogar { /** BANCO NEGRO HOGAR **/
+  margin-left: 100px;
+  margin-top: 1100px;
+}
+#mainProceso #imagenHogar img {
+  width: 50%;
+  height: auto;
+}
+#mainProceso #hogarProceso { /** SECCION ETAPA 5 "hogar" **/
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+#mainProceso #hogarProceso .colUnoHogar { /** COLUMNA 1 - LADO IZQUIERDO**/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 70px;
+}
+#mainProceso #hogarProceso .textoHogar { /** CAJA TEXTO **/
+  width: 100%;
+  line-height: 2;
+  padding-top: 120px;
+  padding-right: 40px;
+}
+#mainProceso #hogarProceso .textoHogar h3 { /** TITULO **/
+  width: 310px;
+  line-height: 1.5;
+}
+#mainProceso #hogarProceso .textoHogar hr { /** LINEA **/
+  width: 30%;
+  text-align: right;
+  margin: 40px 0 40px 50%;
+}
+#mainProceso #hogarProceso .textoHogar p { /** PARRAFO **/
+  text-align: justify;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+#mainProceso .colDosHogar { /** COLUMNA DOS LADO DERECHO (GRID)**/
+  width: 50%;
+  height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  margin-top: 110px;
+  padding-bottom: 100px;
+}
+#mainProceso .colDosHogar .piezaHogar { /** IMAGEN DE LIVING **/
+  position: relative;
+  background-image: url(../Images/proceso/living-hogar.jpg);
+  background-size: cover;
+  grid-column: 1/7;
+  grid-row: 6/14;
+  z-index: 50;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mainProceso .colDosHogar .fondoHogar { /** FONDO COLOR **/
+  position: relative;
+  grid-column: 4/13;
+  grid-row: 1/9;
+  background-color: rgb(54, 52, 51);
+}
+
+/**-------------------------------PROCESO RESPONSIVE---------------------------------------------------------------**/
+/**
+
+@media (max-width: 1024px) { /** TITULO 1024 **/ /**
   #tituloProceso {
-    margin-bottom: 100px;
-  }
-  #tituloProceso h1 {
-    font-size: 35px;
-    width: 450px;
-  }
-  #tituloProceso hr {
-    width: 30%;
+    margin-bottom: 100px !important;
+    h1 {
+      font-size: 50px !important;
+      width: 600px !important;
+    }
+    hr {
+      width: 22% !important;
+    }
   }
 }
-@media (max-width: 600px) { /** TITULO 600 **/
-  #tituloProceso h1 {
-    font-size: 30px;
-    width: 350px;
-  }
+
+@media (max-width: 768px) { /** TITULO 768 **/ /**
   #tituloProceso {
-    margin-left: 20px;
-  }
-  #tituloProceso hr {
-    width: 30%;
+    margin-bottom: 100px !important;
+    h1 {
+      font-size: 35px !important;
+      width: 450px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
   }
 }
-@media (max-width: 480px) { /** TITULO 480 **/
-  #tituloProceso h1 {
-    font-size: 30px;
-    width: 250px;
-  }
-  #tituloProceso h3 {
-    font-size: 25px;
-  }
+
+
+
+@media (max-width: 480px) { /** TITULO 480 **/ /**
   #tituloProceso {
-    margin-left: 20px;
+    margin-left: 20px !important;
+    h1 {
+      font-size: 30px !important;
+      width: 260px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+    h3 {
+      font-size: 25px !important;
+    }
   }
-  #tituloProceso hr {
-    width: 30%;
+}   
+
+
+/**-------CONTENIDO PROCESO --------**/ /**
+
+
+
+@media (max-width: 1023px) {
+
+  #imagenRecoleccion img {
+    width: 70% !important;
   }
-}
-@media (max-width: 320px) { /** TITULO 320 **/
-  #tituloProceso h1 {
-    font-size: 30px;
-    width: 80%;
-  }
-  #tituloProceso h3 {
-    font-size: 25px;
-  }
-  #tituloProceso {
-    margin-left: 20px;
-  }
-  #tituloProceso hr {
-    width: 50%;
-  }
-}
-/**-------CONTENIDO PROCESO --------**/
-@media (max-width: 1024px) {
+
   #recoleccionProceso {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    .colUnoRecoleccion {
+      width: 80% !important;
+    }
+    .colDosRecoleccion {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .imgRecoleccion {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoRecoleccion {
+        margin-left: 200px;
+
+      }
+    }
+  }
+
+  #fuegoProceso{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 100px;
+    .colUnoFuego {
+      height: 500px;
+      display: flex !important;
+      width: 100%;
+      background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+    }
+    .colDosFuego {
+      padding: 0 !important;
+    }
+  }
+
+  #lijadoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .colDosLijado {
+      width: 80% !important;
+    }
+    .colUnoLijado {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaLijado {
+        margin-left: 100px;
+        grid-column: 4/12 !important;
+        grid-row: 5/12 !important;
+      }
+      .fondoLijado {
+        margin-right: 200px;
+
+      }
+    }
+  } 
+
+  #piezaUnicaProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1300px !important;
+    position: relative !important;
+  }
+
+  #hogarProceso { **/ /** SECCION ETAPA 5 "hogar" **/ /**
+    display: flex;
+    margin-top: 200px !important;
+  }
+
+  #hogarProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .colUnoHogar {
+      width: 80% !important;
+    }
+    .colDosHogar {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaHogar {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoHogar {
+        margin-left: 200px;
+
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #imagenRecoleccion img{
+    width: 70% !important;
+    margin-bottom: 100px;
+  }
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    .colUnoRecoleccion {
+      width: 100%;
+      padding: 0 !important;
+      .textoRecoleccion {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .imgRecoleccion {
+        margin: 50px 0;
+        width: 100%;
+      }
+      .fondoRecoleccion {
+        margin: 0;
+        padding: 0;
+        width: 0;
+
+      }
+
+    }
+
   }
-  .colUnoRecoleccion {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+
+  #lijadoProceso
+  .colUnoLijado {
+    display: flex !important;
+    justify-content: center ;
+    padding: 0px !important;
+    margin: 0 0 0 60% !important;
+    width: 100% !important;
+    height: 500px !important;
+    background-color: rgba(0, 0, 0, 0);
+    .piezaLijado {
+      margin: 50px 0;
+      width: 100%;
+    }
+    .fondoLijado {
+      margin: 0;
+      padding: 0;
+      width: 0;
+
+    }
   }
-  .textoRecoleccion {
-    margin: 0;
-    padding: 0;
-  }
-  .textoRecoleccion p {
-    margin: 0;
-    padding: 0;
-  }
-  .colDosRecoleccion {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-left: 200px;
+
+  #hogarProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoHogar {
+      width: 100%;
+      padding: 0 !important;
+      .textoHogar {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosHogar {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .piezaHogar {
+        margin: 50px 0;
+        width: 100%;
+      }
+      .fondoHogar {
+        margin: 0;
+        padding: 0;
+        width: 0;
+
+      }
+
+    }
+
   }
 }
 
 
+@media (max-width: 600px) {
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoRecoleccion {
+      width: 100%;
+      padding: 0 !important;
+      .textoRecoleccion {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .imgRecoleccion {
+        margin: 50px 0;
+        background-image: url(../Images/proceso/sierra.png);
+        width: 100%;
+      }
+      .fondoRecoleccion {
+        margin: 0;
+        padding: 0;
+        width: 0;
+
+      }
+
+    }
+
+  }
+}  **/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #tituloProceso {
+    margin-bottom: 100px !important;
+  }
+  #tituloProceso h1 {
+    font-size: 50px !important;
+    width: 600px !important;
+  }
+  #tituloProceso hr {
+    width: 22% !important;
+  }
+  #imagenRecoleccion img {
+    width: 70% !important;
+  }
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #recoleccionProceso .colUnoRecoleccion {
+    width: 80% !important;
+    padding: 0 !important;
+    margin-top: 50px;
+  }
+  #recoleccionProceso .colUnoRecoleccion .textoRecoleccion {
+    padding: 0 !important;
+  }
+  #recoleccionProceso .colUnoRecoleccion .textoRecoleccion p {
+    padding: 0 !important;
+  }
+  #recoleccionProceso .colDosRecoleccion {
+    padding-top: 100px !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    background-color: rgb(223, 223, 229);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  #recoleccionProceso .colDosRecoleccion .imgRecoleccion {
+    margin-left: 100px;
+    grid-column: 2/8 !important;
+    grid-row: 5/13 !important;
+  }
+  #recoleccionProceso .colDosRecoleccion .fondoRecoleccion {
+    margin-left: 200px;
+  }
+  #fuegoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #fuegoProceso .colUnoFuego {
+    padding: 100px 0 0 0 !important;
+    width: 100% !important;
+    background-color: rgb(223, 223, 229);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr) !important;
+  }
+  #fuegoProceso .colUnoFuego .imgFuego {
+    margin-left: 100px;
+    grid-column: 3/10 !important;
+    grid-row: 6/11 !important;
+  }
+  #fuegoProceso .colUnoFuego .fondoFuego {
+    margin-right: 200px;
+    grid-column: 1/10 !important;
+    grid-row: 1/9 !important;
+  }
+  #fuegoProceso .colDosFuego {
+    width: 80% !important;
+    padding: 0 20px 0 60px !important;
+    margin: 50px 0;
+  }
+  #lijadoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #lijadoProceso .colUnoLijado {
+    padding-top: 100px !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    background-color: rgb(223, 223, 229);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  #lijadoProceso .colUnoLijado .piezaLijado {
+    margin-left: 100px;
+    grid-column: 4/10 !important;
+    grid-row: 5/13 !important;
+  }
+  #lijadoProceso .colUnoLijado .fondoLijado {
+    margin-right: 200px;
+  }
+  #lijadoProceso .colDosLijado {
+    width: 80% !important;
+    padding: 0 70 0 0 !important;
+  }
+  #lijadoProceso .colDosLijado .textoLijado {
+    width: 100% !important;
+    padding: 0 0 0 0 !important;
+  }
+  #piezaUnicaProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 100px;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
+    width: 80% !important;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica {
+    width: 100% !important;
+    padding: 0 55px 0 0 !important;
+    margin: 50px 0 !important;
+  }
+  #piezaUnicaProceso .colDosPiezaUnica img { /** COLUMNA DOS LADO DERECHO (GRID)**/
+    width: 100%;
+    height: auto !important;
+    margin: 50px 0 !important;
+  }
+  #imagenHogar {
+    margin-top: 200px !important;
+  }
+  #imagenHogar img {
+    width: 70% !important;
+  }
+  #hogarProceso { /** SECCION ETAPA 5 "hogar" **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hogarProceso .colUnoHogar {
+    width: 80% !important;
+    margin-top: 100px;
+    padding: 0 !important;
+  }
+  #hogarProceso .colUnoHogar .textoHogar {
+    width: 80% !important;
+    padding: 0 !important;
+  }
+  #hogarProceso .colUnoHogar .textoHogar p {
+    padding: 0px !important;
+  }
+  #hogarProceso .colDosHogar {
+    padding-top: 100px !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    background-color: rgb(223, 223, 229);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  #hogarProceso .colDosHogar .piezaHogar {
+    margin-left: 100px;
+    grid-column: 2/8 !important;
+    grid-row: 5/13 !important;
+  }
+  #hogarProceso .colDosHogar .fondoHogar {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  #tituloProceso { /** TITULO 600 **/
+    margin-left: 50px !important;
+  }
+  #tituloProceso h1 {
+    font-size: 40px !important;
+    width: 400px !important;
+  }
+  #tituloProceso hr {
+    width: 30% !important;
+  }
+}
+@media (max-width: 768px) {
+  #tituloProceso { /** TITULO 320 **/
+    margin-left: 20px !important;
+  }
+  #tituloProceso h1 {
+    font-size: 30px !important;
+    width: 80% !important;
+  }
+  #tituloProceso hr {
+    width: 30% !important;
+  }
+  #tituloProceso h3 {
+    font-size: 25px !important;
+  }
+  #imagenRecoleccion { /** IMAGE ARBOL CAIDO **/
+    margin: 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  #imagenRecoleccion img {
+    width: 80% !important;
+    margin-left: 20px;
+  }
+  #recoleccionProceso { /** PROCESO RECOLECCION **/
+    display: flex;
+    flex-direction: column;
+  }
+  #recoleccionProceso .colUnoRecoleccion {
+    width: 100% !important;
+    margin: 50px 0 !important;
+    padding: 0 50px !important;
+  }
+  #recoleccionProceso .colUnoRecoleccion .textoRecoleccion {
+    width: 80%;
+    padding: 0 !important;
+  }
+  #recoleccionProceso .colUnoRecoleccion .textoRecoleccion h3 {
+    width: 100% !important;
+  }
+  #recoleccionProceso .colUnoRecoleccion .textoRecoleccion p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #recoleccionProceso .colDosRecoleccion {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    height: 800px !important;
+  }
+  #recoleccionProceso .colDosRecoleccion .imgRecoleccion {
+    padding: 0;
+    margin: 50px 0;
+    width: 80%;
+  }
+  #recoleccionProceso .colDosRecoleccion .fondoRecoleccion {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+  #fuegoProceso { /** PROCESO FUEGO **/
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #fuegoProceso .colDosFuego {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    padding: 0 50px !important;
+  }
+  #fuegoProceso .colDosFuego h3 {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 24px !important;
+  }
+  #fuegoProceso .colDosFuego p {
+    padding: 0 !important;
+  }
+  #fuegoProceso .colUnoFuego {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin: 0 0 0 0 !important;
+    width: 100% !important;
+    height: 800px !important;
+  }
+  #fuegoProceso .colUnoFuego .imgFuego {
+    padding: 0;
+    margin: 50px 0;
+    width: 80%;
+  }
+  #fuegoProceso .colUnoFuego .fondoFuego {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+  #lijadoProceso { /** PROCESO LIJADO **/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  #lijadoProceso .colDosLijado {
+    width: 100% !important;
+    margin: 50px 0 !important;
+    padding: 0 50px !important;
+  }
+  #lijadoProceso .colDosLijado .textoLijado {
+    width: 80%;
+    padding: 0 !important;
+  }
+  #lijadoProceso .colDosLijado .textoLijado h3 {
+    width: 100% !important;
+  }
+  #lijadoProceso .colDosLijado .textoLijado p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #lijadoProceso .colUnoLijado {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin: 0 0 0 0 !important;
+    width: 100% !important;
+    height: 800px !important;
+  }
+  #lijadoProceso .colUnoLijado .piezaLijado {
+    padding: 0;
+    margin: 50px 0;
+    width: 80%;
+  }
+  #lijadoProceso .colUnoLijado .fondoLijado {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+  #piezaUnicaProceso { /** PROCESO PIEZA UNICA **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+    position: static !important;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica {
+    width: 100% !important;
+    margin: 50px 0 !important;
+    padding: 50px 50px !important;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica h3 {
+    width: 100% !important;
+    font-size: 24px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #piezaUnicaProceso .colDosPiezaUnica {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin: 0 0 0 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  #piezaUnicaProceso .colDosPiezaUnica img {
+    padding: 50px 0;
+    margin: 50px 0;
+    width: 80% !important;
+    height: auto !important;
+  }
+  #imagenHogar { /** IMAGE BANCO HOGAR **/
+    margin: 50px 0 0 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  #imagenHogar img {
+    width: 80% !important;
+    margin-left: 20px;
+  }
+  #hogarProceso { /** PROCESO HOGAR **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hogarProceso .colUnoHogar {
+    width: 100% !important;
+    margin: 50px 0 !important;
+    padding: 0 50px !important;
+  }
+  #hogarProceso .colUnoHogar .textoHogar {
+    width: 80%;
+    padding: 0 !important;
+  }
+  #hogarProceso .colUnoHogar .textoHogar h3 {
+    width: 100% !important;
+  }
+  #hogarProceso .colUnoHogar .textoHogar p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #hogarProceso .colDosHogar {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin: 0 0 0 0 !important;
+    width: 100% !important;
+    height: 800px !important;
+  }
+  #hogarProceso .colDosHogar .piezaHogar {
+    padding: 0;
+    margin: 50px 0;
+    width: 80%;
+  }
+  #hogarProceso .colDosHogar .fondoHogar {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+}
+/**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
+#mainNosotros {
+  margin-top: 100px;
+}
+
+.lineas { /**SECCIONES DEVIDIDAS EN LINEAS**/
+  display: flex;
+  margin: 200px;
+  justify-content: space-around;
+}
+
+#mainNosotros img { /**IMAGENES**/
+  width: 400px;
+  height: 400px;
+}
+
+.textos { /**CAJAS DE TEXTOS**/
+  width: 400px;
+  height: 400px;
+}
+
+#mainNosotros p { /**PARRAFOS**/
+  width: 400px;
+  height: 400px;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+.textoCuatroNosotros h3,
+.textoCincoNosotros h3 {
+  width: 400px;
+  font-size: 45px;
+}
+
+/**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
+#mainContacto {
+  margin-top: 100px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+#mainContacto #tituloContacto {
+  display: flex;
+  justify-content: space-around;
+}
+#mainContacto #tituloContacto .textoTituloContacto { /**CAJA TITULO**/
+  margin: 50px;
+}
+#mainContacto #tituloContacto .textoTituloContacto h1 { /**TITULO**/
+  text-align: left;
+  font-size: 80px;
+  line-height: 1.4;
+  margin-left: 200px;
+  font-weight: 600;
+}
+#mainContacto #tituloContacto .textoTituloContacto h3 { /**SUBTITULO**/
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 100;
+}
+#mainContacto #tituloContacto .imagenTituloContacto img { /**IMAGEN TITULO**/
+  height: 550px;
+  width: 500px;
+}
+#mainContacto #cuadroContacto {
+  display: flex;
+  justify-content: center;
+}
+#mainContacto #cuadroContacto .formCuadroContacto form { /**FORMULARIO**/
+  display: flex;
+  flex-direction: column;
+}
+#mainContacto #cuadroContacto .datosCuadroContacto { /**DATOS DE CONTACTO**/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(44, 42, 42);
+}
+#mainContacto #cuadroContacto .datosCuadroContacto img {
+  width: 40px;
+  height: auto;
+}
+#mainContacto #mapaContacto {
+  display: flex;
+  justify-content: center;
+}
+
+/**----Navegadores----**/
+/**----------------------------NAV GERERAL--------------------------------------------------------------------------------------------------**/
+.navbar-toggler { /**MENU HAMBURGUESA SIN BORDES**/
+  border: none; /**BOOTSTRAP**/ /** INDEX Y PAGES**/
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav {
+  width: 300px;
+  height: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 0 !important;
+  margin: 5px 30px !important;
+}
+
+.navbar-toggler {
+  z-index: 101;
+}
+
+/**-----BARRA DE NAVEGADOR INDEX-----------------------------------------------------------------------------------------------**/
+.navBarBtsIndex {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 100;
+}
+.navBarBtsIndex .logoNavIndex img { /**LOGO navegador TOP INDEX**/
+  width: 30px;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.menuIndex {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.menuIndex .ulNavIndex { /**UL navegador INDEX**/
+  width: 500px;
+  height: 100px;
+  display: flex;
+  margin-right: 150px;
+}
+.menuIndex .ulNavIndex a { /**LINKS navegador INDEX**/
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  font-size: 18px;
+}
+.menuIndex .ulNavIndex a:hover { /**COLOR LINKS CON PUNTERO ARRIBA**/
+  color: rgb(188, 185, 185);
+}
+
+.hamburguesaColorIndex { /**CAMBIO DE COLOR DEL MENU HAMBURGUESA**/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/**----------------------------NAV PAGES------------------------------------------------------------------------------------------------------**/
+.navBarBtsPages {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+.navBarBtsPages .logoNavPages img { /**LOGO navegador TOP PAGES**/
+  width: 30px;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.menuPages {
+  height: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.menuPages .ulNavPages { /**UL navegador PAGES**/
+  width: 500px;
+  height: 100px;
+  display: flex;
+  margin-right: 150px;
+}
+.menuPages .ulNavPages a { /**LINKS navegador PAGES**/
+  color: rgb(0, 0, 0);
+  margin: 30px;
+  font-size: 18px;
+}
+.menuPages .ulNavPages a:hover { /**COLOR LINKS CON PUNTERO ARRIBA**/
+  color: rgb(188, 185, 185);
+}
+
+.hamburguesaColorPages { /**CAMBIO DE COLOR DEL MENU HAMBURGUESA PAGES**/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/**---------------------------------- NAVEGADORES RESPONSIVE ----------------------------------------------------------------**/
+/**-----MENU HAMBURGUESA INDEX-----**/
+@media (max-width: 992px) {
+  .menuIndex {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+  }
+  .menuIndex .ulNavIndex {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    line-height: 50px;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 992px) {
+  .menuPages {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+  }
+  .menuPages .ulNavPages {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    line-height: 50px;
+    margin-top: 150px;
+  }
+}
+/**----Footer---------**/
+/**------------------------------FOOTER-------------------------------------------------------------------------------**/
+#footer {
+  background-color: black;
+  color: rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 100;
+  /** -----------FILA 1  LOGO, CONTACTO, MENU----------**/
+  /** ---------FILA 2  COPIRIGHT, DISEÑO, MAIL---------**/
+}
+#footer #filaUnoFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-areas: "logo contactoyredes . . . . menu";
+  margin: 0 70px 0 70px;
+}
+#footer #filaUnoFooter .logoFooter {
+  grid-area: logo;
+}
+#footer #filaUnoFooter .logoFooter img { /** LOGO **/
+  width: 170px;
+  height: 170px;
+  margin-top: 200px;
+  margin-right: 30px;
+}
+#footer #filaUnoFooter .contactoyredesFooter {
+  grid-area: contactoyredes;
+  margin-top: 200px;
+}
+#footer #filaUnoFooter .contactoyredesFooter .redesFooter h2 { /** REDES **/
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-family: "Concert One", sans-serif;
+  letter-spacing: 0.05em;
+}
+#footer #filaUnoFooter .contactoyredesFooter .redesFooter img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+#footer #filaUnoFooter .menuFooter {
+  grid-area: menu;
+}
+#footer #filaUnoFooter .menuFooter ul { /** MENU FOOTER **/
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 80px;
+  margin-top: 200px;
+}
+#footer #filaUnoFooter .menuFooter ul a {
+  color: rgb(204, 204, 204);
+  line-height: 1.8;
+  font-size: larger;
+}
+#footer #filaUnoFooter .menuFooter ul a:hover {
+  color: rgb(255, 255, 255);
+}
+#footer #filaDosFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-areas: "copyright diseno . . . mail";
+  margin: 200px 70px 40px 70px;
+}
+#footer #filaDosFooter .copyrightFooter { /** COPYRIGHT **/
+  grid-area: copyright;
+}
+#footer #filaDosFooter .copyrightFooter h3 {
+  font-size: medium;
+  font-weight: 100;
+}
+#footer #filaDosFooter .disenoFooter { /**DESIGN BY**/
+  grid-area: diseno;
+  display: flex;
+  justify-content: left;
+}
+#footer #filaDosFooter .disenoFooter h3 {
+  font-size: medium;
+  font-weight: 100;
+}
+#footer #filaDosFooter .disenoFooter a {
+  text-decoration: underline;
+  color: rgb(204, 204, 204);
+}
+#footer #filaDosFooter .disenoFooter a:hover {
+  color: rgb(255, 255, 255);
+}
+#footer #filaDosFooter .mailFooter { /** MAIL **/
+  grid-area: mail;
+  display: flex;
+  justify-content: right;
+}
+#footer #filaDosFooter .mailFooter h3 {
+  font-size: medium;
+  font-weight: 100;
+}
+
+/**---------------------------------- FOOTER RESPONSIVE --------------------------------------------------------------------**/
+/**------- FOOTER GRID -------**/
+@media (max-width: 1024px) {
+  #footer {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 768px) { /**-----FILA 1-----**/
+  #footer #filaUnoFooter {
+    margin-top: 0px;
+    display: grid;
+    margin-right: 20px;
+    margin-left: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo contactoyredes" "menu .";
+  }
+  #footer #filaUnoFooter .menuFooter {
+    display: flex;
+  }
+  #footer #filaUnoFooter .menuFooter ul {
+    display: flex;
+    align-items: start;
+    margin: 100px 0 0 10px;
+    padding: 0;
+  }
+  #footer #filaDosFooter { /**-----FILA 2-----**/
+    margin-left: 20px;
+  }
+}
+/**---------FOOTER FLEX-----------**/
+@media (max-width: 600px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  #footer #filaUnoFooter { /**-----FILA 1-----**/
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 20px 40px;
+    padding: 0;
+  }
+  #footer #filaUnoFooter .logoFooter {
+    margin: 0 0 0px 0px;
+  }
+  #footer #filaUnoFooter .contactoyredesFooter {
+    margin: 90px 0 0 0px;
+    padding: 0;
+  }
+  #footer #filaUnoFooter .contactoyredesFooter .redesFooter img {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  #footer #filaUnoFooter .menuFooter ul {
+    display: flex;
+    align-items: start;
+    margin: 70px 0 0 0px;
+    padding: 0;
+  }
+  #footer #filaDosFooter { /**-----FILA 2-----**/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin: 70px 0 0 40px;
+    padding: 0;
+  }
+  #footer #filaDosFooter .mailFooter,
+  #footer #filaDosFooter .disenoFooter,
+  #footer #filaDosFooter .copyrightFooter {
+    margin: 0px 15px 20px 0;
+  }
+  #footer #filaDosFooter .mailFooter h3,
+  #footer #filaDosFooter .disenoFooter h3,
+  #footer #filaDosFooter .copyrightFooter h3 {
+    margin: 0px 0px 0 0;
+    padding: 0;
+    font-size: small;
+  }
+}
+@media (max-width: 300px) {
+  .contactoFooter h5 {
+    text-align: center;
+  }
+}
+/**---Icono Whatsapp--**/
+.whatsappIcon { /**ICONO FIXED**/
+  position: fixed;
+  margin-top: 100px;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  z-index: 1;
+}
+.whatsappIcon img {
+  width: 50px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

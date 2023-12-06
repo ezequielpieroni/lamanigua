@@ -1,0 +1,1178 @@
+
+
+/**------------------------------PROCESO CONTENIDO--------------------------------------------------------**/
+
+
+/**------------------TITULO-------------**/
+
+#mainProceso {
+  margin-top: 100px;
+  #tituloProceso { /**CAJA TITULO **/
+    display: flex;
+    flex-direction: column;
+    margin: 250px 0 100px 110px;
+    h1 { /**TITULO**/
+      font-size: 70px;
+      width: 70%;
+      margin-left: 30px;
+      font-weight: 600;
+    }
+    hr {
+      width: 20%;
+      text-align: right;
+      margin: 40px 0;
+    }
+    h3 { /** SUB TITULO**/
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.507);
+      margin-left: 35px;
+      margin-bottom: 5px;
+    }
+  }
+
+
+/**--- ETAPA 1 PROCESO RECOLECCION---------------------------**/
+
+
+  #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
+    margin-left: 100px;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  #recoleccionProceso { /** SECCION ETAPA 1 "recoleccion" **/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    
+    .colUnoRecoleccion { /** COLUMNA 1 - LADO IZQUIERDO**/
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 70px;
+
+      .textoRecoleccion { /** CAJA TEXTO **/
+        width: 100%;
+        line-height: 2;
+        padding-top: 120px;
+        padding-right: 40px;
+        h3 { /** TITULO **/
+          width: 310px;
+          line-height: 1.5;
+        }
+        hr { /** LINEA **/
+          width: 30%;
+          text-align: right;
+          margin: 40px 0 40px 40%;
+        }
+        p { /** PARRAFO **/
+          text-align: justify;
+          justify-content: flex-end;
+          padding-right: 50px;
+        }
+      }
+    }
+    .colDosRecoleccion { /** COLUMNA DOS LADO DERECHO (GRID)**/
+      width: 50%;
+      height: 1100px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      margin-top: 110px;
+      padding-bottom: 100px;
+      .imgRecoleccion { /** IMAGEN DE CORTE **/
+        position: relative;
+        background-image: url(../Images/proceso/sierra.png);
+        background-size: cover;
+        grid-column: 1/7;
+        grid-row: 6/14;
+        z-index: 50;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .fondoRecoleccion { /** FONDO COLOR **/
+        position: relative;
+        grid-column: 4/13;
+        grid-row: 1/9;
+        background-color: rgb(54, 52, 51);
+      }
+    }
+  }
+
+
+/**--- ETAPA 2 PROCESO FUEGO------------------------------**/
+
+  #fuegoProceso { /**SECCION ETAPA 2 FUEGO **/
+    display: flex;
+    justify-content: space-between;
+    
+    .colUnoFuego { /**COLUMNA 1 LADO IZQUIERDO (GRID) **/
+      width: 50%;
+      height: 1100px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(14, 1fr);
+      padding-right: 90px;
+
+              
+      .imgFuego { /** IMAGEN FUEGO **/
+        position: relative;
+        background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+        background-size: cover;
+        grid-column: 5/13;
+        grid-row: 7/14;
+        z-index: 50;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .fondoFuego { /** FONDO COLOR **/
+        position: relative;
+        grid-column: 1/10;
+        grid-row: 1/11;
+        background-color: rgb(54, 52, 51);
+      }
+    }
+    .colDosFuego { /** COLUMNA 2 - LADO DERECHO**/
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-right: 60px;
+      .textoFuego { /** CAJA TEXTO **/
+        width: 100%;
+        padding-top: 0;
+        h3 { /** TITULO **/
+          font-size: 55px;
+          text-align: right;
+          padding-right: 40px;
+        }
+        hr {
+          width: 30%;
+          margin: 40px 0 40px 70%;
+        }
+        p { /** PARRAFO **/
+          text-align: justify;
+          line-height: 2;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+  /** #bancoQuemado { /** IMAGEN BANCO TERMINADO **/   /**
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    img {
+      width: 600px;
+      height: auto;
+      position: relative;
+      z-index: 200;
+
+    }
+    
+  }**/
+
+/**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
+
+  #lijadoProceso { /** SECTION ETAPA 3 "LIJADO" **/
+    display: flex;
+    margin-top: 50px;
+    .colUnoLijado { /** COLUMNA 1 LADO IZQUIERDO (GRID)**/
+      width: 50%;
+      height: 1100px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+              
+      .piezaLijado { /** IMAGEN DE LIJADO PINTADO **/
+        position: relative;
+        background-image: url(../Images/proceso/lijado.jpg);
+        background-size: cover;
+        grid-column: 7/13;
+        grid-row: 6/14;
+        z-index: 50;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .fondoLijado { /** FONDO COLOR **/
+        position: relative;
+        grid-column: 1/10;
+        grid-row: 1/9;
+        background-color: rgb(54, 52, 51);
+      }
+    }
+    .colDosLijado { /** COLUMNA 2 LADO DERECHO**/
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 70px;
+      .textoLijado { /** CAJA TEXTO **/
+        width: 100%;
+        line-height: 2;
+        
+        padding-left: 40px;
+        h3 {
+          width: 310px;
+          padding-left: 50px;
+          line-height: 1.5;
+        }
+        hr { /** LINEA **/
+          display: inline-block;
+          width: 30%;
+          text-align: right;
+          margin: 40px 0 40px 30%;
+        }
+        p { /** PARRAFO **/
+          text-align: justify;
+          justify-content: flex-end;
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+
+
+/**--- ETAPA 4 PROCESO PIEZA UNICA------------------------------**/
+
+  #piezaUnicaProceso { /**SECCION ETAPA 4 PIEZA UNICA **/
+    display: flex;
+    background-color: rgb(223, 223, 229);
+    align-items: center;
+    height: 900px;
+    position: absolute;
+    z-index: 150;
+    .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .textoPiezaUnica { /** CAJA TEXTO **/
+        width: 90%;
+        h3 { /** TITULO **/
+          font-size: 55px;
+          text-align: left;
+          padding-left: 55px;
+        }
+        hr { /** LINEA **/
+          width: 30%;
+          margin: 40px 70% 40px 0;
+        }
+        p { /** PARRAFO **/
+          padding-left: 55px;
+          text-align: justify;
+          line-height: 2;
+        }
+      }
+    }
+      
+    .colDosPiezaUnica { /**COLUMNA 2 LADO DERECHO **/
+      width: 50%;
+      .imagenPiezaUnica {
+          display: flex;
+        justify-content: center;
+        img { /** IMAGEN PIEZA UNICA **/
+          width: 90%;
+          height: 450px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+
+/**--- ETAPA 5 PROCESO HOGAR---------------------------**/
+
+  #imagenHogar  { /** BANCO NEGRO HOGAR **/
+    margin-left: 100px;
+    margin-top: 1100px;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  #hogarProceso { /** SECCION ETAPA 5 "hogar" **/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+
+    .colUnoHogar { /** COLUMNA 1 - LADO IZQUIERDO**/
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 70px;
+
+      }
+      .textoHogar { /** CAJA TEXTO **/
+        width: 100%;
+        line-height: 2;
+        padding-top: 120px;
+        padding-right: 40px;
+        h3 { /** TITULO **/
+          width: 310px;
+          line-height: 1.5;
+        }
+        hr { /** LINEA **/
+          width: 30%;
+          text-align: right;
+          margin: 40px 0 40px 50%;
+        }
+        p { /** PARRAFO **/
+          text-align: justify;
+          justify-content: flex-end;
+          padding-right: 50px;
+        }
+      }
+    }
+    .colDosHogar { /** COLUMNA DOS LADO DERECHO (GRID)**/
+      width: 50%;
+      height: 1100px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      margin-top: 110px;
+      padding-bottom: 100px;
+      .piezaHogar { /** IMAGEN DE LIVING **/
+        position: relative;
+        background-image: url(../Images/proceso/living-hogar.jpg);
+        background-size: cover;
+        grid-column: 1/7;
+        grid-row: 6/14;
+        z-index: 50;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .fondoHogar { /** FONDO COLOR **/
+        position: relative;
+        grid-column: 4/13;
+        grid-row: 1/9;
+        background-color: rgb(54, 52, 51);
+      }
+    }
+  }
+  
+
+
+
+/**-------------------------------PROCESO RESPONSIVE---------------------------------------------------------------**/
+/**
+
+@media (max-width: 1024px) { /** TITULO 1024 **/ /**
+  #tituloProceso {
+    margin-bottom: 100px !important;
+    h1 {
+      font-size: 50px !important;
+      width: 600px !important;
+    }
+    hr {
+      width: 22% !important;
+    }
+  }
+}
+
+@media (max-width: 768px) { /** TITULO 768 **/ /**
+  #tituloProceso {
+    margin-bottom: 100px !important;
+    h1 {
+      font-size: 35px !important;
+      width: 450px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+  }
+}
+
+
+
+@media (max-width: 480px) { /** TITULO 480 **/  /**
+  #tituloProceso {
+    margin-left: 20px !important;
+    h1 {
+      font-size: 30px !important;
+      width: 260px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+    h3 {
+      font-size: 25px !important;
+    }
+  }
+}   
+
+
+/**-------CONTENIDO PROCESO --------**/  /**
+
+
+
+@media (max-width: 1023px) {
+  
+  #imagenRecoleccion img {
+    width: 70% !important;
+  }
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .colUnoRecoleccion {
+      width: 80% !important;
+    }
+    .colDosRecoleccion {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .imgRecoleccion {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoRecoleccion {
+        margin-left: 200px;
+     
+      }
+    }
+  }
+
+  #fuegoProceso{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 100px;
+    .colUnoFuego {
+      height: 500px;
+      display: flex !important;
+      width: 100%;
+      background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+    }
+    .colDosFuego {
+      padding: 0 !important;
+    }
+  }
+
+  #lijadoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .colDosLijado {
+      width: 80% !important;
+    }
+    .colUnoLijado {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaLijado {
+        margin-left: 100px;
+        grid-column: 4/12 !important;
+        grid-row: 5/12 !important;
+      }
+      .fondoLijado {
+        margin-right: 200px;
+     
+      }
+    }
+  } 
+  
+  #piezaUnicaProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1300px !important;
+    position: relative !important;
+  }
+  
+  #hogarProceso { **/ /** SECCION ETAPA 5 "hogar" **/ /**
+    display: flex;
+    margin-top: 200px !important;
+  }
+
+  #hogarProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .colUnoHogar {
+      width: 80% !important;
+    }
+    .colDosHogar {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaHogar {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoHogar {
+        margin-left: 200px;
+     
+      }
+    }
+  }
+  
+}
+  
+@media (max-width: 768px) {
+
+  #imagenRecoleccion img{
+    width: 70% !important;
+    margin-bottom: 100px;
+  }
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoRecoleccion {
+      width: 100%;
+      padding: 0 !important;
+      .textoRecoleccion {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .imgRecoleccion {
+        margin: 50px 0;
+        width: 100%;
+      }
+      .fondoRecoleccion {
+        margin: 0;
+        padding: 0;
+        width: 0;
+     
+      }
+
+    }
+
+  }
+
+  #lijadoProceso
+  .colUnoLijado {
+    display: flex !important;
+    justify-content: center ;
+    padding: 0px !important;
+    margin: 0 0 0 60% !important;
+    width: 100% !important;
+    height: 500px !important;
+    background-color: rgba(0, 0, 0, 0);
+    .piezaLijado {
+      margin: 50px 0;
+      width: 100%;
+    }
+    .fondoLijado {
+      margin: 0;
+      padding: 0;
+      width: 0;
+   
+    }
+  }
+
+  #hogarProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoHogar {
+      width: 100%;
+      padding: 0 !important;
+      .textoHogar {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosHogar {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .piezaHogar {
+        margin: 50px 0;
+        width: 100%;
+      }
+      .fondoHogar {
+        margin: 0;
+        padding: 0;
+        width: 0;
+     
+      }
+
+    }
+
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoRecoleccion {
+      width: 100%;
+      padding: 0 !important;
+      .textoRecoleccion {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      display: flex !important;
+      justify-content: center ;
+      padding: 0px !important;
+      margin: 0 0 0 60% !important;
+      width: 100% !important;
+      height: 500px !important;
+      background-color: rgba(0, 0, 0, 0);
+      .imgRecoleccion {
+        margin: 50px 0;
+        background-image: url(../Images/proceso/sierra.png);
+        width: 100%;
+      }
+      .fondoRecoleccion {
+        margin: 0;
+        padding: 0;
+        width: 0;
+     
+      }
+
+    }
+
+  }
+}  **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #tituloProceso {
+    margin-bottom: 100px !important;
+    h1 {
+      font-size: 50px !important;
+      width: 600px !important;
+    }
+    hr {
+      width: 22% !important;
+    }
+  }
+  
+  #imagenRecoleccion img {
+    width: 70% !important;
+  }
+
+  #recoleccionProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .colUnoRecoleccion {
+      width: 80% !important;
+      padding: 0 !important;
+      margin-top: 50px;
+      .textoRecoleccion {
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .imgRecoleccion {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoRecoleccion {
+        margin-left: 200px;
+     
+      }
+    }
+  }
+
+  #fuegoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .colUnoFuego {
+      padding: 100px 0 0 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(11, 1fr) !important;
+      .imgFuego {
+        margin-left: 100px;
+        grid-column: 3/10 !important;
+        grid-row: 6/11 !important;
+      }
+      .fondoFuego {
+        margin-right: 200px;
+        grid-column: 1/10 !important;
+        grid-row: 1/9 !important;
+     
+      }
+    }
+    .colDosFuego {
+      width: 80% !important;
+      padding: 0 20px 0 60px !important;
+      margin: 50px 0;
+    }
+  } 
+
+  #lijadoProceso {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .colUnoLijado {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaLijado {
+        margin-left: 100px;
+        grid-column: 4/10 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoLijado {
+        margin-right: 200px;
+     
+      }
+    }
+    .colDosLijado {
+      width: 80% !important;
+      padding: 0 70 0 0 !important;
+      .textoLijado {
+        width: 100% !important;
+        padding: 0 0 0 0 !important;
+      }
+    }
+  } 
+  
+  #piezaUnicaProceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 100px;
+    .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
+      width: 80% !important;
+      .textoPiezaUnica {
+        width: 100% !important;
+        padding: 0 55px 0 0 !important;
+        margin: 50px 0 !important;
+      }
+
+    }
+    .colDosPiezaUnica img{ /** COLUMNA DOS LADO DERECHO (GRID)**/
+      width: 100%;
+      height: auto !important;
+      margin: 50px 0 !important;
+
+    }
+  }
+
+  
+  
+  #imagenHogar {
+    margin-top: 200px !important;
+    img {
+      width: 70% !important;
+    }
+  }
+
+  #hogarProceso {   /** SECCION ETAPA 5 "hogar" **/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoHogar {
+      width: 80% !important;
+      margin-top: 100px;
+      padding: 0 !important;
+      .textoHogar {
+        width: 80% !important;
+        padding: 0 !important;
+        p {
+          padding: 0px !important;
+        }
+      }
+    }
+    .colDosHogar {
+      padding-top: 100px !important;
+      padding-bottom: 0 !important;
+      width: 100% !important;
+      background-color: rgb(223, 223, 229);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .piezaHogar {
+        margin-left: 100px;
+        grid-column: 2/8 !important;
+        grid-row: 5/13 !important;
+      }
+      .fondoHogar {
+        margin-left: 200px;
+     
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+   
+  
+  #tituloProceso {              /** TITULO 600 **/  
+    margin-left: 50px !important;   
+    h1 {
+      font-size: 40px !important;
+      width: 400px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+  }
+}  
+ 
+
+@media (max-width: 768px) {
+
+   
+  #tituloProceso {                 /** TITULO 320 **/
+    margin-left: 20px !important;
+    h1 {
+      font-size: 30px !important;
+      width: 80% !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+    h3 {
+      font-size: 25px !important;
+    }
+  }
+  
+  
+  #imagenRecoleccion {            /** IMAGE ARBOL CAIDO **/
+    margin: 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80% !important;
+      margin-left: 20px;
+    }
+  }
+
+  #recoleccionProceso {           /** PROCESO RECOLECCION **/
+    display: flex;
+    flex-direction: column;
+
+    .colUnoRecoleccion {
+      width: 100% !important;
+      margin: 50px 0 !important;
+      padding: 0 50px !important;
+
+      .textoRecoleccion {
+        width: 80%;
+        padding: 0 !important;
+        h3 {
+          width: 100% !important;
+        }
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosRecoleccion {
+      display: flex !important;
+      justify-content: center !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      width: 100% !important;
+      height: 800px !important;
+      .imgRecoleccion {
+        padding: 0;
+        margin: 50px 0;
+        width: 80%;
+      }
+      .fondoRecoleccion {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+
+  #fuegoProceso {             /** PROCESO FUEGO **/
+    display: flex;
+    flex-direction: column-reverse;
+    .colDosFuego {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      padding: 0 50px !important;
+      h3 {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 24px !important;
+      }
+      p {
+        padding: 0 !important;
+      }
+    }
+
+    .colUnoFuego {
+      display: flex !important;
+      justify-content: center !important;
+      padding: 0px !important;
+      margin: 0 0 0 0 !important;
+      width: 100% !important;
+      height: 800px !important;
+      .imgFuego {
+        padding: 0;
+        margin: 50px 0;
+        width: 80%;
+      }
+      .fondoFuego {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  #lijadoProceso {           /** PROCESO LIJADO **/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    .colDosLijado {
+      width: 100% !important;
+      margin: 50px 0 !important;
+      padding: 0 50px !important;
+
+      .textoLijado {
+        width: 80%;
+        padding: 0 !important;
+        h3 {
+          width: 100% !important;
+        }
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
+    .colUnoLijado {
+      display: flex !important;
+      justify-content: center !important;
+      padding: 0px !important;
+      margin: 0 0 0 0 !important;
+      width: 100% !important;
+      height: 800px !important;
+      .piezaLijado {
+        padding: 0;
+        margin: 50px 0;
+        width: 80%;
+      }
+      .fondoLijado {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+
+  #piezaUnicaProceso {           /** PROCESO PIEZA UNICA **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+    position: static !important;
+    .colUnoPiezaUnica {
+      width: 100% !important;
+      margin: 50px 0 !important;
+      padding: 50px 50px !important;
+
+      .textoPiezaUnica {
+        width: 100% !important;
+        padding: 0 !important;
+        h3 {
+          width: 100% !important;
+          font-size: 24px !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosPiezaUnica {
+      display: flex !important;
+      justify-content: center !important;
+      padding: 0px !important;
+      margin: 0 0 0 0 !important;
+      width: 100% !important;
+      height: auto !important;
+      img{
+        padding: 50px 0;
+        margin: 50px 0;
+        width: 80% !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  #imagenHogar {            /** IMAGE BANCO HOGAR **/
+    margin: 50px 0 0 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80% !important;
+      margin-left: 20px;
+    }
+  }
+
+
+
+  #hogarProceso {           /** PROCESO HOGAR **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .colUnoHogar {
+      width: 100% !important;
+      margin: 50px 0 !important;
+      padding: 0 50px !important;
+
+      .textoHogar {
+        width: 80%;
+        padding: 0 !important;
+        h3 {
+          width: 100% !important;
+        }
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
+    .colDosHogar {
+      display: flex !important;
+      justify-content: center !important;
+      padding: 0px !important;
+      margin: 0 0 0 0 !important;
+      width: 100% !important;
+      height: 800px !important;
+      .piezaHogar {
+        padding: 0;
+        margin: 50px 0;
+        width: 80%;
+      }
+      .fondoHogar {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}   
