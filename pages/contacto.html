@@ -24,7 +24,7 @@
         <header id="headerPages">
             <nav class="navbar navbar-expand-lg navBarBtsPages"> <!--Clase navBarBtsPages AÑADIDA-->
                 <div class="container-fluid">
-                    <a class="navbar-brand  logoNavPages" href="#"><img src="../Images/logos/fuego-negro.png"   alt="logo"></a>                                      <!--Clase logoNavPages AÑADIDA-->
+                    <a class="navbar-brand  logoNavPages" href="../index.html"><img src="../Images/logos/fuego-negro.png"   alt="logo"></a>                                      <!--Clase logoNavPages AÑADIDA-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"     aria-label="Toggle  navigation">
                         <span class="navbar-toggler-icon hamburguesaColorPages"></span>
                     </button>                                          
@@ -55,7 +55,9 @@
         <main id="mainContacto">          <!--Pagina de CONTACTO-->
             <section id="tituloContacto"> <!--Mensaje titulo de pagina-->
                 <article class="textoTituloContacto">    
-                    <h1>Contactanos Inspiranos Activate</h1>
+                    <h1>Contactanos</h1>
+                    <h1>Inspiranos</h1>
+                    <h1>Activate</h1>
                     <h3>Envianos un mensaje con tu consulta:</>   
                 </article>
                 <article class="imagenTituloContacto">    
@@ -66,13 +68,32 @@
             <section id="cuadroContacto">
                 <article class="formCuadroContacto"> <!--Formulario de envio de consultas-->
                     <form action="#">                         
-                        <input class="nombre" type="form" placeholder="Nombre"> 
-                        <input class="apellido" type="form" placeholder="Apellido"> 
-                        <input class="email" type="email" placeholder="Email">   
-                        <input class="telefono" type="telefono" placeholder="Telefono">
-                        <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="10"> 
-                        </textarea>  
-                        <input class="enviar" type="submit" value="Enviar"> 
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="form" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                          </div>  
+
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="form" class="form-control" id="exampleFormControlInput1" placeholder="Localidad">
+                          </div>  
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Consulta..."></textarea>
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </div>
                     </form>
                 </article>
                 <article class="datosCuadroContacto">

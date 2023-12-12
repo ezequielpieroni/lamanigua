@@ -1,20 +1,20 @@
 
 /**------Pages--------**/
-@import "reset";
+@import "./reset";
 
 /**------Pages--------**/
-@import "./Pages-estilos/index/index";
+@import "./index";
 @import "./Pages-estilos/piezas/piezas";
-@import "./Pages-estilos/Proceso/proceso";
+@import "./Pages-estilos/proceso/proceso";
 @import "./Pages-estilos/nosotros/nosotros";
 @import "./Pages-estilos/contacto/contacto";
 
 /**----Navegadores----**/
-@import "navegadores";
+@import "./navegadores";
 
 /**----Footer---------**/
-@import "footer";
+@import "./footer";
 
 /**---Icono Whatsapp--**/
-@import "iconfixed";
+@import "./iconfixed";
 

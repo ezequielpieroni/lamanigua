@@ -2,36 +2,110 @@
 /**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
 #mainNosotros {
     margin-top: 100px;
+    .lineas {
+        margin: 200px 0;
+        .textos {       /**CAJAS DE TEXTOS**/
+            width: 400px;
+            height: 400px;
+            margin: 20px 0px;
+            h3 {
+                width: 100% !important;
+            }
+            p { /**PARRAFOS**/
+                text-align: justify;
+                width: 100%;
+                height: auto;
+                line-height: 2;
+                margin-top: 40px;
+            }
+        }
+
     }
-    
-    .lineas {          /**SECCIONES DEVIDIDAS EN LINEAS**/
-    display: flex;
-    margin: 200px;
-    justify-content: space-around;
+    #lineaUnoNosotros {
+        margin-top: 300px;
     }
-    
-    #mainNosotros img { /**IMAGENES**/
-    width: 400px;
-    height: 400px;
+
+    img {               /**IMAGENES**/
+        width: 400px;
+        height: 400px;
     }
-    
-    .textos {       /**CAJAS DE TEXTOS**/
-    width: 400px;
-    height: 400px;
+   
+    #lineaUnoNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-    
-    #mainNosotros p { /**PARRAFOS**/
-    width: 400px;
-    height: 400px;
-    line-height: 1.8;
-    margin-top: 40px;
+    #lineaDosNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
     }
+    #lineaTresNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #lineaCuatroNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+    #lineaCincoNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #lineaSeisNosotros{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
     
     .textoCuatroNosotros h3,  /**TITULOS GRANDES**/
-    .textoCincoNosotros h3 {
-    width: 400px;
-    font-size: 45px;
+    .textoCincoNosotros h3,  /**TITULOS GRANDES**/
+    .textoSeisNosotros h3 {
+        font-size: 45px;
     }
+
+}
+
     
+    /**-------CONTENIDO NOSOTROS --------**/
+@media (max-width: 600px) {
+    #mainNosotros {
+        .lineas {
+            margin-bottom: 50px !important;
+            margin: 0 50px;
+            .imagenNosotros img{
+                width: 100% !important;
+                height: auto;
+            }
+            .textos {       /**CAJAS DE TEXTOS**/
+                width: 100%;
+                height: auto;
+
+
+            }
+        }
+        #lineaSeisNosotros {
+            padding: 0 !important;
+            margin: 0 !important;
+            .textoSeisNosotros {
+                margin: 50px;       
+            }
+        }
+
+    }
+}
+
+@media (max-width: 300px) {
+    .textoCuatroNosotros h3,  /**TITULOS GRANDES**/
+    .textoCincoNosotros h3,  /**TITULOS GRANDES**/
+    .textoSeisNosotros h3 {
+        font-size: 30px !important;
+    }
+}
+
     
     

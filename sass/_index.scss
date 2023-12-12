@@ -23,6 +23,8 @@
     margin-top: 50px;
 }
 
+
+
 /**-----------------------------FRASE INDEX-----------------------------------------------------------------------------**/
 
 #frase { /** SECCION FRASE **/
@@ -161,22 +163,26 @@ padding: 200px 50px 250px 20px;
   }
 
 
-/**-------------CONTENIDO INDEX  ------------**/
+
+
+  /**-------------CONTENIDO INDEX  ------------**/
 
 
 @media (max-width: 700px) {
+
+
 .parrafoFilosofia,
 .parrafoTecnica {
-  width: 100%;
+  width: 100% !important;
 }
 }
 @media (max-width: 500px) {
 .cuencoTecnica img {
-  width: 100%;
+  width: 100% !important;
   height: auto;
 }
 .troncoFilosofia img {
-  width: 100%;
+  width: 100% !important;
   height: auto;
   padding-right: 30px;
 }

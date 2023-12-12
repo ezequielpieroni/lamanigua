@@ -358,6 +358,19 @@ main {
   margin-top: 100px;
   /**--- ETAPA 1 PROCESO RECOLECCION---------------------------**/
   /**--- ETAPA 2 PROCESO FUEGO------------------------------**/
+  /** #bancoQuemado { /** IMAGEN BANCO TERMINADO **/ /**
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  img {
+    width: 600px;
+    height: auto;
+    position: relative;
+    z-index: 200;
+
+  }
+
+}**/
   /**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
   /**--- ETAPA 4 PROCESO PIEZA UNICA------------------------------**/
   /**--- ETAPA 5 PROCESO HOGAR---------------------------**/
@@ -462,7 +475,7 @@ main {
 }
 #mainProceso #fuegoProceso .colUnoFuego .imgFuego { /** IMAGEN FUEGO **/
   position: relative;
-  background-image: url(../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+  background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
   background-size: cover;
   grid-column: 5/13;
   grid-row: 7/14;
@@ -668,7 +681,7 @@ main {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #tituloProceso {
-    margin-bottom: 400px !important;
+    margin-bottom: 100px !important;
   }
   #tituloProceso h1 {
     font-size: 50px !important;
@@ -832,8 +845,20 @@ main {
     margin-left: 200px;
   }
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  #tituloProceso { /** TITULO 600 **/
+    margin-left: 50px !important;
+  }
+  #tituloProceso h1 {
+    font-size: 40px !important;
+    width: 400px !important;
+  }
+  #tituloProceso hr {
+    width: 30% !important;
+  }
+}
 @media (max-width: 768px) {
-  #tituloProceso {
+  #tituloProceso { /** TITULO 320 **/
     margin-left: 20px !important;
   }
   #tituloProceso h1 {
@@ -1066,143 +1091,40 @@ main {
     height: 0;
   }
 }
-/**-------TITULO RESPONSIVE-----**/
-@media (min-width: 600px) and (max-width: 768px) {
-  #tituloProceso { /** TITULO 600 **/
-    margin-bottom: 100px;
-  }
-  #tituloProceso h1 {
-    font-size: 40px !important;
-    width: 450px !important;
-  }
-  #tituloProceso hr {
-    width: 30% !important;
-  }
-}
-@media (min-width: 480px) and (max-width: 600px) {
-  #tituloPiezas {
-    margin-left: 20px;
-  }
-  #tituloPiezas h1 {
-    font-size: 30px;
-    width: 250px;
-  }
-  #tituloPiezas hr {
-    width: 30%;
-  }
-  #tituloPiezas h3 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 320px) {
-  #tituloPiezas {
-    margin-left: 20px;
-  }
-  #tituloPiezas h1 {
-    font-size: 30px;
-    width: 80%;
-  }
-  #tituloPiezas hr {
-    width: 50%;
-  }
-  #tituloPiezas h3 {
-    font-size: 25px;
-  }
-}
 /**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
 #mainNosotros {
   margin-top: 100px;
 }
-#mainNosotros .lineas {
-  margin: 200px 0;
+
+.lineas { /**SECCIONES DEVIDIDAS EN LINEAS**/
+  display: flex;
+  margin: 200px;
+  justify-content: space-around;
 }
-#mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
-  width: 400px;
-  height: 400px;
-  margin: 20px 0px;
-}
-#mainNosotros .lineas .textos h3 {
-  width: 100% !important;
-}
-#mainNosotros .lineas .textos p { /**PARRAFOS**/
-  text-align: justify;
-  width: 100%;
-  height: auto;
-  line-height: 2;
-  margin-top: 40px;
-}
-#mainNosotros #lineaUnoNosotros {
-  margin-top: 300px;
-}
+
 #mainNosotros img { /**IMAGENES**/
   width: 400px;
   height: 400px;
 }
-#mainNosotros #lineaUnoNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+
+.textos { /**CAJAS DE TEXTOS**/
+  width: 400px;
+  height: 400px;
 }
-#mainNosotros #lineaDosNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
+
+#mainNosotros p { /**PARRAFOS**/
+  width: 400px;
+  height: 400px;
+  line-height: 1.8;
+  margin-top: 40px;
 }
-#mainNosotros #lineaTresNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#mainNosotros #lineaCuatroNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-}
-#mainNosotros #lineaCincoNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#mainNosotros #lineaSeisNosotros {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-}
-#mainNosotros .textoCuatroNosotros h3,
-#mainNosotros .textoCincoNosotros h3,
-#mainNosotros .textoSeisNosotros h3 {
+
+.textoCuatroNosotros h3,
+.textoCincoNosotros h3 {
+  width: 400px;
   font-size: 45px;
 }
 
-/**-------CONTENIDO NOSOTROS --------**/
-@media (max-width: 600px) {
-  #mainNosotros .lineas {
-    margin-bottom: 50px !important;
-    margin: 0 50px;
-  }
-  #mainNosotros .lineas .imagenNosotros img {
-    width: 100% !important;
-    height: auto;
-  }
-  #mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
-    width: 100%;
-    height: auto;
-  }
-  #mainNosotros #lineaSeisNosotros {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  #mainNosotros #lineaSeisNosotros .textoSeisNosotros {
-    margin: 50px;
-  }
-}
-@media (max-width: 300px) {
-  .textoCuatroNosotros h3,
-  .textoCincoNosotros h3,
-  .textoSeisNosotros h3 {
-    font-size: 30px !important;
-  }
-}
 /**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
 #mainContacto {
   margin-top: 100px;
@@ -1211,7 +1133,7 @@ main {
 }
 #mainContacto #tituloContacto {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #mainContacto #tituloContacto .textoTituloContacto { /**CAJA TITULO**/
   margin: 50px;
@@ -1220,130 +1142,44 @@ main {
   text-align: left;
   font-size: 80px;
   line-height: 1.4;
-  margin-left: 100px;
+  margin-left: 200px;
   font-weight: 600;
 }
 #mainContacto #tituloContacto .textoTituloContacto h3 { /**SUBTITULO**/
   text-align: left;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 40px;
   font-size: 20px;
   font-weight: 100;
 }
 #mainContacto #tituloContacto .imagenTituloContacto img { /**IMAGEN TITULO**/
-  width: 500px;
   height: 550px;
+  width: 500px;
 }
 #mainContacto #cuadroContacto {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 100px 0;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-#mainContacto #cuadroContacto .formCuadroContacto { /**FORMULARIO**/
+#mainContacto #cuadroContacto .formCuadroContacto form { /**FORMULARIO**/
   display: flex;
   flex-direction: column;
-  width: 500px;
-  margin: 50px;
 }
 #mainContacto #cuadroContacto .datosCuadroContacto { /**DATOS DE CONTACTO**/
-  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#mainContacto #cuadroContacto .datosCuadroContacto h3 {
-  font-size: larger;
-  display: flex;
+  justify-content: space-around;
+  background-color: rgb(44, 42, 42);
 }
 #mainContacto #cuadroContacto .datosCuadroContacto img {
   width: 40px;
   height: auto;
-  margin: 50px 0;
 }
 #mainContacto #mapaContacto {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-/**-------------------------------CONTACTOS RESPONSIVE-------------------------------------------------------------------**/
-@media (max-width: 1240px) {
-  #tituloContacto .textoTituloContacto h1,
-  .textoTituloContacto h3 {
-    margin-left: 50px;
-  }
-  .imagenTituloContacto img {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-@media (max-width: 1024px) {
-  #tituloContacto {
-    flex-wrap: wrap;
-  }
-  #tituloContacto .imagenTituloContacto img {
-    display: none;
-  }
-}
-@media (max-width: 1024px) { /** TITULO 1024 **/
-  .textoTituloContacto {
-    margin-left: 0 !important;
-  }
-  .textoTituloContacto h1 {
-    font-size: 70px !important;
-    width: 600px;
-  }
-}
-@media (max-width: 600px) { /** TITULO 600 **/
-  .textoTituloContacto h1 {
-    font-size: 50px !important;
-    width: 350px;
-  }
-}
-@media (max-width: 480px) { /** TITULO 480 **/
-  .textoTituloContacto {
-    margin-left: 10px !important;
-    margin-top: 100px !important;
-  }
-  .textoTituloContacto h1 {
-    font-size: 35px !important;
-    width: 250px;
-    margin-left: 20px !important;
-  }
-  .textoTituloContacto h3 {
-    font-size: 25px;
-    margin-left: 20px !important;
-  }
-  #cuadroContacto {
-    margin-top: 50px;
-  }
-  #cuadroContacto .datosCuadroContacto h3 {
-    margin: 0 20px;
-  }
-  #mapaContacto {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-@media (max-width: 320px) { /** TITULO 320 **/
-  .textoTituloContacto {
-    margin-right: 5px !important;
-  }
-  .textoTituloContacto h1 {
-    font-size: 30px;
-    width: 100% !important;
-  }
-  .textoTituloContacto h3 {
-    font-size: 25px;
-  }
-  #mapaContacto {
-    display: flex;
-    justify-content: center;
-    width: 80% !important;
-  }
-}
 /**----Navegadores----**/
 /**----------------------------NAV GERERAL--------------------------------------------------------------------------------------------------**/
 .navbar-toggler { /**MENU HAMBURGUESA SIN BORDES**/
@@ -1707,4 +1543,4 @@ main {
   height: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */

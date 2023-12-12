@@ -120,7 +120,7 @@
               
       .imgFuego { /** IMAGEN FUEGO **/
         position: relative;
-        background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+        background-image: url(../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
         background-size: cover;
         grid-column: 5/13;
         grid-row: 7/14;
@@ -163,19 +163,7 @@
     }
   }
 
-  /** #bancoQuemado { /** IMAGEN BANCO TERMINADO **/   /**
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    img {
-      width: 600px;
-      height: auto;
-      position: relative;
-      z-index: 200;
 
-    }
-    
-  }**/
 
 /**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
 
@@ -362,327 +350,6 @@
 
 
 
-/**-------------------------------PROCESO RESPONSIVE---------------------------------------------------------------**/
-/**
-
-@media (max-width: 1024px) { /** TITULO 1024 **/ /**
-  #tituloProceso {
-    margin-bottom: 100px !important;
-    h1 {
-      font-size: 50px !important;
-      width: 600px !important;
-    }
-    hr {
-      width: 22% !important;
-    }
-  }
-}
-
-@media (max-width: 768px) { /** TITULO 768 **/ /**
-  #tituloProceso {
-    margin-bottom: 100px !important;
-    h1 {
-      font-size: 35px !important;
-      width: 450px !important;
-    }
-    hr {
-      width: 30% !important;
-    }
-  }
-}
-
-
-
-@media (max-width: 480px) { /** TITULO 480 **/  /**
-  #tituloProceso {
-    margin-left: 20px !important;
-    h1 {
-      font-size: 30px !important;
-      width: 260px !important;
-    }
-    hr {
-      width: 30% !important;
-    }
-    h3 {
-      font-size: 25px !important;
-    }
-  }
-}   
-
-
-/**-------CONTENIDO PROCESO --------**/  /**
-
-
-
-@media (max-width: 1023px) {
-  
-  #imagenRecoleccion img {
-    width: 70% !important;
-  }
-
-  #recoleccionProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .colUnoRecoleccion {
-      width: 80% !important;
-    }
-    .colDosRecoleccion {
-      padding-top: 100px !important;
-      padding-bottom: 0 !important;
-      width: 100% !important;
-      background-color: rgb(223, 223, 229);
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
-      .imgRecoleccion {
-        margin-left: 100px;
-        grid-column: 2/8 !important;
-        grid-row: 5/13 !important;
-      }
-      .fondoRecoleccion {
-        margin-left: 200px;
-     
-      }
-    }
-  }
-
-  #fuegoProceso{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 100px;
-    .colUnoFuego {
-      height: 500px;
-      display: flex !important;
-      width: 100%;
-      background-image: url(../../../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
-    }
-    .colDosFuego {
-      padding: 0 !important;
-    }
-  }
-
-  #lijadoProceso {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    .colDosLijado {
-      width: 80% !important;
-    }
-    .colUnoLijado {
-      padding-top: 100px !important;
-      padding-bottom: 0 !important;
-      width: 100% !important;
-      background-color: rgb(223, 223, 229);
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
-      .piezaLijado {
-        margin-left: 100px;
-        grid-column: 4/12 !important;
-        grid-row: 5/12 !important;
-      }
-      .fondoLijado {
-        margin-right: 200px;
-     
-      }
-    }
-  } 
-  
-  #piezaUnicaProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1300px !important;
-    position: relative !important;
-  }
-  
-  #hogarProceso { **/ /** SECCION ETAPA 5 "hogar" **/ /**
-    display: flex;
-    margin-top: 200px !important;
-  }
-
-  #hogarProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .colUnoHogar {
-      width: 80% !important;
-    }
-    .colDosHogar {
-      padding-top: 100px !important;
-      padding-bottom: 0 !important;
-      width: 100% !important;
-      background-color: rgb(223, 223, 229);
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
-      .piezaHogar {
-        margin-left: 100px;
-        grid-column: 2/8 !important;
-        grid-row: 5/13 !important;
-      }
-      .fondoHogar {
-        margin-left: 200px;
-     
-      }
-    }
-  }
-  
-}
-  
-@media (max-width: 768px) {
-
-  #imagenRecoleccion img{
-    width: 70% !important;
-    margin-bottom: 100px;
-  }
-
-  #recoleccionProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .colUnoRecoleccion {
-      width: 100%;
-      padding: 0 !important;
-      .textoRecoleccion {
-        padding: 0 !important;
-        p {
-          padding: 0 !important;
-        }
-      }
-    }
-    .colDosRecoleccion {
-      display: flex !important;
-      justify-content: center ;
-      padding: 0px !important;
-      margin: 0 0 0 60% !important;
-      width: 100% !important;
-      height: 500px !important;
-      background-color: rgba(0, 0, 0, 0);
-      .imgRecoleccion {
-        margin: 50px 0;
-        width: 100%;
-      }
-      .fondoRecoleccion {
-        margin: 0;
-        padding: 0;
-        width: 0;
-     
-      }
-
-    }
-
-  }
-
-  #lijadoProceso
-  .colUnoLijado {
-    display: flex !important;
-    justify-content: center ;
-    padding: 0px !important;
-    margin: 0 0 0 60% !important;
-    width: 100% !important;
-    height: 500px !important;
-    background-color: rgba(0, 0, 0, 0);
-    .piezaLijado {
-      margin: 50px 0;
-      width: 100%;
-    }
-    .fondoLijado {
-      margin: 0;
-      padding: 0;
-      width: 0;
-   
-    }
-  }
-
-  #hogarProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .colUnoHogar {
-      width: 100%;
-      padding: 0 !important;
-      .textoHogar {
-        padding: 0 !important;
-        p {
-          padding: 0 !important;
-        }
-      }
-    }
-    .colDosHogar {
-      display: flex !important;
-      justify-content: center ;
-      padding: 0px !important;
-      margin: 0 0 0 60% !important;
-      width: 100% !important;
-      height: 500px !important;
-      background-color: rgba(0, 0, 0, 0);
-      .piezaHogar {
-        margin: 50px 0;
-        width: 100%;
-      }
-      .fondoHogar {
-        margin: 0;
-        padding: 0;
-        width: 0;
-     
-      }
-
-    }
-
-  }
-}
-
-
-@media (max-width: 600px) {
-
-  #recoleccionProceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .colUnoRecoleccion {
-      width: 100%;
-      padding: 0 !important;
-      .textoRecoleccion {
-        padding: 0 !important;
-        p {
-          padding: 0 !important;
-        }
-      }
-    }
-    .colDosRecoleccion {
-      display: flex !important;
-      justify-content: center ;
-      padding: 0px !important;
-      margin: 0 0 0 60% !important;
-      width: 100% !important;
-      height: 500px !important;
-      background-color: rgba(0, 0, 0, 0);
-      .imgRecoleccion {
-        margin: 50px 0;
-        background-image: url(../Images/proceso/sierra.png);
-        width: 100%;
-      }
-      .fondoRecoleccion {
-        margin: 0;
-        padding: 0;
-        width: 0;
-     
-      }
-
-    }
-
-  }
-}  **/
-
-
-
-
-
-
-
 
 
 
@@ -695,7 +362,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
   #tituloProceso {
-    margin-bottom: 100px !important;
+    margin-bottom: 400px !important;
     h1 {
       font-size: 50px !important;
       width: 600px !important;
@@ -897,35 +564,10 @@
 
 
 
-
-
-
-
-
-
-
-
-@media (min-width: 600px) and (max-width: 768px) {
-
-   
-  
-  #tituloProceso {              /** TITULO 600 **/  
-    margin-left: 50px !important;   
-    h1 {
-      font-size: 40px !important;
-      width: 400px !important;
-    }
-    hr {
-      width: 30% !important;
-    }
-  }
-}  
- 
-
 @media (max-width: 768px) {
 
    
-  #tituloProceso {                 /** TITULO 320 **/
+  #tituloProceso {                
     margin-left: 20px !important;
     h1 {
       font-size: 30px !important;
@@ -1176,3 +818,67 @@
     }
   }
 }   
+
+
+
+
+
+
+
+
+
+
+
+/**-------TITULO RESPONSIVE-----**/
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+   
+  
+  #tituloProceso {              /** TITULO 600 **/ 
+    margin-bottom: 100px;
+
+    h1 {
+      font-size: 40px !important;
+      width: 450px !important;
+    }
+    hr {
+      width: 30% !important;
+    }
+  }
+}  
+
+@media (min-width: 480px) and (max-width: 600px) {
+  #tituloPiezas {
+    margin-left: 20px;
+    h1 {
+      font-size: 30px;
+      width: 250px;
+    }
+    hr {
+      width: 30%;
+    }
+    h3 {
+      font-size: 25px;
+    }  
+  }
+}
+
+@media (max-width: 320px) { 
+  #tituloPiezas {
+    margin-left: 20px;
+    h1 {
+      font-size: 30px;
+      width: 80%;
+    }
+    hr {
+      width: 50%;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+ 
+

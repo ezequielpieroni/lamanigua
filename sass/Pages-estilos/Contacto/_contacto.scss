@@ -9,54 +9,154 @@
     color: rgb(255, 255, 255);
     #tituloContacto {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+
       .textoTituloContacto { /**CAJA TITULO**/
         margin: 50px;
         h1 { /**TITULO**/
           text-align: left;
           font-size: 80px;
           line-height: 1.4;
-          margin-left: 200px;
+          margin-left: 100px;
           font-weight: 600;
         }
         h3 { /**SUBTITULO**/
           text-align: left;
-          margin-left: 200px;
+          margin-left: 100px;
           margin-top: 40px;
           font-size: 20px;
           font-weight: 100;
         }
       }
       .imagenTituloContacto img { /**IMAGEN TITULO**/
-        height: 550px;
         width: 500px;
+        height: 550px;
       }
     }
     #cuadroContacto {
       display: flex;
-      justify-content: center;
-      .formCuadroContacto form { /**FORMULARIO**/
+      justify-content: space-around;
+      width: 100%;
+      margin: 100px 0;
+      flex-wrap: wrap;
+      .formCuadroContacto { /**FORMULARIO**/
         display: flex;
         flex-direction: column;
+        width: 500px;
+        margin: 50px;
       }
       .datosCuadroContacto { /**DATOS DE CONTACTO**/
+        width: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        background-color: rgb(44, 42, 42);
+        h3 {
+          font-size: larger;
+          display: flex;
+        }
         img {
           width: 40px;
           height: auto;
+          margin: 50px 0;        
         }
       }
     }
     #mapaContacto {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
+
+
+    
   
   
-  
-  
+
+/**-------------------------------CONTACTOS RESPONSIVE-------------------------------------------------------------------**/
+
+
+@media (max-width: 1240px) {
+  #tituloContacto 
+    .textoTituloContacto h1,
+    .textoTituloContacto h3{
+      margin-left: 50px ;
+    }
+    .imagenTituloContacto img{
+    width: 100% !important;
+    height: auto !important;
+    
+  }
+} 
+
+@media (max-width: 1024px) {
+  #tituloContacto {
+    flex-wrap: wrap;
+    .imagenTituloContacto img{
+      display: none;
+    }
+  }
+} 
+
+
+@media (max-width: 1024px) { /** TITULO 1024 **/
+    .textoTituloContacto {
+      margin-left: 0 !important;
+      h1 {
+        font-size: 70px !important;
+        width: 600px;
+      }
+    }
+}
+
+@media (max-width: 600px) { /** TITULO 600 **/
+  .textoTituloContacto h1 {
+    font-size: 50px !important;
+    width: 350px;
+  }
+}
+
+@media (max-width: 480px) { /** TITULO 480 **/
+  .textoTituloContacto {
+    margin-left: 10px !important;
+    margin-top: 100px !important;
+    h1 {
+    font-size: 35px !important;
+    width: 250px;
+    margin-left: 20px !important;
+    }
+    h3 {
+      font-size: 25px;
+      margin-left: 20px  !important;
+    }  
+  }
+  #cuadroContacto {
+    margin-top: 50px;
+    .datosCuadroContacto h3 {
+      margin: 0 20px;
+    }
+  }
+
+  #mapaContacto {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 320px) { /** TITULO 320 **/
+  .textoTituloContacto {
+    margin-right: 5px !important;
+    h1 {
+      font-size: 30px;
+      width: 100% !important;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+   #mapaContacto { 
+    display: flex;
+    justify-content: center;
+    width: 80% !important;
+   }
+}
