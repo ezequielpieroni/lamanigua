@@ -4,69 +4,69 @@
 /**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
 
 #mainContacto {
-    margin-top: 100px;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    #tituloContacto {
-      display: flex;
-      justify-content: space-between;
+  margin-top: 100px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  #tituloContacto {
+    display: flex;
+    justify-content: space-between;
 
-      .textoTituloContacto { /**CAJA TITULO**/
-        margin: 50px;
-        h1 { /**TITULO**/
-          text-align: left;
-          font-size: 80px;
-          line-height: 1.4;
-          margin-left: 100px;
-          font-weight: 600;
-        }
-        h3 { /**SUBTITULO**/
-          text-align: left;
-          margin-left: 100px;
-          margin-top: 40px;
-          font-size: 20px;
-          font-weight: 100;
-        }
+    .textoTituloContacto { /**CAJA TITULO**/
+      margin: 50px;
+      h1 { /**TITULO**/
+        text-align: left;
+        font-size: 80px;
+        line-height: 1.4;
+        margin-left: 100px;
+        font-weight: 600;
       }
-      .imagenTituloContacto img { /**IMAGEN TITULO**/
-        width: 500px;
-        height: 550px;
+      h3 { /**SUBTITULO**/
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 100;
       }
     }
-    #cuadroContacto {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      margin: 100px 0;
-      flex-wrap: wrap;
-      .formCuadroContacto { /**FORMULARIO**/
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        margin: 50px;
-      }
-      .datosCuadroContacto { /**DATOS DE CONTACTO**/
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3 {
-          font-size: larger;
-          display: flex;
-        }
-        img {
-          width: 40px;
-          height: auto;
-          margin: 50px 0;        
-        }
-      }
-    }
-    #mapaContacto {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    .imagenTituloContacto img { /**IMAGEN TITULO**/
+      width: 500px;
+      height: 550px;
     }
   }
+  #cuadroContacto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 100px 0;
+    flex-wrap: wrap;
+    .formCuadroContacto { /**FORMULARIO**/
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      margin: 50px;
+    }
+    .datosCuadroContacto { /**DATOS DE CONTACTO**/
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: larger;
+        display: flex;
+      }
+      img {
+        width: 40px;
+        height: auto;
+        margin: 50px 0;        
+      }
+    }
+  }
+  #mapaContacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 
     

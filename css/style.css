@@ -1117,9 +1117,9 @@ main {
   margin: 200px 0;
 }
 #mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
-  width: 400px;
-  height: 400px;
-  margin: 20px 0px;
+  width: 500px;
+  height: auto;
+  margin: 20px;
 }
 #mainNosotros .lineas .textos h3 {
   width: 100% !important;
@@ -1135,8 +1135,9 @@ main {
   margin-top: 300px;
 }
 #mainNosotros img { /**IMAGENES**/
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: auto;
+  margin: 20px;
 }
 #mainNosotros #lineaUnoNosotros {
   display: flex;
@@ -1178,10 +1179,14 @@ main {
 @media (max-width: 600px) {
   #mainNosotros .lineas {
     margin-bottom: 50px !important;
-    margin: 0 50px;
+    margin: 0 10px;
+  }
+  #mainNosotros .lineas .imagenNosotros {
+    display: flex;
+    justify-content: center;
   }
   #mainNosotros .lineas .imagenNosotros img {
-    width: 100% !important;
+    width: 80% !important;
     height: auto;
   }
   #mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
