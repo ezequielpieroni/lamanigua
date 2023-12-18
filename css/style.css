@@ -386,6 +386,7 @@ main {
 }
 #mainProceso #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
   margin-left: 100px;
+  margin-top: 200px;
 }
 #mainProceso #imagenRecoleccion img {
   width: 50%;
@@ -1131,15 +1132,13 @@ main {
   line-height: 2;
   margin-top: 40px;
 }
-#mainNosotros #lineaUnoNosotros {
-  margin-top: 300px;
-}
 #mainNosotros img { /**IMAGENES**/
   width: 500px;
   height: auto;
   margin: 20px;
 }
 #mainNosotros #lineaUnoNosotros {
+  margin-top: 300px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1175,7 +1174,7 @@ main {
   font-size: 45px;
 }
 
-/**-------CONTENIDO NOSOTROS --------**/
+/**-------CONTENIDO NOSOTROS  MEDIA QUERIES--------**/
 @media (max-width: 600px) {
   #mainNosotros .lineas {
     margin-bottom: 50px !important;
@@ -1193,12 +1192,22 @@ main {
     width: 100%;
     height: auto;
   }
-  #mainNosotros #lineaSeisNosotros {
-    padding: 0 !important;
+  #mainNosotros #lineaSeisNosotros .imagenNosotros {
+    width: 100% !important;
+  }
+  #mainNosotros #lineaSeisNosotros .imagenNosotros img {
+    width: 100% !important;
     margin: 0 !important;
   }
   #mainNosotros #lineaSeisNosotros .textoSeisNosotros {
     margin: 50px;
+  }
+  #mainNosotros #lineaSeisNosotros .textoSeisNosotros h3 {
+    width: 100% !important;
+    font-size: 38px;
+  }
+  #mainNosotros #lineaSeisNosotros .textoSeisNosotros p {
+    width: 100% !important;
   }
 }
 @media (max-width: 300px) {
@@ -1298,7 +1307,7 @@ main {
   }
   .textoTituloContacto h1 {
     font-size: 70px !important;
-    width: 600px;
+    width: 450px;
   }
 }
 @media (max-width: 600px) { /** TITULO 600 **/
@@ -1342,11 +1351,6 @@ main {
   }
   .textoTituloContacto h3 {
     font-size: 25px;
-  }
-  #mapaContacto {
-    display: flex;
-    justify-content: center;
-    width: 80% !important;
   }
 }
 /**----Navegadores----**/

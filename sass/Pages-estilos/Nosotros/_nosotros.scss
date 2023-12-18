@@ -21,36 +21,40 @@
         }
 
     }
-    #lineaUnoNosotros {
-        margin-top: 300px;
-    }
 
     img {               /**IMAGENES**/
         width: 500px;
         height: auto;
         margin: 20px;
     }
-   
-    #lineaUnoNosotros{
+
+
+    #lineaUnoNosotros {
+        margin-top: 300px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
+  
     #lineaDosNosotros{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap-reverse;
     }
+
     #lineaTresNosotros{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     #lineaCuatroNosotros{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap-reverse;
     }
+
     #lineaCincoNosotros{
         display: flex;
         justify-content: space-around;
@@ -72,7 +76,9 @@
 }
 
     
-    /**-------CONTENIDO NOSOTROS --------**/
+    /**-------CONTENIDO NOSOTROS  MEDIA QUERIES--------**/
+
+
 @media (max-width: 600px) {
     #mainNosotros {
         .lineas {
@@ -96,10 +102,23 @@
             }
         }
         #lineaSeisNosotros {
-            padding: 0 !important;
-            margin: 0 !important;
+
+            .imagenNosotros {
+                width: 100% !important;
+                img {
+                    width: 100% !important;
+                    margin: 0 !important;
+                }
+            }
             .textoSeisNosotros {
-                margin: 50px;       
+                margin: 50px; 
+                h3 {
+                    width: 100% !important;
+                    font-size: 38px;
+                }   
+                p {
+                    width: 100% !important;
+                }       
             }
         }
 
