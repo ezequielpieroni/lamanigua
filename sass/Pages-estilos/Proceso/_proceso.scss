@@ -18,7 +18,7 @@
       font-weight: 600;
     }
     hr {
-      width: 20%;
+      width: 15%;
       text-align: right;
       margin: 40px 0;
     }
@@ -36,7 +36,6 @@
 
   #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
     margin-left: 100px;
-    margin-top: 200px;
     img {
       width: 50%;
       height: auto;
@@ -84,7 +83,7 @@
       grid-template-rows: repeat(12, 1fr);
       margin-top: 110px;
       padding-bottom: 100px;
-      .imgRecoleccion { /** IMAGEN DE CORTE **/
+      .piezaRecoleccion { /** IMAGEN DE CORTE **/
         position: relative;
         background-image: url(../Images/proceso/sierra.png);
         background-size: cover;
@@ -121,10 +120,10 @@
               
       .imgFuego { /** IMAGEN FUEGO **/
         position: relative;
-        background-image: url(../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+        background-image: url(../Images/proceso/acercamiento-vertical-hoguera-hermosa-llama-naranja.jpg);
         background-size: cover;
         grid-column: 5/13;
-        grid-row: 7/14;
+        grid-row: 3/14;
         z-index: 50;
         background-size: contain;
         background-repeat: no-repeat;
@@ -133,7 +132,7 @@
       .fondoFuego { /** FONDO COLOR **/
         position: relative;
         grid-column: 1/10;
-        grid-row: 1/11;
+        grid-row: 1/8;
         background-color: rgb(54, 52, 51);
       }
     }
@@ -183,7 +182,7 @@
         background-image: url(../Images/proceso/lijado.jpg);
         background-size: cover;
         grid-column: 7/13;
-        grid-row: 6/14;
+        grid-row: 5/13;
         z-index: 50;
         background-size: contain;
         background-repeat: no-repeat;
@@ -191,7 +190,7 @@
       .fondoLijado { /** FONDO COLOR **/
         position: relative;
         grid-column: 1/10;
-        grid-row: 1/9;
+        grid-row: 1/8;
         background-color: rgb(54, 52, 51);
       }
     }
@@ -399,7 +398,7 @@
       background-color: rgb(223, 223, 229);
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
-      .imgRecoleccion {
+      .piezaRecoleccion {
         margin-left: 100px;
         grid-column: 2/8 !important;
         grid-row: 5/13 !important;
@@ -415,27 +414,28 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin: 150px 0;
     .colUnoFuego {
-      padding: 100px 0 0 0 !important;
+      padding: 0 !important;
       width: 100% !important;
       background-color: rgb(223, 223, 229);
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(11, 1fr) !important;
       .imgFuego {
         margin-left: 100px;
-        grid-column: 3/10 !important;
+        grid-column: 4/11 !important;
         grid-row: 6/11 !important;
       }
       .fondoFuego {
         margin-right: 200px;
         grid-column: 1/10 !important;
-        grid-row: 1/9 !important;
+        grid-row: 3/9 !important;
      
       }
     }
     .colDosFuego {
       width: 80% !important;
-      padding: 0 20px 0 60px !important;
+      padding: 0 0px 0 60px !important;
       margin: 50px 0;
     }
   } 
@@ -463,7 +463,7 @@
     }
     .colDosLijado {
       width: 80% !important;
-      padding: 0 70 0 0 !important;
+      padding: 0 20px 60px 0 !important;
       .textoLijado {
         width: 100% !important;
         padding: 0 0 0 0 !important;
@@ -479,6 +479,7 @@
     position: static !important;
     width: 100% !important;
     height: auto !important;
+    padding-top: 50px;
     padding-bottom: 100px;
     .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
       width: 80% !important;
@@ -591,12 +592,14 @@
     img {
       width: 80% !important;
       margin-left: 20px;
+      
     }
   }
 
   #recoleccionProceso {           /** PROCESO RECOLECCION **/
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
     .colUnoRecoleccion {
       width: 100% !important;
@@ -621,13 +624,15 @@
       padding: 0px !important;
       margin: 0px !important;
       width: 100% !important;
-      height: 800px !important;
-      .imgRecoleccion {
+      height: 500px !important;
+      .piezaRecoleccion {
         padding: 0;
-        margin: 50px 0;
+        margin: 0;
         width: 80%;
+        
       }
       .fondoRecoleccion {
+        background-image: none;
         margin: 0;
         padding: 0;
         width: 0;
@@ -645,6 +650,7 @@
       padding: 0 !important;
       width: 100% !important;
       padding: 0 50px !important;
+      margin-bottom: 50px !important;
       h3 {
         padding: 0 !important;
         margin: 0 !important;
@@ -659,12 +665,12 @@
       display: flex !important;
       justify-content: center !important;
       padding: 0px !important;
-      margin: 0 0 0 0 !important;
+      margin: 0 0 50px 0 !important;
       width: 100% !important;
-      height: 800px !important;
+      height: 500px !important;
       .imgFuego {
         padding: 0;
-        margin: 50px 0;
+        margin: 0;
         width: 80%;
       }
       .fondoFuego {
@@ -702,12 +708,12 @@
       display: flex !important;
       justify-content: center !important;
       padding: 0px !important;
-      margin: 0 0 0 0 !important;
+      margin: 0 0 50px 0 !important;
       width: 100% !important;
-      height: 800px !important;
+      height: 500px !important;
       .piezaLijado {
         padding: 0;
-        margin: 50px 0;
+        margin: 0;
         width: 80%;
       }
       .fondoLijado {
@@ -802,12 +808,12 @@
       display: flex !important;
       justify-content: center !important;
       padding: 0px !important;
-      margin: 0 0 0 0 !important;
+      margin: 0 0 50px 0 !important;
       width: 100% !important;
-      height: 800px !important;
+      height: 500px !important;
       .piezaHogar {
         padding: 0;
-        margin: 50px 0;
+        margin: 0;
         width: 80%;
       }
       .fondoHogar {
@@ -823,6 +829,29 @@
 
 
 
+
+
+@media (max-width: 380px) {
+
+  #recoleccionProceso {           /** PROCESO RECOLECCION **/
+    margin-bottom: 0 !important;
+  }
+
+
+  #fuegoProceso {             /** PROCESO FUEGO **/
+    .colUnoFuego {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  #lijadoProceso {           /** PROCESO LIJADO **/
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    .colUnoLijado {
+      margin-bottom: 0 !important;
+    }
+  }
+}   
 
 
 

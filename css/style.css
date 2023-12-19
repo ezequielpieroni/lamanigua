@@ -52,7 +52,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 150px;
   position: relative;
   z-index: 100;
 }
@@ -63,7 +63,7 @@ main {
   margin: 0 10px;
 }
 #frase .textoRenglonDosFrase {
-  padding-bottom: 350px;
+  padding-bottom: 430px;
   font-weight: 100;
   text-align: center;
   margin: 0 10px;
@@ -262,11 +262,20 @@ main {
 
 .imagenesPiezas {
   margin: 0 50px;
+  overflow: hidden;
 }
 
 #mainPiezas img {
   width: 400px;
   height: auto;
+  transition: all 0.5s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+
+#mainPiezas img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 /**-------------------------------PIEZAS RESPONSIVE-------------------------------------------------------------------**/
@@ -374,7 +383,7 @@ main {
   font-weight: 600;
 }
 #mainProceso #tituloProceso hr {
-  width: 20%;
+  width: 15%;
   text-align: right;
   margin: 40px 0;
 }
@@ -386,7 +395,6 @@ main {
 }
 #mainProceso #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
   margin-left: 100px;
-  margin-top: 200px;
 }
 #mainProceso #imagenRecoleccion img {
   width: 50%;
@@ -433,7 +441,7 @@ main {
   margin-top: 110px;
   padding-bottom: 100px;
 }
-#mainProceso #recoleccionProceso .colDosRecoleccion .imgRecoleccion { /** IMAGEN DE CORTE **/
+#mainProceso #recoleccionProceso .colDosRecoleccion .piezaRecoleccion { /** IMAGEN DE CORTE **/
   position: relative;
   background-image: url(../Images/proceso/sierra.png);
   background-size: cover;
@@ -463,10 +471,10 @@ main {
 }
 #mainProceso #fuegoProceso .colUnoFuego .imgFuego { /** IMAGEN FUEGO **/
   position: relative;
-  background-image: url(../Images/proceso/beautiful-fire-flames-campfire-closeup_254845-30805.jpg);
+  background-image: url(../Images/proceso/acercamiento-vertical-hoguera-hermosa-llama-naranja.jpg);
   background-size: cover;
   grid-column: 5/13;
-  grid-row: 7/14;
+  grid-row: 3/14;
   z-index: 50;
   background-size: contain;
   background-repeat: no-repeat;
@@ -474,7 +482,7 @@ main {
 #mainProceso #fuegoProceso .colUnoFuego .fondoFuego { /** FONDO COLOR **/
   position: relative;
   grid-column: 1/10;
-  grid-row: 1/11;
+  grid-row: 1/8;
   background-color: rgb(54, 52, 51);
 }
 #mainProceso #fuegoProceso .colDosFuego { /** COLUMNA 2 - LADO DERECHO**/
@@ -518,7 +526,7 @@ main {
   background-image: url(../Images/proceso/lijado.jpg);
   background-size: cover;
   grid-column: 7/13;
-  grid-row: 6/14;
+  grid-row: 5/13;
   z-index: 50;
   background-size: contain;
   background-repeat: no-repeat;
@@ -526,7 +534,7 @@ main {
 #mainProceso #lijadoProceso .colUnoLijado .fondoLijado { /** FONDO COLOR **/
   position: relative;
   grid-column: 1/10;
-  grid-row: 1/9;
+  grid-row: 1/8;
   background-color: rgb(54, 52, 51);
 }
 #mainProceso #lijadoProceso .colDosLijado { /** COLUMNA 2 LADO DERECHO**/
@@ -705,7 +713,7 @@ main {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
   }
-  #recoleccionProceso .colDosRecoleccion .imgRecoleccion {
+  #recoleccionProceso .colDosRecoleccion .piezaRecoleccion {
     margin-left: 100px;
     grid-column: 2/8 !important;
     grid-row: 5/13 !important;
@@ -717,9 +725,10 @@ main {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin: 150px 0;
   }
   #fuegoProceso .colUnoFuego {
-    padding: 100px 0 0 0 !important;
+    padding: 0 !important;
     width: 100% !important;
     background-color: rgb(223, 223, 229);
     grid-template-columns: repeat(12, 1fr);
@@ -727,17 +736,17 @@ main {
   }
   #fuegoProceso .colUnoFuego .imgFuego {
     margin-left: 100px;
-    grid-column: 3/10 !important;
+    grid-column: 4/11 !important;
     grid-row: 6/11 !important;
   }
   #fuegoProceso .colUnoFuego .fondoFuego {
     margin-right: 200px;
     grid-column: 1/10 !important;
-    grid-row: 1/9 !important;
+    grid-row: 3/9 !important;
   }
   #fuegoProceso .colDosFuego {
     width: 80% !important;
-    padding: 0 20px 0 60px !important;
+    padding: 0 0px 0 60px !important;
     margin: 50px 0;
   }
   #lijadoProceso {
@@ -763,7 +772,7 @@ main {
   }
   #lijadoProceso .colDosLijado {
     width: 80% !important;
-    padding: 0 70 0 0 !important;
+    padding: 0 20px 60px 0 !important;
   }
   #lijadoProceso .colDosLijado .textoLijado {
     width: 100% !important;
@@ -777,6 +786,7 @@ main {
     position: static !important;
     width: 100% !important;
     height: auto !important;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   #piezaUnicaProceso .colUnoPiezaUnica { /** COLUMNA 1 - LADO IZQUIERDO**/
@@ -860,6 +870,7 @@ main {
   #recoleccionProceso { /** PROCESO RECOLECCION **/
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
   }
   #recoleccionProceso .colUnoRecoleccion {
     width: 100% !important;
@@ -883,14 +894,15 @@ main {
     padding: 0px !important;
     margin: 0px !important;
     width: 100% !important;
-    height: 800px !important;
+    height: 500px !important;
   }
-  #recoleccionProceso .colDosRecoleccion .imgRecoleccion {
+  #recoleccionProceso .colDosRecoleccion .piezaRecoleccion {
     padding: 0;
-    margin: 50px 0;
+    margin: 0;
     width: 80%;
   }
   #recoleccionProceso .colDosRecoleccion .fondoRecoleccion {
+    background-image: none;
     margin: 0;
     padding: 0;
     width: 0;
@@ -905,6 +917,7 @@ main {
     padding: 0 !important;
     width: 100% !important;
     padding: 0 50px !important;
+    margin-bottom: 50px !important;
   }
   #fuegoProceso .colDosFuego h3 {
     padding: 0 !important;
@@ -918,13 +931,13 @@ main {
     display: flex !important;
     justify-content: center !important;
     padding: 0px !important;
-    margin: 0 0 0 0 !important;
+    margin: 0 0 50px 0 !important;
     width: 100% !important;
-    height: 800px !important;
+    height: 500px !important;
   }
   #fuegoProceso .colUnoFuego .imgFuego {
     padding: 0;
-    margin: 50px 0;
+    margin: 0;
     width: 80%;
   }
   #fuegoProceso .colUnoFuego .fondoFuego {
@@ -959,13 +972,13 @@ main {
     display: flex !important;
     justify-content: center !important;
     padding: 0px !important;
-    margin: 0 0 0 0 !important;
+    margin: 0 0 50px 0 !important;
     width: 100% !important;
-    height: 800px !important;
+    height: 500px !important;
   }
   #lijadoProceso .colUnoLijado .piezaLijado {
     padding: 0;
-    margin: 50px 0;
+    margin: 0;
     width: 80%;
   }
   #lijadoProceso .colUnoLijado .fondoLijado {
@@ -1051,13 +1064,13 @@ main {
     display: flex !important;
     justify-content: center !important;
     padding: 0px !important;
-    margin: 0 0 0 0 !important;
+    margin: 0 0 50px 0 !important;
     width: 100% !important;
-    height: 800px !important;
+    height: 500px !important;
   }
   #hogarProceso .colDosHogar .piezaHogar {
     padding: 0;
-    margin: 50px 0;
+    margin: 0;
     width: 80%;
   }
   #hogarProceso .colDosHogar .fondoHogar {
@@ -1065,6 +1078,22 @@ main {
     padding: 0;
     width: 0;
     height: 0;
+  }
+}
+@media (max-width: 380px) {
+  #recoleccionProceso { /** PROCESO RECOLECCION **/
+    margin-bottom: 0 !important;
+  }
+  #fuegoProceso { /** PROCESO FUEGO **/ }
+  #fuegoProceso .colUnoFuego {
+    margin-bottom: 0 !important;
+  }
+  #lijadoProceso { /** PROCESO LIJADO **/
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  #lijadoProceso .colUnoLijado {
+    margin-bottom: 0 !important;
   }
 }
 /**-------TITULO RESPONSIVE-----**/
@@ -1117,15 +1146,15 @@ main {
 #mainNosotros .lineas {
   margin: 200px 0;
 }
-#mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
+#mainNosotros .lineas .textosNosotros { /**CAJAS DE TEXTOS**/
   width: 500px;
   height: auto;
   margin: 20px;
 }
-#mainNosotros .lineas .textos h3 {
+#mainNosotros .lineas .textosNosotros h3 {
   width: 100% !important;
 }
-#mainNosotros .lineas .textos p { /**PARRAFOS**/
+#mainNosotros .lineas .textosNosotros p { /**PARRAFOS**/
   text-align: justify;
   width: 100%;
   height: auto;
@@ -1138,7 +1167,7 @@ main {
   margin: 20px;
 }
 #mainNosotros #lineaUnoNosotros {
-  margin-top: 300px;
+  margin-top: 250px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1188,9 +1217,13 @@ main {
     width: 80% !important;
     height: auto;
   }
-  #mainNosotros .lineas .textos { /**CAJAS DE TEXTOS**/
+  #mainNosotros .lineas .textosNosotros { /**CAJAS DE TEXTOS**/
     width: 100%;
     height: auto;
+  }
+  #mainNosotros #lineaSeisNosotros {
+    padding: 0 !important;
+    margin: 0 !important;
   }
   #mainNosotros #lineaSeisNosotros .imagenNosotros {
     width: 100% !important;
@@ -1200,7 +1233,7 @@ main {
     margin: 0 !important;
   }
   #mainNosotros #lineaSeisNosotros .textoSeisNosotros {
-    margin: 50px;
+    margin: 30px;
   }
   #mainNosotros #lineaSeisNosotros .textoSeisNosotros h3 {
     width: 100% !important;
@@ -1208,6 +1241,16 @@ main {
   }
   #mainNosotros #lineaSeisNosotros .textoSeisNosotros p {
     width: 100% !important;
+  }
+}
+@media (max-width: 350px) {
+  .textoSeisNosotros h3 { /**TITULOS GRANDES**/
+    font-size: 35px !important;
+  }
+}
+@media (max-width: 320px) {
+  .textoSeisNosotros h3 { /**TITULOS GRANDES**/
+    font-size: 30px !important;
   }
 }
 @media (max-width: 300px) {
@@ -1657,7 +1700,7 @@ main {
   #footer #filaUnoFooter { /**-----FILA 1-----**/
     display: flex;
     flex-direction: column;
-    margin: 50px 20px 20px 40px;
+    margin: 50px 20px 20px 20px;
     padding: 0;
   }
   #footer #filaUnoFooter .logoFooter {

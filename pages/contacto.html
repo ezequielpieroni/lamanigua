@@ -15,6 +15,9 @@
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
+        <!-- AOS animaciones -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- CSS -->
         <link rel="stylesheet" href="../css/style.css"> 
           
@@ -55,12 +58,12 @@
         </header>    
          
         <main id="mainContacto">          <!--Pagina de CONTACTO-->
-            <section id="tituloContacto"> <!--Mensaje titulo de pagina-->
+            <section id="tituloContacto" data-aos="fade-up"> <!--Mensaje titulo de pagina-->
                 <article class="textoTituloContacto">    
-                    <h1>Contactanos</h1>
-                    <h1>Inspiranos</h1>
-                    <h1>Activate</h1>
-                    <h3>Envianos un mensaje con tu consulta:</>   
+                    <h1 data-aos="fade-left">Contactanos</h1>
+                    <h1 data-aos="fade-right">Inspiranos</h1>
+                    <h1 data-aos="fade-left">Activate</h1>
+                    <h3 >Envianos un mensaje con tu consulta:</>   
                 </article>
                 <article class="imagenTituloContacto">    
                     <img src="../Images/contacto/e3a26b6d587a875ae5e6432d9845c987.jpg" alt="impresion tronco">
@@ -94,7 +97,7 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Consulta..."></textarea>
                           </div>
                           <div class="col-auto">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
                           </div>
                     </form>
                 </article>
@@ -102,13 +105,14 @@
                     <img src="../Images/contacto/whatsapp.png" alt="logo Whatsapp">
                     <h3>+54 221 456 5486</h3>
                     <img src="../Images/contacto/gps.png" alt="logo GPS">
-                    <h3>C. 138 , Arturo Seguí, Buenos Aires, Argentina</h3>
+                    <h3>C. 424 1436, La Plata, Buenos Aires, Argentina</h3>
                     <img src="../Images/contacto/mail.png" alt="logo Mail">
                     <h3>lamanigua@gmail.com</h3>
                 </article>   
             </section>
             <section id="mapaContacto">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13509.709843544379!2d-58.1040427252773!3d-34.88950815637113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d954c167eb1b%3A0xa9641dcf00cf2b4d!2sC.%20138%2C%20Arturo%20Segu%C3%AD%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2suk!4v1698608321854!5m2!1ses!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style="filter: invert(90%)" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2451.882422924567!2d-58.10456626807234!3d-34.8846000505956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUzJzA2LjEiUyA1OMKwMDYnMTguNCJX!5e0!3m2!1ses!2sit!4v1702906642096!5m2!1ses!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </section>        
         </main>
 
@@ -149,7 +153,7 @@
                     <h3 class="copyright">© 2023 La Manigüa</h3> 
                 </article>
                 <article class="disenoFooter">        
-                    <h3>Design by <a href="#">EP</a></h3>
+                    <h3>Design by <a href="https://estudioep.com" target="_blank" rel="noreferrer noopener">EP</a></h3>
                 </article>  
                 <article class="mailFooter">
                     <h3>lamanigua@gmail.com</h3>
@@ -157,5 +161,12 @@
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1500
+			});
+		</script>
     </body>
 </html>

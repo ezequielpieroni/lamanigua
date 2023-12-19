@@ -15,6 +15,9 @@
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
+        <!-- AOS animaciones -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- CSS -->
         <link rel="stylesheet" href="../css/style.css"> 
 
@@ -57,9 +60,9 @@
         
         <main id="mainProceso"> <!--ETAPA 1 PROCESO de creacion de piezas dividios en pasos-->
             <section id="tituloProceso">        <!--Titulo-->
-                <h3>Proceso de creación</h3>
-                <hr>
-                <h1>Nuestra destreza se forja en el arte del proceso</h1>                
+                <h3 data-aos="fade-right">Proceso de creación</h3>
+                <hr data-aos="fade-left">
+                <h1 data-aos="fade-right">Nuestra destreza se forja en el arte del proceso</h1>                
             </section>
             
             <section id="imagenRecoleccion">
@@ -78,15 +81,15 @@
                     </div>
                 </article>                            <!--Columna derecha GRID imagen y fondo-->
                 <article class="colDosRecoleccion">
-                    <div class="imgRecoleccion"></div>
-                    <div class="fondoRecoleccion"></div>
+                    <div class="piezaRecoleccion" data-aos="fade-up"></div>
+                    <div class="fondoRecoleccion" data-aos="fade-down"></div>
                 </article>
             </section>
 
             <section id="fuegoProceso">     <!-- ETAPA 2 - PROCESO DE FUEGO-->
                 <article class="colUnoFuego">  <!-- columa izquierda GRID imagen y fondo-->
-                    <div class="imgFuego"></div>
-                    <div class="fondoFuego"></div>
+                    <div class="imgFuego" data-aos="fade-up"></div>
+                    <div class="fondoFuego" data-aos="fade-down-right"></div>
                 </article>
                 <article class="colDosFuego">   <!-- Columna derecha. Texto-->
                     <div class="textoFuego">
@@ -100,15 +103,11 @@
                 </article>
             </section>
 
-          <!--  <section id="bancoQuemado">
-                <img src="../Images/proceso/terminado.png" alt="">
-            </section>  -->
-  
             <section id="lijadoProceso">        <!-- ETAPA 3 PROCESO DE LIJADO Y PINTADO-->
                 <article class="colUnoLijado">  <!-- Columna izquierda GRID imagen y fondo-->
 
-                    <div class="piezaLijado"></div>
-                    <div class="fondoLijado"></div>
+                    <div class="piezaLijado" data-aos="fade-up"></div>
+                    <div class="fondoLijado" data-aos="fade-right"></div>
                 </article>
                 <article class="colDosLijado"> <!-- Columna derecha. Imagen y texto-->
                     <div class="textoLijado">
@@ -122,7 +121,7 @@
             </section>
 
             <section id="piezaUnicaProceso">     <!-- ETAPA 4 PROCESO DE PIEZA UNICA-->
-                <article class="colUnoPiezaUnica">  <!-- Columa izquierda. Texto-->
+                <article class="colUnoPiezaUnica" data-aos="fade-left">  <!-- Columa izquierda. Texto-->
                     <div class="textoPiezaUnica">
                         <h3>Piezas únicas la singularidad en cada mueble</h3>
                             <hr>
@@ -131,12 +130,12 @@
                     </div>
                 </article>
                     
-                <article class="colDosPiezaUnica">   <!-- Columna derecha. Imagen-->
+                <article class="colDosPiezaUnica" data-aos="fade-right">   <!-- Columna derecha. Imagen-->
                     <div class="imagenPiezaUnica"><img src="../Images/proceso/cuenco pieza sf.png" alt="banco al sol"></div>
                 </article>
             </section>
 
-            <section id="imagenHogar">
+            <section id="imagenHogar" data-aos="fade-right">
                 <img src="../Images/proceso/banco-hogar.jpg" alt="living">
             </section>
 
@@ -152,10 +151,10 @@
                 </article>                         <!--Columna derecha GRID imagen y fondo-->
                 <article class="colDosHogar">
 
-                    <div class="piezaHogar">
+                    <div class="piezaHogar" data-aos="fade-up">
                     
                     </div>
-                    <div class="fondoHogar"></div>
+                    <div class="fondoHogar" data-aos="fade-down"></div>
                 </article>
             </section>
         </main>
@@ -197,7 +196,7 @@
                     <h3 class="copyright">© 2023 La Manigüa</h3> 
                 </article>
                 <article class="disenoFooter">        
-                    <h3>Design by <a href="#">EP</a></h3>
+                    <h3>Design by <a href="https://estudioep.com" target="_blank" rel="noreferrer noopener">EP</a></h3>
                 </article>  
                 <article class="mailFooter">
                     <h3>lamanigua@gmail.com</h3>
@@ -205,5 +204,12 @@
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1500
+			});
+		</script>
     </body>
 </html>

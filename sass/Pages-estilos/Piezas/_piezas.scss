@@ -81,11 +81,22 @@
   
   .imagenesPiezas{
     margin: 0 50px;
+    overflow: hidden;
   }
   
   #mainPiezas img {
     width: 400px;
     height: auto;
+    transition: all 0.5s;
+    transform: scale(1);
+    filter: grayscale(100%);
+  }
+  
+  #mainPiezas img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    
+
   }
 
 
