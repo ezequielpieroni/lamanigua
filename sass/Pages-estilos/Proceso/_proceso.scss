@@ -17,17 +17,27 @@
       margin-left: 30px;
       font-weight: 600;
     }
-    hr {
-      width: 15%;
-      text-align: right;
-      margin: 40px 0;
+    .lineaTituloProceso { /**LINEA **/
+      width: 13%;
+      height: 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.6);
     }
     h3 { /** SUB TITULO**/
       font-size: 30px;
-      color: rgba(0, 0, 0, 0.507);
+      color: rgba(0, 0, 0, 0.62);
       margin-left: 35px;
-      margin-bottom: 5px;
+      margin-bottom: 45px;
     }
+  }
+
+  /**-------LINEA DIVISORIA DE PARRAFOS --------------------**/
+
+  .lineaParrafoProceso {  
+    width: 130px !important;
+    height: 40px;
+    margin-left: 25%;
+    margin-top:35px;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
   }
 
 
@@ -36,6 +46,7 @@
 
   #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
     margin-left: 100px;
+    margin-top: 230px;
     img {
       width: 50%;
       height: auto;
@@ -62,11 +73,6 @@
         h3 { /** TITULO **/
           width: 310px;
           line-height: 1.5;
-        }
-        hr { /** LINEA **/
-          width: 30%;
-          text-align: right;
-          margin: 40px 0 40px 40%;
         }
         p { /** PARRAFO **/
           text-align: justify;
@@ -265,8 +271,8 @@
           display: flex;
         justify-content: center;
         img { /** IMAGEN PIEZA UNICA **/
-          width: 90%;
-          height: 450px;
+          width: 80%;
+          height: auto;
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -279,7 +285,7 @@
 
   #imagenHogar  { /** BANCO NEGRO HOGAR **/
     margin-left: 100px;
-    margin-top: 1100px;
+    margin-top: 1200px;
     img {
       width: 50%;
       height: auto;
@@ -354,8 +360,12 @@
 
 
 
-
-
+@media  (max-width: 1024px) {
+  
+  #mainProceso p{
+    text-align: center !important;
+  }
+}
 
 
 
@@ -859,7 +869,7 @@
 
 
 
-/**-------TITULO RESPONSIVE-----**/
+/**-------TITULO RESPONSIVE-----**/ /**-----LINEA PARRAFOS-----**/
 
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -873,8 +883,9 @@
       font-size: 40px !important;
       width: 450px !important;
     }
-    hr {
-      width: 30% !important;
+
+    .lineaTituloPieza { /**LINEA **/
+      width: 20% !important;
     }
   }
 }  
@@ -886,14 +897,19 @@
       font-size: 30px;
       width: 250px;
     }
-    hr {
-      width: 30%;
+    .lineaTituloPiezas { /**LINEA **/
+      width: 30% !important;
+    }
     }
     h3 {
       font-size: 25px;
     }  
   }
-}
+
+  .lineaParrafoProceso {
+    width: 100px !important;    /** LINEA PARRAFOS **/
+  }
+
 
 @media (max-width: 320px) { 
   #tituloPiezas {
@@ -902,13 +918,18 @@
       font-size: 30px;
       width: 80%;
     }
-    hr {
-      width: 50%;
+    .lineaTituloPieza { /**LINEA **/
+      width: 40% !important;
+    }
     }
     h3 {
       font-size: 25px;
     }
+
+    .lineaParrafoProceso {
+      width: 80px !important;  /** LINEA PARRAFOS **/
+    }
   }
-}
+
  
 

@@ -102,6 +102,7 @@
 @media (max-width: 1024px) { /** TITULO 1024 **/
     .textoTituloContacto {
       margin-left: 0 !important;
+      margin-right: 0;
       h1 {
         font-size: 70px !important;
         width: 450px;
@@ -120,6 +121,7 @@
   .textoTituloContacto {
     margin-left: 10px !important;
     margin-top: 100px !important;
+    margin-right: 0 !important;
     h1 {
     font-size: 35px !important;
     width: 250px;
@@ -145,10 +147,11 @@
 
 @media (max-width: 320px) { /** TITULO 320 **/
   .textoTituloContacto {
-    margin-right: 5px !important;
+    margin-left: 5px !important;
+    margin-right: 0 !important;
     h1 {
-      font-size: 30px;
-      width: 100% !important;
+      font-size: 25px !important;
+      width: 80% !important;
     }
     h3 {
       font-size: 25px;

@@ -144,7 +144,21 @@ padding: 200px 50px 250px 20px;
 
 /**---------------------------INDEX RESPONSIVE-------------------------------------------------**/
 
+
+/**----------LOGO NAV ----------**/
+
+
+@media (max-width: 992px) {
+  .logoNavIndex img{
+    margin-top: 0 !important;
+  }
+}
+
+
+
+
 /**----------LOGO INDEX ----------**/
+
 
 @media (max-width: 480px) {
     .logoPrincipal img {

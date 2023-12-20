@@ -33,19 +33,19 @@
                     
                     <!--Imagen LA MANIGUA MADERA Y FUEGO-->
                     
-                    <div class="logoPrincipal">           
+                    <div class="logoPrincipal" data-aos="fade-zoom-in">           
                         <img  src="Images/logos/Manigua-maderayfuego.png" alt="La Manigua">    
                     </div>   
                     
                     <!--Navegador Bootstrap-->
                     <nav id="navbarIndex" class="navbar navbar-expand-lg navBarBtsIndex"> <!--Clase navBarBts AÑADIDA-->
-                        <div class="container-fluid">
+                        <div class="container-fluid" data-aos="fade-zoom-in">
                             <a class="navbar-brand  logoNavIndex" href="#"><img src="Images/logos/fuegoBlanco.png"   alt="logo"></a>                                      <!--Clase logoNavIndex AÑADIDA-->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"     aria-label="Toggle  navigation">
                                 <span class="navbar-toggler-icon hamburguesaColorIndex"></span>
                             </button>                                          
-                            <div class="collapse navbar-collapse menuIndex" id="navbarNav"> <!--Clase menuIndex AÑADIDA-->
-                                <ul class="navbar-nav ulNavIndex">              <!--Clase ulNavIndex AÑADIDA-->
+                            <div class="collapse navbar-collapse menuIndex" id="navbarNav" > <!--Clase menuIndex AÑADIDA-->
+                                <ul class="navbar-nav ulNavIndex" >              <!--Clase ulNavIndex AÑADIDA-->
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Inicio</a>
                                     </li>
@@ -72,11 +72,13 @@
 
         <main id="mainIndex">       <!--Contenido introductorio al sitio-->
             <section id="frase">
-                    <h2 class="textoRenglonUnoFrase">"y, abriéndote paso entre la manigua,</h2>   <!--Frase referente al sitio-->
-                    <h2 class="textoRenglonDosFrase">inaugurarás caminos y atajos"</h2>
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <h2 class="textoRenglonUnoFrase">"y, abriéndote paso entre la manigua,</h2>   <!--Frase referente al sitio-->
+                        <h2 class="textoRenglonDosFrase">inaugurarás caminos y atajos"</h2>
+                    </div>    
                     <a href="#contenido" class="vermasFrase">
-                        <h3 >ver mas</h3>
-                        <img src="Images/Index/right_arrows_1.png" alt="flecha hacia abajo">    <!--Flecha-->
+                        <h3  data-aos="zoom-in" data-aos-easing="linear"data-aos-duration="500">ver mas</h3>
+                        <img  data-aos="fade-down" src="Images/Index/right_arrows_1.png" alt="flecha hacia abajo">    <!--Flecha-->
                     </a> 
             </section>
             <section id="contenido">

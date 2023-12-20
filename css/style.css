@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/**------Pages--------**/
+/**------Reset--------**/
 /**-----RESET CSS-----**/
 * {
   box-sizing: border-box;
@@ -152,6 +152,12 @@ main {
 }
 
 /**---------------------------INDEX RESPONSIVE-------------------------------------------------**/
+/**----------LOGO NAV ----------**/
+@media (max-width: 992px) {
+  .logoNavIndex img {
+    margin-top: 0 !important;
+  }
+}
 /**----------LOGO INDEX ----------**/
 @media (max-width: 480px) {
   .logoPrincipal img {
@@ -195,6 +201,11 @@ main {
   flex-direction: column;
   margin: 250px 0 100px 110px;
 }
+#mainPiezas #tituloPiezas .lineaTituloPieza { /**LINEA **/
+  width: 13%;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
 #mainPiezas .sectionsPieza { /**SECCIONES**/
   display: flex;
   margin: 200px auto 200px auto;
@@ -211,10 +222,12 @@ main {
   flex-wrap: wrap-reverse;
 }
 
-#tituloPiezas hr { /**LINEA **/
-  width: 15%;
-  text-align: right;
-  margin: 40px 0;
+.lineaParrafoPiezas {
+  width: 130px;
+  height: 40px;
+  margin-left: 25%;
+  margin-top: 35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 #tituloPiezas h1 { /** TITULO **/
@@ -227,7 +240,7 @@ main {
 #tituloPiezas h3 { /** SUB TITULO**/
   font-size: 30px;
   color: rgba(0, 0, 0, 0.507);
-  margin-bottom: 5px;
+  margin-bottom: 45px;
   margin-left: 35px;
 }
 
@@ -279,16 +292,29 @@ main {
 }
 
 /**-------------------------------PIEZAS RESPONSIVE-------------------------------------------------------------------**/
-@media (max-width: 1024px) { /** TITULO 1024 **/
+@media (max-width: 1076px) {
+  .textosPiezas p {
+    text-align: center !important;
+  }
+  .textosPiezas h3 {
+    margin-left: 5%;
+  }
+  .lineaParrafoPiezas {
+    margin-left: 20%;
+  }
+  /** TITULO 1024 **/
+}
+@media (max-width: 1076px) { /** TITULO 1076 **/
   #tituloPiezas {
     margin-bottom: 400px;
+    margin-left: 80px !important;
+  }
+  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+    width: 18% !important;
   }
   #tituloPiezas h1 {
     font-size: 50px;
     width: 600px;
-  }
-  #tituloPiezas hr {
-    width: 22%;
   }
 }
 @media (max-width: 768px) { /** TITULO 768 **/
@@ -299,8 +325,8 @@ main {
     font-size: 35px;
     width: 450px;
   }
-  #tituloPiezas hr {
-    width: 30%;
+  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+    width: 20% !important;
   }
 }
 @media (max-width: 600px) { /** TITULO 600 **/
@@ -311,8 +337,8 @@ main {
     font-size: 30px;
     width: 350px;
   }
-  #tituloPiezas hr {
-    width: 30%;
+  #tituloPiezas .lineaTituloPiezas { /**LINEA **/
+    width: 30% !important;
   }
 }
 @media (max-width: 480px) { /** TITULO 480 **/
@@ -321,13 +347,16 @@ main {
   }
   #tituloPiezas h1 {
     font-size: 30px;
-    width: 250px;
+    width: 240px;
   }
-  #tituloPiezas hr {
-    width: 30%;
+  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+    width: 33% !important;
   }
   #tituloPiezas h3 {
     font-size: 25px;
+  }
+  .lineaParrafoPiezas {
+    width: 110px; /** LINEA PARRAFOS **/
   }
 }
 @media (max-width: 320px) { /** TITULO 320 **/
@@ -336,13 +365,16 @@ main {
   }
   #tituloPiezas h1 {
     font-size: 30px;
-    width: 80%;
+    width: 250px;
   }
-  #tituloPiezas hr {
-    width: 50%;
+  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+    width: 40% !important;
   }
   #tituloPiezas h3 {
     font-size: 25px;
+  }
+  .lineaParrafoPiezas {
+    width: 80px; /** LINEA PARRAFOS **/
   }
 }
 /**-------CONTENIDO PIEZAS --------**/
@@ -365,6 +397,7 @@ main {
 /**------------------TITULO-------------**/
 #mainProceso {
   margin-top: 100px;
+  /**-------LINEA DIVISORIA DE PARRAFOS --------------------**/
   /**--- ETAPA 1 PROCESO RECOLECCION---------------------------**/
   /**--- ETAPA 2 PROCESO FUEGO------------------------------**/
   /**--- ETAPA 3 PROCESO LIJADO-----------------------------**/
@@ -382,19 +415,27 @@ main {
   margin-left: 30px;
   font-weight: 600;
 }
-#mainProceso #tituloProceso hr {
-  width: 15%;
-  text-align: right;
-  margin: 40px 0;
+#mainProceso #tituloProceso .lineaTituloProceso { /**LINEA **/
+  width: 13%;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
 }
 #mainProceso #tituloProceso h3 { /** SUB TITULO**/
   font-size: 30px;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgba(0, 0, 0, 0.62);
   margin-left: 35px;
-  margin-bottom: 5px;
+  margin-bottom: 45px;
+}
+#mainProceso .lineaParrafoProceso {
+  width: 130px !important;
+  height: 40px;
+  margin-left: 25%;
+  margin-top: 35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
 }
 #mainProceso #imagenRecoleccion { /** IMAGEN ARBOL CAIDO **/
   margin-left: 100px;
+  margin-top: 230px;
 }
 #mainProceso #imagenRecoleccion img {
   width: 50%;
@@ -421,11 +462,6 @@ main {
 #mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion h3 { /** TITULO **/
   width: 310px;
   line-height: 1.5;
-}
-#mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion hr { /** LINEA **/
-  width: 30%;
-  text-align: right;
-  margin: 40px 0 40px 40%;
 }
 #mainProceso #recoleccionProceso .colUnoRecoleccion .textoRecoleccion p { /** PARRAFO **/
   text-align: justify;
@@ -604,14 +640,14 @@ main {
   justify-content: center;
 }
 #mainProceso #piezaUnicaProceso .colDosPiezaUnica .imagenPiezaUnica img { /** IMAGEN PIEZA UNICA **/
-  width: 90%;
-  height: 450px;
+  width: 80%;
+  height: auto;
   background-size: contain;
   background-repeat: no-repeat;
 }
 #mainProceso #imagenHogar { /** BANCO NEGRO HOGAR **/
   margin-left: 100px;
-  margin-top: 1100px;
+  margin-top: 1200px;
 }
 #mainProceso #imagenHogar img {
   width: 50%;
@@ -675,6 +711,11 @@ main {
   background-color: rgb(54, 52, 51);
 }
 
+@media (max-width: 1024px) {
+  #mainProceso p {
+    text-align: center !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   #tituloProceso {
     margin-bottom: 400px !important;
@@ -1096,7 +1137,7 @@ main {
     margin-bottom: 0 !important;
   }
 }
-/**-------TITULO RESPONSIVE-----**/
+/**-------TITULO RESPONSIVE-----**/ /**-----LINEA PARRAFOS-----**/
 @media (min-width: 600px) and (max-width: 768px) {
   #tituloProceso { /** TITULO 600 **/
     margin-bottom: 100px;
@@ -1105,8 +1146,8 @@ main {
     font-size: 40px !important;
     width: 450px !important;
   }
-  #tituloProceso hr {
-    width: 30% !important;
+  #tituloProceso .lineaTituloPieza { /**LINEA **/
+    width: 20% !important;
   }
 }
 @media (min-width: 480px) and (max-width: 600px) {
@@ -1117,13 +1158,17 @@ main {
     font-size: 30px;
     width: 250px;
   }
-  #tituloPiezas hr {
-    width: 30%;
+  #tituloPiezas .lineaTituloPiezas { /**LINEA **/
+    width: 30% !important;
   }
-  #tituloPiezas h3 {
+  h3 {
     font-size: 25px;
   }
 }
+.lineaParrafoProceso {
+  width: 100px !important; /** LINEA PARRAFOS **/
+}
+
 @media (max-width: 320px) {
   #tituloPiezas {
     margin-left: 20px;
@@ -1132,11 +1177,14 @@ main {
     font-size: 30px;
     width: 80%;
   }
-  #tituloPiezas hr {
-    width: 50%;
+  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+    width: 40% !important;
   }
-  #tituloPiezas h3 {
+  h3 {
     font-size: 25px;
+  }
+  .lineaParrafoProceso {
+    width: 80px !important; /** LINEA PARRAFOS **/
   }
 }
 /**------------------------------NOSOTROS CONTENIDO--------------------------------------------------------**/
@@ -1204,6 +1252,12 @@ main {
 }
 
 /**-------CONTENIDO NOSOTROS  MEDIA QUERIES--------**/
+@media (max-width: 1096px) {
+  #mainNosotros .textosNosotros p,
+  .textosNosotros h3 {
+    text-align: center !important;
+  }
+}
 @media (max-width: 600px) {
   #mainNosotros .lineas {
     margin-bottom: 50px !important;
@@ -1347,6 +1401,7 @@ main {
 @media (max-width: 1024px) { /** TITULO 1024 **/
   .textoTituloContacto {
     margin-left: 0 !important;
+    margin-right: 0;
   }
   .textoTituloContacto h1 {
     font-size: 70px !important;
@@ -1363,6 +1418,7 @@ main {
   .textoTituloContacto {
     margin-left: 10px !important;
     margin-top: 100px !important;
+    margin-right: 0 !important;
   }
   .textoTituloContacto h1 {
     font-size: 35px !important;
@@ -1386,11 +1442,12 @@ main {
 }
 @media (max-width: 320px) { /** TITULO 320 **/
   .textoTituloContacto {
-    margin-right: 5px !important;
+    margin-left: 5px !important;
+    margin-right: 0 !important;
   }
   .textoTituloContacto h1 {
-    font-size: 30px;
-    width: 100% !important;
+    font-size: 25px !important;
+    width: 80% !important;
   }
   .textoTituloContacto h3 {
     font-size: 25px;

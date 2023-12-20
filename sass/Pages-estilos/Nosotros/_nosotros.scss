@@ -79,6 +79,14 @@
     
     /**-------CONTENIDO NOSOTROS  MEDIA QUERIES--------**/
 
+@media  (max-width: 1096px) {
+  
+  #mainNosotros
+    .textosNosotros p,
+    .textosNosotros h3 {
+        text-align: center !important;
+    }
+}
 
 @media (max-width: 600px) {
     #mainNosotros {
