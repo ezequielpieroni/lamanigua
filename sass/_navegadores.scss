@@ -13,7 +13,7 @@
 
 .navbar-nav {
   width: 300px;
-  height: 100px;
+  height: 65px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -40,16 +40,16 @@
    
 
 .navBarBtsIndex {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.337);
   width: 100%;
-  height: 100px;
+  height: 65px;
   position: fixed;
   z-index: 100;
   .logoNavIndex img {            /**LOGO navegador TOP INDEX**/
-    width: 30px;
+    width: 23px;
     height: auto;
     margin-left: 7%;
-    margin-top: 30px;
+    margin-top: 15px;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -62,7 +62,7 @@
   align-items: center;
   .ulNavIndex {                    /**UL navegador INDEX**/
     width: 500px;
-    height: 100px;
+    height: 65px;
     display: flex;
     margin-right: 150px;
     
@@ -90,15 +90,15 @@
 .navBarBtsPages {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100px;
+    height: 65px;
     position: fixed;
     z-index: 100;
     top: 0;
   .logoNavPages img { /**LOGO navegador TOP PAGES**/
-    width: 30px;
+    width: 23px;
     height: auto;
     margin-left: 7%;
-    margin-top: 30px;
+    margin-top: 15px;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -159,6 +159,8 @@
     }
   }
 }
+
+/**-----MENU HAMBURGUESA PAGES-----**/
 
 @media (max-width: 992px) {
 

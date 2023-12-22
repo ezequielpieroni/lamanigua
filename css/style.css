@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/**------Reset--------**/
+/**------Pages--------**/
 /**-----RESET CSS-----**/
 * {
   box-sizing: border-box;
@@ -48,7 +48,7 @@ main {
 #frase { /** SECCION FRASE **/
   color: rgb(255, 255, 255);
   background-color: black;
-  height: 1150px;
+  height: 1180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@ main {
   z-index: 100;
 }
 #frase .textoRenglonUnoFrase { /** texto FRASE **/
-  padding-top: 200px;
+  padding-top: 150px;
   font-weight: 100;
   text-align: center;
   margin: 0 10px;
@@ -72,7 +72,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 #frase .vermasFrase h3 {
   text-decoration: none;
@@ -81,14 +81,14 @@ main {
 #frase .vermasFrase img {
   position: relative;
   height: 80%;
-  width: 20px;
-  padding: 90px 0;
+  width: 50px;
+  margin: 150px 0 0 0;
 }
 
 /** -------------------------CONTENIDO INDEX---------------------------------------------------------------------------------**/
 .navNegroIndex { /**STICKY FONDO NEGRO PARA NAVEGADOR SOBRE MAIN **/
   width: 100%;
-  height: 100px;
+  height: 65px;
   position: sticky;
   top: 0;
   display: flex;
@@ -152,12 +152,6 @@ main {
 }
 
 /**---------------------------INDEX RESPONSIVE-------------------------------------------------**/
-/**----------LOGO NAV ----------**/
-@media (max-width: 992px) {
-  .logoNavIndex img {
-    margin-top: 0 !important;
-  }
-}
 /**----------LOGO INDEX ----------**/
 @media (max-width: 480px) {
   .logoPrincipal img {
@@ -1465,7 +1459,7 @@ main {
 
 .navbar-nav {
   width: 300px;
-  height: 100px;
+  height: 65px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -1488,17 +1482,17 @@ main {
 
 /**-----BARRA DE NAVEGADOR INDEX-----------------------------------------------------------------------------------------------**/
 .navBarBtsIndex {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.337);
   width: 100%;
-  height: 100px;
+  height: 65px;
   position: fixed;
   z-index: 100;
 }
 .navBarBtsIndex .logoNavIndex img { /**LOGO navegador TOP INDEX**/
-  width: 30px;
+  width: 23px;
   height: auto;
   margin-left: 7%;
-  margin-top: 30px;
+  margin-top: 15px;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1511,7 +1505,7 @@ main {
 }
 .menuIndex .ulNavIndex { /**UL navegador INDEX**/
   width: 500px;
-  height: 100px;
+  height: 65px;
   display: flex;
   margin-right: 150px;
 }
@@ -1532,16 +1526,16 @@ main {
 .navBarBtsPages {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 100px;
+  height: 65px;
   position: fixed;
   z-index: 100;
   top: 0;
 }
 .navBarBtsPages .logoNavPages img { /**LOGO navegador TOP PAGES**/
-  width: 30px;
+  width: 23px;
   height: auto;
   margin-left: 7%;
-  margin-top: 30px;
+  margin-top: 15px;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1593,6 +1587,7 @@ main {
     margin-top: 150px;
   }
 }
+/**-----MENU HAMBURGUESA PAGES-----**/
 @media (max-width: 992px) {
   .menuPages {
     height: 100vh;
