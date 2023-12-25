@@ -1,145 +1,132 @@
 /**---------------------------------PIEZAS CONTENIDO---------------------------------------------------------------------**/
 
 #mainPiezas { /**MAIN PIEZAS **/
-    margin-top: 100px;
-    #tituloPiezas { /** CAJA TITULO **/
-      display: flex;
-      flex-direction: column;
-      margin: 250px 0 100px 110px;
-      .lineaTituloPieza { /**LINEA **/
-        width: 13%;
-        height: 40px;
-        border-top: 1px solid rgba(0, 0, 0, 0.6);
-      }
-    }
-    .sectionsPieza { /**SECCIONES**/
-      display: flex;
-      margin: 200px auto 200px auto;
-      justify-content: center;
-      padding: 30px;
-    }
-    #lineaUnoPiezas{
-      flex-wrap: wrap-reverse;
-    }
-    #lineaDosPiezas { /** PARES **/
-      flex-wrap: wrap;
-    }
-    #lineaTresPiezas {
-      flex-wrap: wrap-reverse;
+  margin-top: 100px;
+  #tituloPiezas { /** CAJA TITULO **/
+    display: flex;
+    flex-direction: column;
+    margin: 250px 0 100px 110px;
+    .lineaTituloPieza { /**LINEA **/
+      width: 13%;
+      height: 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.6);
     }
   }
-  
-  
-  .lineaParrafoPiezas {
-    width: 130px;
-    height: 40px;
-    margin-left: 25%;
-    margin-top:35px;
-    border-top: 1px solid rgba(0, 0, 0, 0.7);
+  .sectionsPieza { /**SECCIONES**/
+    display: flex;
+    margin: 200px auto 200px auto;
+    justify-content: center;
+    padding: 30px;
   }
-  
-  
-  
+  #lineaUnoPiezas{
+    flex-wrap: wrap-reverse;
+  }
+  #lineaDosPiezas { /** PARES **/
+    flex-wrap: wrap;
+  }
+  #lineaTresPiezas {
+    flex-wrap: wrap-reverse;
+  }
+}
   
 
-  
-  #tituloPiezas h1 { /** TITULO **/
-    font-size: 70px;
-    width: 900px;
-    margin-left: 30px;
-    font-weight: 600;
-  }
-  
-  #tituloPiezas h3 { /** SUB TITULO**/
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.507);
-    margin-bottom: 45px;
-    margin-left: 35px;
-  }
-  
-  .textosPiezas {
-    width: 400px;
-    height: auto;
-    line-height: 2;
-    margin: 0 50px;
-  }
-  
-  .textoUnoPiezas hr { /**LINEAS**/
-    width: 40%;
-    margin: 40px 0 40px 130px;
-  }
-  
-  .textoDosPiezas hr {
-    width: 40%;
-    margin: 40px 0 40px 60px;
-  }
-  
-  .textoTresPiezas hr {
-    width: 40%;
-    margin: 40px 0 40px 150px;
-  }
-  
-  #mainPiezas p { /**PARRAFOS**/
-    width: 100%;
-    height: auto;
-    text-align: justify;
-    margin-bottom: 50px;
-  }
-  
-  .imagenesPiezas{
-    margin: 0 50px;
-    overflow: hidden;
-  }
-  
-  #mainPiezas img {
-    width: 400px;
-    height: auto;
-    transition: all 0.5s;
-    transform: scale(1);
-    filter: grayscale(100%);
-  }
-  
-  #mainPiezas img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-  }
+
+/**-------LINEA DIVISORIA DE PARRAFOS --------------------**/
+
+
+.lineaParrafoPiezas {
+  width: 130px;
+  height: 40px;
+  margin-left: 25%;
+  margin-top:35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+#tituloPiezas h1 { /** TITULO **/
+  font-size: 70px;
+  width: 900px;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+#tituloPiezas h3 { /** SUB TITULO**/
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.507);
+  margin-bottom: 45px;
+  margin-left: 35px;
+}
+
+.textosPiezas {
+  width: 400px;
+  height: auto;
+  line-height: 2;
+  margin: 0 50px;
+}
+
+
+
+#mainPiezas p { /**PARRAFOS**/
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.imagenesPiezas{
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+#mainPiezas img {
+  width: 400px;
+  height: auto;
+  transition: all 0.5s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+
+#mainPiezas img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
 
 
 
 
 /**-------------------------------PIEZAS RESPONSIVE-------------------------------------------------------------------**/
 
-@media (max-width: 1076px) {
-  .textosPiezas p {
-    text-align: center !important;
-  }
 
-  .textosPiezas h3 {
-    margin-left: 5%;
-  }
-
-  .lineaParrafoPiezas {
-    margin-left: 20%;
-
-  }
-  /** TITULO 1024 **/
-
-  
-}
-
-@media (max-width: 1076px) { /** TITULO 1076 **/
+@media (max-width: 1076px) {     /** TITULO 1076 **/
   #tituloPiezas {
-    margin-bottom: 400px;
+    margin-bottom: 400px !important;
     margin-left: 80px !important;
-    .lineaTituloPieza { /**LINEA **/
+    .lineaTituloPieza {          
       width: 18% !important;
     }
-    h1 {
+    h1 {            
       font-size: 50px;
       width: 600px;
     }
 
   }
+
+  .textosPiezas p {           /**Parrafos**/
+    text-align: center !important;
+  }
+
+  .textosPiezas h3 {        /** Titulos de parrafos **/
+    margin-left: 5%;
+  }
+
+  .lineaParrafoPiezas {     /**Lineas animadas**/
+    margin-left: 20%;
+
+  } 
 }
 
 @media (max-width: 768px) { /** TITULO 768 **/
@@ -173,14 +160,12 @@
     margin-left: 20px;
     h1 {
       font-size: 30px;
-      width: 240px;
+      width: 80% !important;
     }
     .lineaTituloPieza { /**LINEA **/
       width: 33% !important;
     }
-    h3 {
-      font-size: 25px;
-    }  
+ 
   }
   .lineaParrafoPiezas {
     width: 110px;  /** LINEA PARRAFOS **/

@@ -151,6 +151,13 @@ main {
   padding-top: 50px;
 }
 
+.lineaParrafoIndex {
+  width: 130px;
+  height: 40px;
+  margin-top: 35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+}
+
 /**---------------------------INDEX RESPONSIVE-------------------------------------------------**/
 /**----------LOGO INDEX ----------**/
 @media (max-width: 480px) {
@@ -169,6 +176,12 @@ main {
   }
 }
 /**-------------CONTENIDO INDEX  ------------**/
+@media (max-width: 1009px) {
+  .parrafoFilosofia,
+  .parrafoTecnica {
+    text-align: center !important;
+  }
+}
 @media (max-width: 700px) {
   .parrafoFilosofia,
   .parrafoTecnica {
@@ -216,6 +229,7 @@ main {
   flex-wrap: wrap-reverse;
 }
 
+/**-------LINEA DIVISORIA DE PARRAFOS --------------------**/
 .lineaParrafoPiezas {
   width: 130px;
   height: 40px;
@@ -245,21 +259,6 @@ main {
   margin: 0 50px;
 }
 
-.textoUnoPiezas hr { /**LINEAS**/
-  width: 40%;
-  margin: 40px 0 40px 130px;
-}
-
-.textoDosPiezas hr {
-  width: 40%;
-  margin: 40px 0 40px 60px;
-}
-
-.textoTresPiezas hr {
-  width: 40%;
-  margin: 40px 0 40px 150px;
-}
-
 #mainPiezas p { /**PARRAFOS**/
   width: 100%;
   height: auto;
@@ -286,29 +285,26 @@ main {
 }
 
 /**-------------------------------PIEZAS RESPONSIVE-------------------------------------------------------------------**/
-@media (max-width: 1076px) {
-  .textosPiezas p {
-    text-align: center !important;
-  }
-  .textosPiezas h3 {
-    margin-left: 5%;
-  }
-  .lineaParrafoPiezas {
-    margin-left: 20%;
-  }
-  /** TITULO 1024 **/
-}
 @media (max-width: 1076px) { /** TITULO 1076 **/
   #tituloPiezas {
-    margin-bottom: 400px;
+    margin-bottom: 400px !important;
     margin-left: 80px !important;
   }
-  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+  #tituloPiezas .lineaTituloPieza {
     width: 18% !important;
   }
   #tituloPiezas h1 {
     font-size: 50px;
     width: 600px;
+  }
+  .textosPiezas p { /**Parrafos**/
+    text-align: center !important;
+  }
+  .textosPiezas h3 { /** Titulos de parrafos **/
+    margin-left: 5%;
+  }
+  .lineaParrafoPiezas { /**Lineas animadas**/
+    margin-left: 20%;
   }
 }
 @media (max-width: 768px) { /** TITULO 768 **/
@@ -341,13 +337,10 @@ main {
   }
   #tituloPiezas h1 {
     font-size: 30px;
-    width: 240px;
+    width: 80% !important;
   }
   #tituloPiezas .lineaTituloPieza { /**LINEA **/
     width: 33% !important;
-  }
-  #tituloPiezas h3 {
-    font-size: 25px;
   }
   .lineaParrafoPiezas {
     width: 110px; /** LINEA PARRAFOS **/
@@ -531,10 +524,6 @@ main {
   text-align: right;
   padding-right: 40px;
 }
-#mainProceso #fuegoProceso .colDosFuego .textoFuego hr {
-  width: 30%;
-  margin: 40px 0 40px 70%;
-}
 #mainProceso #fuegoProceso .colDosFuego .textoFuego p { /** PARRAFO **/
   text-align: justify;
   line-height: 2;
@@ -584,12 +573,6 @@ main {
   padding-left: 50px;
   line-height: 1.5;
 }
-#mainProceso #lijadoProceso .colDosLijado .textoLijado hr { /** LINEA **/
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-  margin: 40px 0 40px 30%;
-}
 #mainProceso #lijadoProceso .colDosLijado .textoLijado p { /** PARRAFO **/
   text-align: justify;
   justify-content: flex-end;
@@ -616,10 +599,6 @@ main {
   font-size: 55px;
   text-align: left;
   padding-left: 55px;
-}
-#mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica hr { /** LINEA **/
-  width: 30%;
-  margin: 40px 70% 40px 0;
 }
 #mainProceso #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica p { /** PARRAFO **/
   padding-left: 55px;
@@ -669,17 +648,12 @@ main {
   width: 310px;
   line-height: 1.5;
 }
-#mainProceso #hogarProceso .textoHogar hr { /** LINEA **/
-  width: 30%;
-  text-align: right;
-  margin: 40px 0 40px 50%;
-}
 #mainProceso #hogarProceso .textoHogar p { /** PARRAFO **/
   text-align: justify;
   justify-content: flex-end;
   padding-right: 50px;
 }
-#mainProceso .colDosHogar { /** COLUMNA DOS LADO DERECHO (GRID)**/
+#mainProceso #hogarProceso .colDosHogar { /** COLUMNA DOS LADO DERECHO (GRID)**/
   width: 50%;
   height: 1100px;
   display: grid;
@@ -688,7 +662,7 @@ main {
   margin-top: 110px;
   padding-bottom: 100px;
 }
-#mainProceso .colDosHogar .piezaHogar { /** IMAGEN DE LIVING **/
+#mainProceso #hogarProceso .colDosHogar .piezaHogar { /** IMAGEN DE LIVING **/
   position: relative;
   background-image: url(../Images/proceso/living-hogar.jpg);
   background-size: cover;
@@ -698,13 +672,25 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#mainProceso .colDosHogar .fondoHogar { /** FONDO COLOR **/
+#mainProceso #hogarProceso .colDosHogar .fondoHogar { /** FONDO COLOR **/
   position: relative;
   grid-column: 4/13;
   grid-row: 1/9;
   background-color: rgb(54, 52, 51);
 }
 
+/**-----------------------------RESPONSIVE PROCESO------------------------**/
+@media (max-width: 1076px) { /**Lineas animadas**/
+  #tituloPiezas {
+    margin-bottom: 400px !important;
+  }
+  .lineaTituloProceso {
+    width: 18% !important;
+  }
+  .lineaParrafoProceso {
+    margin-left: 20% !important;
+  }
+}
 @media (max-width: 1024px) {
   #mainProceso p {
     text-align: center !important;
@@ -718,8 +704,8 @@ main {
     font-size: 50px !important;
     width: 600px !important;
   }
-  #tituloProceso hr {
-    width: 22% !important;
+  #tituloProceso .lineaTituloProceso { /**LINEA **/
+    width: 20% !important;
   }
   #imagenRecoleccion img {
     width: 70% !important;
@@ -880,14 +866,12 @@ main {
 }
 @media (max-width: 768px) {
   #tituloProceso {
+    margin-bottom: 400px !important;
     margin-left: 20px !important;
   }
   #tituloProceso h1 {
     font-size: 30px !important;
     width: 80% !important;
-  }
-  #tituloProceso hr {
-    width: 30% !important;
   }
   #tituloProceso h3 {
     font-size: 25px !important;
@@ -910,7 +894,7 @@ main {
   #recoleccionProceso .colUnoRecoleccion {
     width: 100% !important;
     margin: 50px 0 !important;
-    padding: 0 50px !important;
+    padding: 0 30px !important;
   }
   #recoleccionProceso .colUnoRecoleccion .textoRecoleccion {
     width: 80%;
@@ -920,7 +904,7 @@ main {
     width: 100% !important;
   }
   #recoleccionProceso .colUnoRecoleccion .textoRecoleccion p {
-    margin: 0 !important;
+    margin: 0 15px !important;
     padding: 0 !important;
   }
   #recoleccionProceso .colDosRecoleccion {
@@ -951,7 +935,7 @@ main {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
-    padding: 0 50px !important;
+    padding: 0 30px !important;
     margin-bottom: 50px !important;
   }
   #fuegoProceso .colDosFuego h3 {
@@ -961,6 +945,7 @@ main {
   }
   #fuegoProceso .colDosFuego p {
     padding: 0 !important;
+    margin: 0 15px !important;
   }
   #fuegoProceso .colUnoFuego {
     display: flex !important;
@@ -990,7 +975,7 @@ main {
   #lijadoProceso .colDosLijado {
     width: 100% !important;
     margin: 50px 0 !important;
-    padding: 0 50px !important;
+    padding: 0 30px !important;
   }
   #lijadoProceso .colDosLijado .textoLijado {
     width: 80%;
@@ -1033,7 +1018,7 @@ main {
   #piezaUnicaProceso .colUnoPiezaUnica {
     width: 100% !important;
     margin: 50px 0 !important;
-    padding: 50px 50px !important;
+    padding: 50px 30px !important;
   }
   #piezaUnicaProceso .colUnoPiezaUnica .textoPiezaUnica {
     width: 100% !important;
@@ -1082,7 +1067,7 @@ main {
   #hogarProceso .colUnoHogar {
     width: 100% !important;
     margin: 50px 0 !important;
-    padding: 0 50px !important;
+    padding: 0 30px !important;
   }
   #hogarProceso .colUnoHogar .textoHogar {
     width: 80%;
@@ -1115,6 +1100,35 @@ main {
     height: 0;
   }
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  #tituloProceso {
+    margin-left: 30px !important; /** TITULO 600 **/
+  }
+  #tituloProceso h1 {
+    font-size: 30px;
+    width: 350px;
+  }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+  #tituloPiezas {
+    margin-left: 20px;
+  }
+  #tituloPiezas h1 {
+    font-size: 30px;
+    width: 250px;
+  }
+  #tituloPiezas .lineaTituloProceso { /**LINEA **/
+    width: 30% !important;
+  }
+}
+@media (max-width: 480px) {
+  .lineaTituloProceso { /**LINEA animada titulo **/
+    width: 33% !important;
+  }
+  .lineaParrafoProceso { /** LINEA PARRAFOS **/
+    width: 110px;
+  }
+}
 @media (max-width: 380px) {
   #recoleccionProceso { /** PROCESO RECOLECCION **/
     margin-bottom: 0 !important;
@@ -1131,51 +1145,9 @@ main {
     margin-bottom: 0 !important;
   }
 }
-/**-------TITULO RESPONSIVE-----**/ /**-----LINEA PARRAFOS-----**/
-@media (min-width: 600px) and (max-width: 768px) {
-  #tituloProceso { /** TITULO 600 **/
-    margin-bottom: 100px;
-  }
-  #tituloProceso h1 {
-    font-size: 40px !important;
-    width: 450px !important;
-  }
-  #tituloProceso .lineaTituloPieza { /**LINEA **/
-    width: 20% !important;
-  }
-}
-@media (min-width: 480px) and (max-width: 600px) {
-  #tituloPiezas {
-    margin-left: 20px;
-  }
-  #tituloPiezas h1 {
-    font-size: 30px;
-    width: 250px;
-  }
-  #tituloPiezas .lineaTituloPiezas { /**LINEA **/
-    width: 30% !important;
-  }
-  h3 {
-    font-size: 25px;
-  }
-}
-.lineaParrafoProceso {
-  width: 100px !important; /** LINEA PARRAFOS **/
-}
-
 @media (max-width: 320px) {
-  #tituloPiezas {
-    margin-left: 20px;
-  }
-  #tituloPiezas h1 {
-    font-size: 30px;
-    width: 80%;
-  }
-  #tituloPiezas .lineaTituloPieza { /**LINEA **/
+  .lineaTituloProceso { /**LINEA **/
     width: 40% !important;
-  }
-  h3 {
-    font-size: 25px;
   }
   .lineaParrafoProceso {
     width: 80px !important; /** LINEA PARRAFOS **/
@@ -1246,7 +1218,7 @@ main {
 }
 
 /**-------CONTENIDO NOSOTROS  MEDIA QUERIES--------**/
-@media (max-width: 1096px) {
+@media (max-width: 1079px) {
   #mainNosotros .textosNosotros p,
   .textosNosotros h3 {
     text-align: center !important;
@@ -1310,7 +1282,7 @@ main {
 }
 /**------------------------------CONTACTO CONTENIDO--------------------------------------------------------**/
 #mainContacto {
-  margin-top: 100px;
+  margin-top: 65px;
   background-color: black;
   color: rgb(255, 255, 255);
 }
@@ -1459,7 +1431,7 @@ main {
 
 .navbar-nav {
   width: 300px;
-  height: 65px;
+  height: 68px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -1492,7 +1464,7 @@ main {
   width: 23px;
   height: auto;
   margin-left: 7%;
-  margin-top: 15px;
+  margin-top: 16px;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1505,7 +1477,7 @@ main {
 }
 .menuIndex .ulNavIndex { /**UL navegador INDEX**/
   width: 500px;
-  height: 65px;
+  height: 68px;
   display: flex;
   margin-right: 150px;
 }
@@ -1535,7 +1507,7 @@ main {
   width: 23px;
   height: auto;
   margin-left: 7%;
-  margin-top: 15px;
+  margin-top: 16px;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1568,7 +1540,7 @@ main {
 
 /**---------------------------------- NAVEGADORES RESPONSIVE ----------------------------------------------------------------**/
 /**-----MENU HAMBURGUESA INDEX-----**/
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .menuIndex {
     height: 100vh;
     background-color: black;
@@ -1588,7 +1560,7 @@ main {
   }
 }
 /**-----MENU HAMBURGUESA PAGES-----**/
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .menuPages {
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -1652,6 +1624,7 @@ main {
   width: 40px;
   height: auto;
   margin-right: 10px;
+  margin-top: 25px;
 }
 #footer #filaUnoFooter .menuFooter {
   grid-area: menu;
